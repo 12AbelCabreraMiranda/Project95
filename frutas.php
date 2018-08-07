@@ -72,7 +72,9 @@
             </div>
         </div>
     </div>
-
+    <div class="footers">
+        prueba de footer
+    </div>
 
     <!-- funciones de JavaScript, Squery y Json-->
     <script>

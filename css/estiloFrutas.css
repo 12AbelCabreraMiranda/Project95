@@ -93,7 +93,16 @@ table tr td{
     width: 130px;
     border: solid 1px #000000;
 }
+/* Large Desktop*/
+@media (min-width:1200px){
+.footers{
+    display: none;
+}
+}
+/* Medium Desktop*/
+@media (max-width: 1199px) and (min-width: 1023px){
 
+}
 /* Tablets*/
 @media (max-width: 1024px) and (min-width: 768px){
 
@@ -174,8 +183,14 @@ table tr td{
     .avance{
         display: none;
     }
-    
-    
-       /* display: none;*/
+    .footers{
+        background-color: steelblue;
+        width: 100%;
+        height: 80px;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        color: white;
+    }
        
 }
