@@ -19,19 +19,11 @@
 
 <body>
     <div class="container-fluid">
-        <!-- Fila Encabezado-->
-        <header class="row">
-            <div id="inicio"class="col-lg-1 col-md-3 col-sm-4 col-xs-2"> 
-                <a href="inicio.html" class="iconINICIO" >
-                    <img src="img/frutas/Home-icon.png" class="img-responsive" alt="">
-                </a>    
-            </div>
-            <div id="encabezadoFruta" class="col-lg-11 col-md-9 col-sm-8 col-xs-10" ><h1 id="TituloFrutasDulces">“Frutas Dulces”</h1></div>
-        </header>
-
-       
-        
-        
+        <div class="row" id="encabezadoFruta">
+            <div class="col-md-12">
+                <h1 id="TituloFrutasDulces">“Frutas Dulces”</h1>
+            </div>            
+        </div>
         <!-- CUERPO DE IMAGENES-->
         <div class="container-fluid">
             <div class="row sep" style="margin-top:20px" id="separacionEC">
