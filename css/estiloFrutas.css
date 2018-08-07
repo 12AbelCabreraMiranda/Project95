@@ -184,13 +184,61 @@ table tr td{
         display: none;
     }
     .footers{
-        background-color: steelblue;
+       background-color: white;
         width: 100%;
-        height: 80px;
+        height: 100px;
         bottom: 0;
         position: fixed;
         text-align: center;
         color: white;
+    }
+    .izquierda{
+        width: 33%;
+        height: 100%;        
+        float: left;
+        border-top: 1px solid rgb(8, 81, 163);
+        border-right: 1px solid  rgb(8, 81, 163);
+    }
+    .test{       
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 3px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }
+    .centro{
+        width: 34%;
+        height: 100%;    
+        float: left;
+        border-top: 1px solid rgb(8, 81, 163);
+        border-right: 1px solid rgb(8, 81, 163);
+    }
+    .casa{
+        position: absolute;
+        top: 0;        
+        left: 25px;
+        bottom: 8px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }
+    .derecha{
+        width: 33%;
+        height: 100%;        
+        float: left;
+        border-top: 1px solid rgb(8, 81, 163);
+    }
+    .avances{
+        position: absolute;
+        top: 0;                
+        right: 25px;
+        bottom: 5px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
     }
        
 }

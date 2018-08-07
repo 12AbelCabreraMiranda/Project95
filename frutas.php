@@ -22,8 +22,8 @@
         <!-- Fila Encabezado-->
         <header class="row">
             <div id="inicio"class="col-lg-1 col-md-3 col-sm-4 col-xs-2"> 
-                <a href="inicio.html" class="iconINICIO" >
-                    <img src="img/frutas/Home-icon.png" class="img-responsive" alt="">
+                <a href="catFrutas.php" class="iconINICIO" >
+                    <img src="img/regresar.png" class="img-responsive" alt="">
                 </a>    
             </div>
             <div id="encabezadoFruta" class="col-lg-11 col-md-9 col-sm-8 col-xs-10" ><h1 id="TituloFrutasDulces">“Frutas Dulces”</h1></div>
@@ -72,9 +72,7 @@
             </div>
         </div>
     </div>
-    <div class="footers">
-        prueba de footer
-    </div>
+
 
     <!-- funciones de JavaScript, Squery y Json-->
     <script>

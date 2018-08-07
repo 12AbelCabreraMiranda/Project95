@@ -1,0 +1,9 @@
+@media (max-width: 767px){
+
+    .imagen{
+        width: 50%;    
+        background-color: violet;
+        float: left;
+        height:200px;       
+    }
+}
