@@ -34,7 +34,7 @@
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Dulces </p>
                 </div>
                 <!--img 3 -->
-                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(55, 91, 128);height:230px">
+                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(25, 44, 61);height:230px">
                     <a href="#"> <img class="img-responsive imgF"src="img/frutas/FRUTA_ACIDO.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
                 </div>

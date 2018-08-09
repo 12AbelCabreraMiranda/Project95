@@ -32,7 +32,7 @@ div h1#TituloFrutasDulces{
 }
 
 .fondo_fruta{
-    background:rgb(120, 120, 121);
+    background:rgba(2, 89, 139, 0.959);
     height:500px;
     border-radius: 15px;
     width: 60%;
@@ -109,17 +109,17 @@ table tr td{
 }
 /* Phones*/
 @media (max-width: 767px){
-    .fondo_fruta{
-        background:rgb(120, 120, 121);
-        height:500px;
-        border-radius: 15px;
-        width: 93%;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+    
     #inicio{
         background-color: #000000; 
         height: 40px; 
+    }
+    .fondo_fruta{
+        background:rgb(2, 85, 78);
+        height:530px;
+        border-radius: 15px;
+        width: 100%;
+        margin-left: 0;
     }
     .iconINICIO{
         height:40px;
@@ -172,13 +172,7 @@ table tr td{
         pointer-events: stroke;
         width: auto;
     }
-    .fondo_fruta{
-        background:rgb(120, 120, 121);
-        height:530px;
-        border-radius: 15px;
-        width: 100%;
-        margin-left: 0;
-    }
+  
 
     .avance{
         display: none;
