@@ -12,7 +12,7 @@
     <script src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/estilo_inicio.css">
     <link rel="stylesheet" href="css/estiloFrutas.css">
-    <link rel="stylesheet" href="css/catFrutas.css">
+    
 
 </head>
 <body>
@@ -26,26 +26,26 @@
 
         <div class="row" style="margin-top:20px">
             <!--CUERPO DE IMAGENES-->
-            <aside class="col-lg-12 " style="background:#333; height:400px">
+            <aside class="col-lg-12 " style="background:#333; height:500px">
 
                 <!--img 2 -->
-                <div  class="col-lg-2 col-sm-3 col-md-6 col-xs-6 col-lg-offset-2 imagen" style="background:rgb(76, 55, 54)">
-                    <a href="frutas.php"> <img class="img-responsive" src="img/frutas/FRUTA_DULCE.png"></a>
+                <div  class="col-lg-2 col-sm-3 col-md-6 col-xs-6 col-lg-offset-2 " style="background:rgb(76, 55, 54);height:230px">
+                    <a href="frutas.php"> <img class="img-responsive imgF" src="img/frutas/FRUTA_DULCE.png"></a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Dulces </p>
                 </div>
                 <!--img 3 -->
-                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 imagen" style="background:rgb(55, 91, 128)">
-                    <a href="#"> <img class="img-responsive"src="img/frutas/FRUTA_ACIDO.png"> </a>
+                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(55, 91, 128);height:230px">
+                    <a href="#"> <img class="img-responsive imgF"src="img/frutas/FRUTA_ACIDO.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
                 </div>
                 <!--img 4 -->
-                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 imagen" style="background:rgb(25, 44, 61)">
-                    <a href="#"> <img class="img-responsive" src="img/frutas/FRUTA_SEMIACIDO.jpg"> </a>
+                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(25, 44, 61);height:230px">
+                    <a href="#"> <img class="img-responsive imgF " src="img/frutas/FRUTA_SEMIACIDO.jpg"> </a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas SemiÁcidas </p>
                 </div>
                 <!--img 5 -->
-                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 imagen" style="background:rgb(76, 55, 54)">
-                    <a href="#"> <img class="img-responsive" src="img/frutas/FRUTA_NEUTRO.png"> </a>
+                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(76, 55, 54);height:230px">
+                    <a href="#"> <img class="img-responsive imgF" src="img/frutas/FRUTA_NEUTRO.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Neutras </p>
                 </div>
             
@@ -64,6 +64,9 @@
         </div>
         <div class="derecha">
             <a href=""> <img class="img-responsive avances" src="img/avance.png" style=" height:85px;width:85px"> </a>
+        </div>
+        <div class="derecha2">
+            <a href=""> <img class="img-responsive perfil" src="img/perfil.png" style=" height:85px;width:85px"> </a>
         </div>
     </div>
 

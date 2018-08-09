@@ -193,52 +193,71 @@ table tr td{
         color: white;
     }
     .izquierda{
-        width: 33%;
+        width: 25%;
         height: 100%;        
         float: left;
-        border-top: 1px solid rgb(8, 81, 163);
-        border-right: 1px solid  rgb(8, 81, 163);
+        border-top: 1px solid #333;
+        border-right: 1px solid  #333;
     }
     .test{       
         position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
+        top: 0;        
+        left: 27%;
         bottom: 3px;
         margin: auto;
         pointer-events: stroke;
         width: auto;
     }
     .centro{
-        width: 34%;
+        width: 25%;
         height: 100%;    
         float: left;
-        border-top: 1px solid rgb(8, 81, 163);
-        border-right: 1px solid rgb(8, 81, 163);
+        border-top: 1px solid #333;
+        border-right: 1px solid #333;
     }
     .casa{
         position: absolute;
         top: 0;        
-        left: 25px;
+        left: 9px;
         bottom: 8px;
         margin: auto;
         pointer-events: stroke;
         width: auto;
     }
     .derecha{
-        width: 33%;
+        width: 25%;
         height: 100%;        
         float: left;
-        border-top: 1px solid rgb(8, 81, 163);
+        border-top: 1px solid #333;
+        border-right: 1px solid #333;
     }
     .avances{
         position: absolute;
         top: 0;                
-        right: 25px;
+        right: 28%;
         bottom: 5px;
         margin: auto;
         pointer-events: stroke;
         width: auto;
     }
+    .derecha2{
+        width: 25%;
+        height: 100%;        
+        float: left;
+        border-top: 1px solid #333;
+    }
+    .perfil{
+        position: absolute;
+        top: 0;                
+        right: 11px;
+        bottom: 5px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }
+    .imgF{
+        margin-top: 15px;
+    }
+
        
 }
