@@ -42,7 +42,7 @@
                     
                     <!-- IMAGENES CENTRO-->
                     <div id="fruta">
-                        <a href="#" onmousedown="voz1.play()" > <img class="img-responsive" src="img/frutas/manzana_roja.png"> </a>
+                        <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"> </a>
                     </div>                                        
                     <!-- IMAGENES VISTAS MINIATURAS SIGUIENTES-->
                     <div id="siguiente"style=" height:90px;width:90px">

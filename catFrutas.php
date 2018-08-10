@@ -29,22 +29,22 @@
             <aside class="col-lg-12 " style="background:#333; height:500px">
 
                 <!--img 2 -->
-                <div  class="col-lg-2 col-sm-3 col-md-6 col-xs-6 col-lg-offset-2 " style="background:rgb(76, 55, 54);height:230px">
+                <div  class="col-lg-2 col-sm-3 col-md-6 col-xs-6 col-lg-offset-2 fondoIMG" style="background:rgb(76, 55, 54)">
                     <a href="frutas.php"> <img class="img-responsive imgF" src="img/frutas/FRUTA_DULCE.png"></a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Dulces </p>
                 </div>
                 <!--img 3 -->
-                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(25, 44, 61);height:230px">
+                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
                     <a href="#"> <img class="img-responsive imgF"src="img/frutas/FRUTA_ACIDO.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
                 </div>
                 <!--img 4 -->
-                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(25, 44, 61);height:230px">
+                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
                     <a href="#"> <img class="img-responsive imgF " src="img/frutas/FRUTA_SEMIACIDO.jpg"> </a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas SemiÁcidas </p>
                 </div>
                 <!--img 5 -->
-                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(76, 55, 54);height:230px">
+                <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(76, 55, 54)">
                     <a href="#"> <img class="img-responsive imgF" src="img/frutas/FRUTA_NEUTRO.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:15px">Frutas Neutras </p>
                 </div>
