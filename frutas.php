@@ -36,13 +36,13 @@
         <div class="container-fluid">
             <div class="row sep" style="margin-top:20px" id="separacionEC">
                 <!-- CUERPO DE frutas-->
-                <div class="col-md-8 fondo_fruta " >
+                <div class="col-md-8 fondo_fruta  " >
                     <p class="text-left" id="titulos" name="titulo">Manzana Roja</p>
                     <!--<a href="#" onmousedown="voz1.play()" > <img class="img-responsive" id="fruta" src="img/frutas/manzana_roja.png"> </a> -->
                     
                     <!-- IMAGENES CENTRO-->
                     <div id="fruta">
-                        <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"> </a>
+                        <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"></a>
                     </div>                                        
                     <!-- IMAGENES VISTAS MINIATURAS SIGUIENTES-->
                     <div id="siguiente"style=" height:90px;width:90px">

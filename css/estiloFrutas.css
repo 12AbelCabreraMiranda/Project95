@@ -40,14 +40,14 @@ div h1#TituloFrutasDulces{
 }
 #fruta{
     position: absolute;
-    top: 0;
+    top: 45px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
     pointer-events: stroke;
-    height:450px; 
-    width: 450px;
+    height:430px; 
+    width: 430px;
 }
 
 #siguiente{
