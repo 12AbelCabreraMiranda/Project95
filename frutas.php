@@ -20,19 +20,20 @@
 <body>
     <div class="container-fluid">
         <!-- Fila Encabezado-->
-        <header class="row">
-            <div id="inicio"class="col-lg-1 col-md-3 col-sm-4 col-xs-2"> 
+        
+        <header class="row encabez">
+            <div id="atras"> 
                 <a href="catFrutas.php" class="iconINICIO" >
-                    <img src="img/regresar.png" class="img-responsive" alt="">
-                </a>    
+                    <img src="img/atrasF.png" class="img-responsive" alt="">
+                </a>
             </div>
-            <div id="encabezadoFruta" class="col-lg-11 col-md-9 col-sm-8 col-xs-10" ><h1 id="TituloFrutasDulces">“Frutas Dulces”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Frutas Dulces”</h1></div>
         </header>               
         
         <!-- CUERPO DE IMAGENES-->
         <div class="container-fluid">
         
-            <div class="row sep col-lg-offset-1" style="margin-top:20px" id="separacionEC">  
+            <div class="row sep col-lg-offset-1" id="sepa" >  
                 <!-- CUERPO DE frutas ANTERIORES-->
                 <div  class=" col-lg-2 anterior"id="anterior" onClick="previus()"></div>        
                 <!-- CUERPO DE frutas CENTRO-->
