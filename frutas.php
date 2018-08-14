@@ -34,14 +34,14 @@
         
             <div class="row sep col-lg-offset-1" style="margin-top:20px" id="separacionEC">  
                 <!-- CUERPO DE frutas ANTERIORES-->
-                        
+                <div  class=" col-lg-2 anterior"id="anterior" onClick="previus()"></div>        
                 <!-- CUERPO DE frutas CENTRO-->
                 <div class="col-lg-6  fondo_fruta  " >
                     <p class="text-left" id="titulos" name="titulo">Manzana Roja</p>
                     <!--<a href="#" onmousedown="voz1.play()" > <img class="img-responsive" id="fruta" src="img/frutas/manzana_roja.png"> </a> -->
                     
                      <!-- IMAGENES VISTAS MINIATURAS ANTERIOR-->
-                     <div id="anterior" onClick="previus()"  style="background-color:red; height:90px;width:90px">
+                     <div class="anterior"id="anteriorP" onClick="previus()"  style="background-color:red; height:90px;width:90px">
                          <!--<a href="#"  > <img class="img-responsive img-circle"  src="img/frutas/pera.png"  > </a>-->
                     </div>
 
@@ -50,13 +50,13 @@
                         <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"></a>
                     </div>                                        
                     <!-- IMAGENES VISTAS MINIATURAS SIGUIENTES-->
-                    <div id="siguiente" style=" height:90px;width:90px">
+                    <div class="siguiente" id="siguienteP" style=" height:90px;width:90px">
                         <!--<a href="#" onClick="siguientes()" > <img class="img-responsive img-circle"  src="img/frutas/pera.jpg"  > </a>-->
                     </div>
                 </div>
+
                 <!-- CUERPO DE frutas SIGUIENTES-->
-            
-                
+                <div class="col-lg-2 siguiente" id="siguiente" > </div>                
                 
             </div>
         </div>
@@ -77,7 +77,7 @@
         }            
        
         //INICIALIZACION
-        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
         //INICIO DE CONDICIONES PARA IR CAMBIANDO IMAGENES
        
         function siguientes(){ 
@@ -93,10 +93,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);                      
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             } 
@@ -111,10 +111,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);                      
-                        $("#anterior").html("<a href='#'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+                        $(".anterior").html("<a href='#'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -129,10 +129,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex); 
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");                     
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");                     
                     }                                                                                                 
                 }                                                                                                                                  
             }  
@@ -147,10 +147,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");                                           
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");                                           
                     }                                                                                                 
                 }                                                                                                                                  
             }  
@@ -165,10 +165,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);   
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");                                                              
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");                                                              
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -183,10 +183,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);   
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");                   
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");                   
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -201,10 +201,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);    
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");                  
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");                  
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -219,10 +219,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex); 
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");                     
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");                     
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -237,10 +237,10 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);         
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");             
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");             
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -258,7 +258,7 @@
                         //$("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.jpg'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);   
-                        $("#anterior").html("<a href='#'  > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");                      
+                        $(".anterior").html("<a href='#'  > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");                      
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -278,9 +278,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             } 
@@ -295,9 +295,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -312,9 +312,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             } 
@@ -329,9 +329,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -346,9 +346,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -363,9 +363,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -380,9 +380,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -397,9 +397,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -414,9 +414,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -431,9 +431,9 @@
                         //SobrePone ImagenNuevo CENTRO
                         $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $("#anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }

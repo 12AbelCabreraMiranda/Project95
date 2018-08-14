@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(207, 204, 204);
+    background-color: rgb(116, 113, 113);
 }
 #inicio{
     background-color: #000000; 
@@ -30,13 +30,20 @@ div h1#TituloFrutasDulces{
     color: white;
     text-align: center;
 }
-
+#anterior{
+    margin-top: 150px;
+    height:200px;    
+}
 .fondo_fruta{
     background:rgba(2, 89, 139, 0.959);
     height:500px;
     border-radius: 15px;
     /*width: 60%;*/
     /*margin-left: 20px;*/
+}
+#siguiente{
+    margin-top: 150px;
+    height:200px; 
 }
 #fruta{
     position: absolute;
@@ -50,24 +57,6 @@ div h1#TituloFrutasDulces{
     width: 430px;
 }
 
-#siguiente{
-    height:90px; 
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    margin: auto;
-    pointer-events: stroke;
-    width: auto;
-}
-#anterior{
-    height:90px; 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    pointer-events: stroke;
-    width: auto;
-}
 
 #titulos{
     padding-top: 0px;
@@ -105,7 +94,12 @@ table tr td{
     .fondoIMG{
         height:210px;
     }
-   
+    #siguienteP{
+        display: none;
+    }
+    #anteriorP{
+        display: none;
+    }
 }
 /* Medium Desktop*/
 @media (max-width: 1199px) and (min-width: 1023px){
@@ -117,6 +111,12 @@ table tr td{
 }
 /* Phones*/
 @media (max-width: 767px){
+    #anterior{
+        display: none;
+    }
+    #siguiente{
+        display: none;
+    }
     
     #inicio{
         background-color: #000000; 
@@ -175,7 +175,8 @@ table tr td{
         height:500px; 
         width: auto;
     }
-    #anterior{
+    
+    #anteriorP{
         height:90px; 
         position: absolute;
         bottom: 50px;
@@ -184,7 +185,8 @@ table tr td{
         pointer-events: stroke;
         width: auto;
     }
-    #siguiente{
+    
+    #siguienteP{
         height:90px; 
         position: absolute;
         top: 50px;
