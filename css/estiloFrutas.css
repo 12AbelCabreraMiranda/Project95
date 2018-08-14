@@ -35,8 +35,8 @@ div h1#TituloFrutasDulces{
     background:rgba(2, 89, 139, 0.959);
     height:500px;
     border-radius: 15px;
-    width: 60%;
-    margin-left: 20px;
+    /*width: 60%;*/
+    /*margin-left: 20px;*/
 }
 #fruta{
     position: absolute;
@@ -81,12 +81,7 @@ div h1#TituloFrutasDulces{
     height:500px;
     border-radius: 15px;
 }
-#tituloAvance{
-    margin-top: 10px;
-    font-size: 30px;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-}
+
 
 .next{
     font-size: 30px;
@@ -110,6 +105,7 @@ table tr td{
     .fondoIMG{
         height:210px;
     }
+   
 }
 /* Medium Desktop*/
 @media (max-width: 1199px) and (min-width: 1023px){
@@ -177,6 +173,15 @@ table tr td{
         margin: auto;
         pointer-events: stroke;
         height:500px; 
+        width: auto;
+    }
+    #anterior{
+        height:90px; 
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        margin: auto;
+        pointer-events: stroke;
         width: auto;
     }
     #siguiente{

@@ -31,14 +31,17 @@
         
         <!-- CUERPO DE IMAGENES-->
         <div class="container-fluid">
-            <div class="row sep col-lg-offset-3" style="margin-top:20px" id="separacionEC">
-                <!-- CUERPO DE frutas-->
-                <div class="col-lg-8  fondo_fruta  " >
+        
+            <div class="row sep col-lg-offset-1" style="margin-top:20px" id="separacionEC">  
+                <!-- CUERPO DE frutas ANTERIORES-->
+                        
+                <!-- CUERPO DE frutas CENTRO-->
+                <div class="col-lg-6  fondo_fruta  " >
                     <p class="text-left" id="titulos" name="titulo">Manzana Roja</p>
                     <!--<a href="#" onmousedown="voz1.play()" > <img class="img-responsive" id="fruta" src="img/frutas/manzana_roja.png"> </a> -->
                     
                      <!-- IMAGENES VISTAS MINIATURAS ANTERIOR-->
-                     <div id="anterior"onClick="previus()" style="background-color:red; height:90px;width:90px">
+                     <div id="anterior" onClick="previus()"  style="background-color:red; height:90px;width:90px">
                          <!--<a href="#"  > <img class="img-responsive img-circle"  src="img/frutas/pera.png"  > </a>-->
                     </div>
 
@@ -47,11 +50,14 @@
                         <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"></a>
                     </div>                                        
                     <!-- IMAGENES VISTAS MINIATURAS SIGUIENTES-->
-                    <div id="siguiente"style=" height:90px;width:90px">
+                    <div id="siguiente" style=" height:90px;width:90px">
                         <!--<a href="#" onClick="siguientes()" > <img class="img-responsive img-circle"  src="img/frutas/pera.jpg"  > </a>-->
                     </div>
                 </div>
-
+                <!-- CUERPO DE frutas SIGUIENTES-->
+            
+                
+                
             </div>
         </div>
     </div>
@@ -446,6 +452,7 @@
 
     
     </script>
+
   <script src="audio.js" ></script>
 </body>
 </html>
