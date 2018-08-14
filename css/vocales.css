@@ -1,0 +1,85 @@
+*{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+body{
+    background-color: rgb(116, 113, 113);
+}
+.encabez{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+}
+
+#atras{
+    background-color: #e9b405; 
+    height: 100%; 
+    width: 7%;
+    float: left;
+}
+.iconINICIO{
+    height:55px; 
+    width: 55px;
+    position: absolute;
+    top: 5px;
+    left: 10px;    
+    margin: auto;
+    pointer-events: stroke;    
+}
+
+div#encabezadoFruta{
+    background-color: #6d0b04; 
+    height: 100%; 
+    float: left;
+    width: 93%;
+}
+div h1#TituloFrutasDulces{
+    color: white;
+    text-align: center;
+}
+
+.cuerpo1{
+    margin-top: 100px;  
+}
+.vocal{
+    background-color: rgb(255, 208, 0);
+    height: 480px; 
+    left: 10px;
+}
+.espacioVocales{
+    height: 450px;
+    width: 450px;
+}
+.animalVocal{
+    height: 500px;
+    width: 500px;
+}
+.botones{
+    background-color: blue;
+    height: 30px; 
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.anteriorVocal{
+    height: 100%; 
+    width: 50%;
+    float: left;
+    background-color: rgb(14, 13, 13);
+    cursor: pointer;
+}
+.siguienteVocal{
+    height: 100%; 
+    width: 50%;
+    float: left;
+    background-color: rgb(241, 232, 232);
+    cursor: pointer;
+}
+.animal{
+    background-color: rgb(255, 60, 0);
+    height: 480px; 
+    right: 10px;
+}

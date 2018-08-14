@@ -30,7 +30,7 @@
 
                 <!--img 2 -->
                 <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
-                    <a href="#"> <img class="img-responsive imgF"  src="img/inicio/Vocales.png"></a>
+                    <a href="vocales.php"> <img class="img-responsive imgF"  src="img/inicio/Vocales.png"></a>
                     <p style="text-align:center; color:honeydew; font-size:14px">Vocales </p>
                 </div>
                 <!--img 3 -->
