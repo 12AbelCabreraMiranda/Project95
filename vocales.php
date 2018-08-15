@@ -26,10 +26,11 @@
         <div class="row cuerpo1">
             <div class="col-md-5 col-xs-12 vocal">
                 <div class="tam_miniatura">
-                    <p class="view_vocal">a</p>
+                    <p class="view_vocal" id="vocalActual">a</p>
                 </div>
+                <!-- VOCAL CENTRO -->
                 <div class="espacioVocales">
-                    <a href="#" > <img class="img-responsive"  src="img/vocales/a.png"> </a> 
+                    <!--<a href="#" > <img class="img-responsive"  src="img/vocales/a.png"> </a> -->
                 </div>
 
                 <div class="botones">
@@ -52,33 +53,28 @@
         });
         var productos;
         function listar(){
-                __ajax("prueba1Listar.php", "")
+                __ajax("bd/prueba1Listar.php", "")
                 .done(function(info){                
                      productos = JSON.parse(info); //cambiarlo por curso despues                             
                 });            
         }            
        
         //INICIALIZACION
-        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+        $(".espacioVocales").html("<a href='#' > <img class='img-responsive' src='img/vocales/a.png'> </a>");
         //INICIO DE CONDICIONES PARA IR CAMBIANDO IMAGENES
        
-        function siguientes(){ 
-            var prueba = document.getElementById("titulos").innerHTML ; //obtengo el valor del texto de la etiqueta para se comparado                                                        
+        function sigVocal(){ 
+            var vocal = document.getElementById("vocalActual").innerHTML ; //obtengo el valor del texto de la etiqueta para se comparado                                                        
             //FRUTA 2
-            if(prueba=="Manzana Roja"){                                                                                                
+            if(vocal=="a"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==2){                                                             
+                    if(nom==13){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
-                        $("#titulos").html(x);//SobreEscribe NuevoNombre 
+                        $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
-                        //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
-                        //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex);                      
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
             } 

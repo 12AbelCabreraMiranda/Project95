@@ -71,7 +71,7 @@
         });
         var productos;
         function listar(){
-                __ajax("prueba1Listar.php", "")
+                __ajax("bd/prueba1Listar.php", "")
                 .done(function(info){                
                      productos = JSON.parse(info); //cambiarlo por curso despues                             
                 });            
