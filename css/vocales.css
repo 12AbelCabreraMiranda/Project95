@@ -49,11 +49,23 @@ div h1#TituloFrutasDulces{
 }
 .espacioVocales{
     height: 450px;
-    width: 450px;
+    width: 450px; 
+}
+.animal{
+    background-color: rgb(255, 60, 0);
+    height: 480px; 
+    right: 10px;
 }
 .animalVocal{
-    height: 500px;
-    width: 500px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: stroke;
+    height:500px; 
+    width: 500px;  
 }
 .botones{
     background-color: blue;
@@ -78,8 +90,22 @@ div h1#TituloFrutasDulces{
     background-color: rgb(241, 232, 232);
     cursor: pointer;
 }
-.animal{
-    background-color: rgb(255, 60, 0);
-    height: 480px; 
-    right: 10px;
+.tam_miniatura{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    pointer-events: stroke;
+    height:200px; 
+    width: 200px; 
+    background-color: rgb(255, 196, 0);
+}
+.view_vocal{
+    text-align: center;
+    margin-top: -130px;
+    font-size: 280px;
+    margin-left: -25px;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 1.5px black;
 }
