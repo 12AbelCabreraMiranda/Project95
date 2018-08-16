@@ -35,7 +35,7 @@
                 </div>
                 <!--img 3 -->
                 <div class="col-lg-3 col-md-6  col-xs-6 fondoIMG" style="background:rgb(76, 55, 54)">
-                    <a href="#"> <img class="img-responsive imgF"  src="img/inicio/Abecedario.png"> </a>
+                    <a href="abecedarios.php"> <img class="img-responsive imgF"  src="img/inicio/Abecedario.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:14px">Abecedarios </p>
                 </div>
                 <!--img 4 -->

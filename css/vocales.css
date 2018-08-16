@@ -48,12 +48,14 @@ div h1#TituloFrutasDulces{
     left: 10px;
 }
 .espacioVocales{
-    height: 450px;
-    width: 450px; 
+    height: 350px;
+    width: 350px; 
+    bottom: 30px;
+    left: 10px;
     position:absolute; z-index:1;
 }
 .animal{
-    background-color: rgb(255, 60, 0);
+    background-color: white;
     height: 480px; 
     right: 10px;
 }
@@ -100,7 +102,7 @@ div h1#TituloFrutasDulces{
     pointer-events: stroke;
     height:240px; 
     width: 240px; 
-    background-color: rgb(255, 196, 0);
+
 }
 .view_vocal{
     text-align: center;
