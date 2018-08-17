@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vocales</title>
+    <title>Números</title>
     <link rel="icon" href="img/android.png">
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!--No funciona los iconos -->
     <script src="js/bootstrap.min.js" ></script>
@@ -20,7 +20,7 @@
                     <img src="img/inicio.png" class="img-responsive">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Aprendiendo las Vocales”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Aprendiendo los Números”</h1></div>
         </header>
     
         <div class="row cuerpo1">
@@ -39,7 +39,7 @@
 
             <div class="col-md-7 col-xs-12 animal">
                 <div class="animalVocal">
-                    <a href="#" > <img class="img-responsive"  src="img/vocales/abeja.png"> </a>
+                    
                 </div>
             </div>
         </div>        
@@ -72,7 +72,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/uno.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -85,7 +85,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }            
@@ -98,7 +98,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -111,7 +111,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             } 
@@ -124,7 +124,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }  
@@ -137,7 +137,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -150,7 +150,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }  
@@ -163,7 +163,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -176,7 +176,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }  
@@ -189,7 +189,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/diez.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -206,7 +206,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -219,7 +219,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/uno.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }            
@@ -232,7 +232,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -245,7 +245,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             } 
@@ -258,7 +258,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }  
@@ -271,7 +271,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -284,7 +284,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }  
@@ -297,7 +297,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
@@ -310,7 +310,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }  
@@ -323,7 +323,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        //$(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");                        
+                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
                     }                                       
                 }                                                                                                                                  
             }
