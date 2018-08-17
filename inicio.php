@@ -40,7 +40,7 @@
                 </div>
                 <!--img 4 -->
                 <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(11, 21, 66)">
-                    <a href="#"> <img class="img-responsive imgF"  src="img/inicio/Numero.png"> </a>
+                    <a href="numeros.php"> <img class="img-responsive imgF"  src="img/inicio/Numero.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:14px">Números </p>
                 </div>
 
