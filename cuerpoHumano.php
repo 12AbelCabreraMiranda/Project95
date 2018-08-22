@@ -20,11 +20,11 @@
         
         <header class="row encabez">
             <div id="atras"> 
-                <a href="catFrutas.php" class="iconINICIO" >
-                    <img src="img/atrasF.png" class="img-responsive" alt="">
+                <a href="inicio.php" class="iconINICIO" >
+                    <img src="img/inicio.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Frutas Dulces”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Partes del Cuerpo Humano”</h1></div>
         </header>               
         
         <!-- CUERPO DE IMAGENES-->
@@ -35,7 +35,7 @@
                 <div  class=" col-lg-2 anterior"id="anterior" onClick="previus()"></div>        
                 <!-- CUERPO DE frutas CENTRO-->
                 <div class="col-lg-6  fondo_fruta  " >
-                    <p class="text-left" id="titulos" name="titulo">Manzana Roja</p>
+                    <p class="text-left" id="titulos" name="titulo">Boca</p>
                     <!--<a href="#" onmousedown="voz1.play()" > <img class="img-responsive" id="fruta" src="img/frutas/manzana_roja.png"> </a> -->
                     
                      <!-- IMAGENES VISTAS MINIATURAS ANTERIOR-->
@@ -45,7 +45,7 @@
 
                     <!-- IMAGENES CENTRO-->
                     <div id="fruta">
-                        <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"></a>
+                        <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/CuerpoHumano/boca.png"></a>
                     </div>                                        
                     <!-- IMAGENES VISTAS MINIATURAS SIGUIENTES-->
                     <div class="siguiente" id="siguienteP" style=" height:90px;width:90px">
@@ -74,367 +74,336 @@
                 });            
         }            
        
-        //INICIALIZACION
-        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+        //INICIALIZACION DE SIGUIENTE
+        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/cabeza.png'> </a>");
         //INICIO DE CONDICIONES PARA IR CAMBIANDO IMAGENES
        
         function siguientes(){ 
             var prueba = document.getElementById("titulos").innerHTML ; //obtengo el valor del texto de la etiqueta para se comparado                                                        
-            //FRUTA 2
-            if(prueba=="Manzana Roja"){                                                                                                
+            //Cuerpo 2
+            if(prueba=="Boca"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==2){                                                             
+                    if(nom==79){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/cabeza.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/dedo.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);                      
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/boca.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             } 
-             //FRUTA 3
-             if(prueba=="Manzana Verde"){                                                                                                
+            // cuerpo 3
+            if(prueba=="Cabeza"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==3){                                                             
+                    if(nom==80){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/dedo.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/diente.png'> </a>");
                         //var frutNex = "Abecedarios";
                         //$("#cambiar").html(frutNex);                      
-                        $(".anterior").html("<a href='#'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/cabeza.png'> </a>");
+                    }                                                                                                 
+                }                                                                                                                                  
+            } 
+            // cuerpo 4
+            if(prueba=="Dedo"){                                                                                                
+                for(var i in productos.data){                                          
+                    var nom = new Array();                                                           
+                    nom= [productos.data[i].idImagenes];                                                                                                                   
+                    if(nom==81){                                                             
+                        var x=(productos.data[i].nombreImagen);                                                           
+                        $("#titulos").html(x);//SobreEscribe NuevoNombre 
+                        //SobrePone ImagenNuevo
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/diente.png'> </a>");
+                        //SobrePone imagen View Minieatura
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/lengua.png'> </a>");
+                        //var frutNex = "Abecedarios";
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/dedo.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 4
-            if(prueba=="Papaya"){                                                                                                
+            // cuerpo 5
+            if(prueba=="Diente"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==4){                                                             
+                    if(nom==82){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/lengua.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/mano.png'> </a>");
                         //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex); 
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");                     
-                    }                                                                                                 
-                }                                                                                                                                  
-            }  
-            //FRUTA 5
-            if(prueba=="Pera"){                                                                                                
-                for(var i in productos.data){                                          
-                    var nom = new Array();                                                           
-                    nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==5){                                                             
-                        var x=(productos.data[i].nombreImagen);                                                           
-                        $("#titulos").html(x);//SobreEscribe NuevoNombre 
-                        //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
-                        //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
-                        //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex);
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");                                           
-                    }                                                                                                 
-                }                                                                                                                                  
-            }  
-            //FRUTA 6
-            if(prueba=="Sandia"){                                                                                                
-                for(var i in productos.data){                                          
-                    var nom = new Array();                                                           
-                    nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==6){                                                             
-                        var x=(productos.data[i].nombreImagen);                                                           
-                        $("#titulos").html(x);//SobreEscribe NuevoNombre 
-                        //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
-                        //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
-                        //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex);   
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");                                                              
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/diente.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-             //FRUTA 7
-             if(prueba=="Uva"){                                                                                                
+            // cuerpo 6
+            if(prueba=="Lengua"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==7){                                                             
+                    if(nom==83){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/mano.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/nariz.png'> </a>");
                         //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex);   
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");                   
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/lengua.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-              //FRUTA 8
-              if(prueba=="Zapote"){                                                                                                
+            // cuerpo 7
+            if(prueba=="Mano"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==8){                                                             
+                    if(nom==84){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/nariz.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/ojo.png'> </a>");
                         //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex);    
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");                  
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/mano.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 9
-            if(prueba=="Guayaba"){                                                                                                
+            // cuerpo 8
+            if(prueba=="Nariz"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==9){                                                             
+                    if(nom==85){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/ojo.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/oreja.png'> </a>");
                         //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex); 
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");                     
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/nariz.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-             //FRUTA 10
-             if(prueba=="Higo"){                                                                                                
+            // cuerpo 9
+            if(prueba=="Ojo"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==10){                                                             
+                    if(nom==86){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/oreja.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/pie.png'> </a>");
                         //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex);         
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");             
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/ojo.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 11
-            if(prueba=="Banano"){                                                                                                
+            // cuerpo 10
+            if(prueba=="Oreja"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==11){                                                             
+                    if(nom==87){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz11.play()'> <img class='img-responsive img-circle' src='img/frutas/Melon.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/pie.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        //$("#siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.jpg'> </a>");
+                        $(".siguiente").html("");
                         //var frutNex = "Abecedarios";
-                        //$("#cambiar").html(frutNex);   
-                        $(".anterior").html("<a href='#'  > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");                      
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/oreja.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
+
+
+     
 
         }                
         // imagen previus
         function previus(){ 
             var prueba = document.getElementById("titulos").innerHTML ; //obtengo el valor del texto de la etiqueta para se comparado                                                        
-            //FRUTA 1
-            if(prueba=="Manzana Verde"){                                                                                                
+            //cuerpo 1
+            if(prueba=="Cabeza"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==1){                                                             
+                    if(nom==78){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/boca.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/cabeza.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $(".anterior").html("");
                     }                                                                                                 
                 }                                                                                                                                  
             } 
-            //FRUTA 2
-            if(prueba=="Papaya"){                                                                                                
+            //cuerpo 2
+            if(prueba=="Dedo"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==2){                                                             
+                    if(nom==79){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/cabeza.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/dedo.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzana_roja.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/boca.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 3
-            if(prueba=="Pera"){                                                                                                
+            //cuerpo 3
+            if(prueba=="Diente"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==3){                                                             
+                    if(nom==80){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/dedo.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/diente.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/manzanaVerde.png'> </a>");
-                    }                                                                                                 
-                }                                                                                                                                  
-            } 
-            //FRUTA 4
-            if(prueba=="Sandia"){                                                                                                
-                for(var i in productos.data){                                          
-                    var nom = new Array();                                                           
-                    nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==4){                                                             
-                        var x=(productos.data[i].nombreImagen);                                                           
-                        $("#titulos").html(x);//SobreEscribe NuevoNombre 
-                        //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
-                        //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
-                        //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Papaya.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/cabeza.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 5
-            if(prueba=="Uva"){                                                                                                
+            //cuerpo 4
+            if(prueba=="Lengua"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==5){                                                             
+                    if(nom==81){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/diente.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/lengua.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Pera.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/dedo.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 6
-            if(prueba=="Zapote"){                                                                                                
+            //cuerpo 5
+            if(prueba=="Mano"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==6){                                                             
+                    if(nom==82){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/lengua.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/mano.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Sandia.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/diente.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 7
-            if(prueba=="Guayaba"){                                                                                                
+            //cuerpo 6
+            if(prueba=="Nariz"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==7){                                                             
+                    if(nom==83){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/mano.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/nariz.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Uva.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/Lengua.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 8
-            if(prueba=="Higo"){                                                                                                
+            //cuerpo 7
+            if(prueba=="Ojo"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==8){                                                             
+                    if(nom==84){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/nariz.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/ojo.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Zapote.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/mano.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 9
-            if(prueba=="Banano"){                                                                                                
+            //cuerpo 8
+            if(prueba=="Oreja"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==9){                                                             
+                    if(nom==85){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/ojo.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/oreja.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Guayaba.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/nariz.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
-            //FRUTA 10
-            if(prueba=="Melon"){                                                                                                
+             //cuerpo 9
+             if(prueba=="Pie"){                                                                                                
                 for(var i in productos.data){                                          
                     var nom = new Array();                                                           
                     nom= [productos.data[i].idImagenes];                                                                                                                   
-                    if(nom==10){                                                             
+                    if(nom==86){                                                             
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/frutas/Banano.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/CuerpoHumano/oreja.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
-                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/Melon.png'> </a>");
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/CuerpoHumano/pie.png'> </a>");
                         //Miniatura view ANTERIOR
-                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/frutas/Higo.png'> </a>");
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/CuerpoHumano/ojo.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
+       
 
         } 
 
