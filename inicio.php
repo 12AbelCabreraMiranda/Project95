@@ -71,7 +71,7 @@
                 </div>
                 <!--img 2 -->
                 <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(10, 59, 27)">
-                    <a href="#"> <img class="img-responsive imgF"  src="img/inicio/CuerpoHumano.png"> </a>
+                    <a href="cuerpoHumano.php"> <img class="img-responsive imgF"  src="img/inicio/CuerpoHumano.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:14px">El Cuerpo Humano </p>
                 </div>
 
