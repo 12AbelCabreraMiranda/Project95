@@ -19,13 +19,13 @@
         <!-- Fila Encabezado-->
         
         <header class="row encabez">
-            <div id="atras"> 
+            <div id="atras">
                 <a href="inicio.php" class="iconINICIO" >
                     <img src="img/inicio.png" class="img-responsive" alt="">
                 </a>
             </div>
             <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Partes del Cuerpo Humano”</h1></div>
-        </header>               
+        </header>
         
         <!-- CUERPO DE IMAGENES-->
         <div class="container-fluid">
