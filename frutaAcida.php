@@ -8,8 +8,6 @@
     <script src="js/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js" ></script>
-    <link rel="stylesheet" href="css/estilo_footer.css">
-    <link rel="stylesheet" href="css/estilo_img_responsive.css">
     <link rel="icon" href="img/android.png">
     <link rel="stylesheet" href="css/fruta_acida.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">

@@ -58,7 +58,7 @@
                 </div>
                 <!--img 3 -->
                 <div class="col-lg-3  col-md-6 col-xs-6 fondoIMG" style="background:rgb(105, 3, 3)">
-                    <a href="#"> <img class="img-responsive imgF"  src="img/inicio/Animales.png"> </a>
+                    <a href="animales.php"> <img class="img-responsive imgF"  src="img/inicio/Animales.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:14px">Animales </p>
                 </div>
 
