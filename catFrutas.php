@@ -34,25 +34,16 @@
             <aside class="col-lg-12 " style="background:#333; height:500px">
                 <div class="espacioFrutas" style="margin-top:40px" >
                     <!--img 2 -->
-                    <div  class="col-lg-2 col-sm-3 col-md-6 col-xs-6 col-lg-offset-2 fondoIMG" style="background:rgb(76, 55, 54)">
+                    <div  class="col-lg-2 col-sm-3 col-md-6 col-xs-6 col-lg-offset-4 fondoIMG" style="background:rgb(76, 55, 54)">
                         <a href="frutas.php"> <img class="img-responsive imgF" src="img/frutas/FRUTA_DULCE.png"></a>
                         <p style="text-align:center; color:honeydew; font-size:15px">Frutas Dulces </p>
                     </div>
                     <!--img 3 -->
                     <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
-                        <a href="#"> <img class="img-responsive imgF"src="img/frutas/FRUTA_ACIDO.png"> </a>
+                        <a href="frutaAcida.php"> <img class="img-responsive imgF"src="img/frutas/FRUTA_ACIDO.png"> </a>
                         <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
                     </div>
-                    <!--img 4 -->
-                    <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
-                        <a href="#"> <img class="img-responsive imgF " src="img/frutas/FRUTA_SEMIACIDO.jpg"> </a>
-                        <p style="text-align:center; color:honeydew; font-size:15px">Frutas SemiÁcidas </p>
-                    </div>
-                    <!--img 5 -->
-                    <div class="col-lg-2 col-sm-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(76, 55, 54)">
-                        <a href="#"> <img class="img-responsive imgF" src="img/frutas/FRUTA_NEUTRO.png"> </a>
-                        <p style="text-align:center; color:honeydew; font-size:15px">Frutas Neutras </p>
-                    </div>                    
+                                   
                 </div>
             </aside>
         </div>

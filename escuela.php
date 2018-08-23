@@ -70,7 +70,7 @@
         function listar(){
                 __ajax("bd/prueba1Listar.php", "")
                 .done(function(info){                
-                     productos = JSON.parse(info); //cambiarlo por curso despues                             
+                    productos = JSON.parse(info); //cambiarlo por curso despues                             
                 });            
         }            
        
