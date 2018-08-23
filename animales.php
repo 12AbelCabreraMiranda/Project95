@@ -499,12 +499,33 @@
                         //SobrePone ImagenNuevo
                         $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/animales/zorro.png'> </a>");
                         //SobrePone imagen View Minieatura
-                        $(".siguiente").html("");                        
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/animales/mariposa.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
                         $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/animales/zebra.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
-            }               
+            }
+            //animal 27
+            if(prueba=="Zorro"){                                                                                                
+                for(var i in productos.data){                                          
+                    var nom = new Array();                                                           
+                    nom= [productos.data[i].idImagenes];                                                                                                                   
+                    if(nom==117){                                                             
+                        var x=(productos.data[i].nombreImagen);                                                           
+                        $("#titulos").html(x);//SobreEscribe NuevoNombre 
+                        //SobrePone ImagenNuevo
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/animales/mariposa.png'> </a>");
+                        //SobrePone imagen View Minieatura
+                        $(".siguiente").html("");                        
+                        //$("#cambiar").html(frutNex);                      
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/animales/zorro.png'> </a>");
+                    }                                                                                                 
+                }                                                                                                                                  
+            }
+
+
+
+
         }                
         // imagen previus
         function previus(){ 
@@ -931,6 +952,23 @@
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/animales/zorro.png'> </a>");
                         //Miniatura view ANTERIOR
                         $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/animales/venado.png'> </a>");
+                    }                                                                                                 
+                }                                                                                                                                  
+            }
+            //animal 26
+            if(prueba=="Mariposa"){                                                                                                
+                for(var i in productos.data){                                          
+                    var nom = new Array();                                                           
+                    nom= [productos.data[i].idImagenes];                                                                                                                   
+                    if(nom==77){                                                             
+                        var x=(productos.data[i].nombreImagen);                                                           
+                        $("#titulos").html(x);//SobreEscribe NuevoNombre 
+                        //SobrePone ImagenNuevo CENTRO
+                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/animales/zorro.png'> </a>");
+                        //SobrePone imagen View Minieatura SIGUIENTE
+                        $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/animales/mariposa.png'> </a>");
+                        //Miniatura view ANTERIOR
+                        $(".anterior").html("<a href='#' > <img class='img-responsive img-circle' src='img/animales/zebra.png'> </a>");
                     }                                                                                                 
                 }                                                                                                                                  
             }
