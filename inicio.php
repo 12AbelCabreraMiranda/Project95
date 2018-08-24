@@ -1,3 +1,9 @@
+<?php
+    require('bd/conexion.php');
+    $query = "select idEstudiante, nombre from estudiante";
+    $resultado = $conexion->query($query);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,10 +130,16 @@
                         <tr>
                             <td>Animales</td>
                             <td> <a href="#">Asignarme</a> </td>
-                        </tr>
-                        
-                    </table>                               
-
+                        </tr>                        
+                    </table>                           
+                    <div class="col-md-12" style="color:white"> Estudiante
+                        <select style="color:black; width:150px; border-radius:5px" name="seleccionar_Estudiante" id="id_estudiante">
+                        <?php while($row = $resultado->fetch_assoc()){  ?>
+                        <option class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
+                        <?php  echo $row['nombre']; ?> </option>
+                        <?php }?>
+                        </select> 
+                    </div> 
                 </div>
             </div>
 
