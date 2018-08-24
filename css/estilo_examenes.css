@@ -97,6 +97,29 @@ table tr td{
     width: 130px;
     border: solid 1px #000000;
 }
+.vocal{
+    height: 320px;
+}
+.view_vocal{
+    margin-top: -40px;
+    font-size: 130px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 1.5px black;
+}
+.tam_miniatura{
+    background-color: red;
+    position: absolute;
+    z-index:0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    pointer-events: stroke;
+    height:100px; 
+    width: 100px; 
+}
+
 /* Large Desktop*/
 @media (min-width:1200px){
     .footers{

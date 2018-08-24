@@ -33,6 +33,7 @@
             <form action="imgSubir.php" method="POST" id="insertar-pelicula" enctype="multipart/form-data" > <!-- enctype="multipart/form-data": sirve para cuando se envian archivos: pdf, img etc-->
                 <input type="text" name="nomIMG" class="form-control" placeholder="Nombre de Imagen"  >
                 <input type="file" name="imagen"  class="form-control">                
+                
                 <select name="curso"  class="form-control">
                     <?php while($row = $resultado->fetch_assoc()){  ?>
                     <option value="<?php echo $row['idCursos']; ?> ">
