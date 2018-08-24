@@ -74,8 +74,62 @@
                     <a href="cuerpoHumano.php"> <img class="img-responsive imgF"  src="img/inicio/CuerpoHumano.png"> </a>
                     <p style="text-align:center; color:honeydew; font-size:14px">El Cuerpo Humano </p>
                 </div>
-
             </aside>
+            <!--PERFIL -->
+            <div class="col-lg-4 fondo_perfil">
+                <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
+                    <a href="vocales.php"> <img class="img-responsive imgF img-circle"  src="img/abel.jpg"></a>
+                    <p style="text-align:center; color:honeydew; font-size:14px"> </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff">   
+                    <label for="">Abel Cabrera Miranda</label>  
+                    <label for="">Profesor</label>                             
+                </div>
+                <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos" style="background: #8e8d8d">   
+                <label>CURSOS</label>  
+                    <table>
+                        <tr>
+                            <td>Nombre Curso</td>
+                            <td>Elegir Cruso</td>
+                        </tr>                       
+                        <!-- cuerpo de la tabla-->
+                        <tr>
+                            <td>Vocales</td>
+                            <td> <a href="examen/examen_vocal.php">Asignarme</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Abecedarios</td>
+                            <td> <a href="#">Asignarme</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Colores</td>
+                            <td> <a href="#">Asignarme</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Números</td>
+                            <td> <a href="#">Asignarme</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Frutas</td>
+                            <td> <a href="#">Asignarme</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Escuela</td>
+                            <td> <a href="#">Asignarme</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Cuerpo Humano</td>
+                            <td> <a href="#">Asignarme</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Animales</td>
+                            <td> <a href="#">Asignarme</a> </td>
+                        </tr>
+                        
+                    </table>                               
+
+                </div>
+            </div>
 
         </div>
     </div>

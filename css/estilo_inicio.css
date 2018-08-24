@@ -22,7 +22,13 @@
     text-align:center; 
     color:honeydew
   }
-
+  .fondo_perfil{
+    height: 500px;
+    background-color: #0f0f0f;
+  }
+  .fondo_cursos{
+    height:250px;
+}
 
   }
 
