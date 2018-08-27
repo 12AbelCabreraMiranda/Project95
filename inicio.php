@@ -1,8 +1,4 @@
-<?php
-    require('bd/conexion.php');
-    $query = "select idEstudiante, nombre from estudiante";
-    $resultado = $conexion->query($query);
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -93,57 +89,47 @@
                 </div>
                 <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos" style="background: #8e8d8d">   
                 <label>CURSOS</label>  
-                    <form action="examen/examen_vocal.php" method="POST" >
-                        <table>
-                            <tr>
-                                <td>Nombre Curso</td>
-                                <td>Elegir Cruso</td>
-                            </tr>                       
-                            <!-- cuerpo de la tabla-->
-                            <tr>
-                                <td>Vocales</td>
-                                <td> <input type="submit" class="btn btn-block btn-default" value="Asignarme"> </td>
-                            </tr>
-                            <tr>
-                                <td>Abecedarios</td>
-                                <td> <a href="#">Asignarme</a> </td>
-                            </tr>
-                            <tr>
-                                <td>Colores</td>
-                                <td> <a href="#">Asignarme</a> </td>
-                            </tr>
-                            <tr>
-                                <td>Números</td>
-                                <td> <a href="#">Asignarme</a> </td>
-                            </tr>
-                            <tr>
-                                <td>Frutas</td>
-                                <td> <a href="#">Asignarme</a> </td>
-                            </tr>
-                            <tr>
-                                <td>Escuela</td>
-                                <td> <a href="#">Asignarme</a> </td>
-                            </tr>
-                            <tr>
-                                <td>Cuerpo Humano</td>
-                                <td> <a href="#">Asignarme</a> </td>
-                            </tr>
-                            <tr>
-                                <td>Animales</td>
-                                <td> Asignarme </td>
-                            </tr>                        
-                        </table>   
-                    
-                        <div class="col-md-12" style="color:white"> Estudiante
-                            <select name="elegir" style="color:black; width:150px; border-radius:5px"  id="id_estudiante">
-                            <?php while($row = $resultado->fetch_assoc()){  ?>
-                            <option class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
-                            <?php  echo $row['nombre']; ?> </option>
-                            <?php }?>
-                            </select> 
-                        </div> 
-                        
-                    </form>                        
+                
+                    <table>
+                        <tr>
+                            <td>Nombre Curso</td>
+                            <td>Comenzar</td>                                
+                        </tr>                       
+                        <!-- cuerpo de la tabla-->
+                        <tr>
+                            <td>Vocales</td>
+                            <td> <a href="examen/examen_vocal.php">Evaluación</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Abecedarios</td>
+                            <td> <a href="#">Evaluación</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Colores</td>
+                            <td> <a href="#">Evaluación</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Números</td>
+                            <td> <a href="#">Evaluación</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Frutas</td>
+                            <td> <a href="#">Evaluación</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Escuela</td>
+                            <td> <a href="#">Evaluación</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Cuerpo Humano</td>
+                            <td> <a href="#">Evaluación</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Animales</td>
+                            <td> <a href="#">Evaluación</a> </td>
+                        </tr>                        
+                    </table>                                                
+                                                
                 </div>
             </div>
 

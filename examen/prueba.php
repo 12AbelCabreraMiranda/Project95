@@ -1,10 +1,9 @@
 <?php
    
 include("../bd/conexion.php");
-
     $nom="AbelPrueba1";
     $puntos='8';
-    $nombres = $_POST["alumnoCurso"];
+    $nombres = $_REQUEST["nombre"];
 
 
 

@@ -1,3 +1,9 @@
+<?php
+    require('..//bd/conexion.php');
+    $query = "select idEstudiante, nombre from estudiante";
+    $resultado = $conexion->query($query);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +16,7 @@
     <link rel="icon" href="../img/android.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css"> <!--No funciona los iconos -->
     <script src="../js/bootstrap.min.js" ></script>    
+    
     <link rel="stylesheet" href="../css/estilo_examenes.css">
     
 
@@ -31,24 +38,38 @@
         <div class="row" style="margin-top:100px">
             <!--CUERPO DE IMAGENES-->
             <aside class="col-lg-12 " style="background:white; height:500px">
+                <form action="examen_vocal.php" method="post" id="guardarEstudiante" enctype="multipart/form-data">                    
+                        <label > ALumno: </label>      <!--type="hidden"  $id=$_REQUEST['id'];-->                                           
+                        <div class="col-md-12" style="color:white"> Estudiante
+                            <select name="elegir" style="color:black; width:150px; border-radius:5px"  id="id_estudiante">
+                            <?php while($row = $resultado->fetch_assoc()){  ?>
+                            <option class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
+                            <?php  echo $row['nombre']; ?> </option>
+                            <?php }?>
+                            </select> 
+                            <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>
+                        </div>                        
+                </form>
+                <!--SEGUNDO FORMULARIO-->
                 <form action="examen_vocal.php" method="POST" id="insetarPuntos" enctype="multipart/form-data">
-
-                    <label > ALumno: </label>      <!--type="hidden"-->                   
-                        <input  name="alumnoCurso" value="<?php echo $nombres = $_POST['elegir']; ?>">
+                    <div  > <!-- type="hidden" id="nombre_alumno"-->
+                            <p id="nombre_alumno"></p>
+                    </div>
+                    
+                    <!--kaki va la lista --> 
                     <div class="espacioFrutas" >
-
                         <h1 style="text-align:center; color:black">cual es la letra A</h1>
-
                         <center>
-                            <div id="respuesta"  >
+                            <div id="respuesta">
+
                             </div>
                         </center>
 
                         <!--img 1 -->                        
-                        <div  class="col-lg-3 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(76, 55, 54)">                                                
-                            <input  name ='ItemPurchase' type="image" class="img-responsive imgF" src="../img/vocales/a.png">                                              
+                        <div  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(76, 55, 54)">                                                
+                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/aa.png">                                              
                             <!-- <input type="checkbox" name="vehicle" value="Bike"> click<br>--> 
-                            <input onclick="insertP()" type="submit" value="Insertar Puntos" class="form-control">
+                           
                         </div>     
                         
                         
@@ -58,24 +79,24 @@
 
     
                         <!--img 2 -->
-                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(25, 44, 61)">
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_ACIDO.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
                         </div>
                         <!--img 3 --> 
-                        <div class="col-lg-3 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(25, 44, 61)">
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Zorro </p>
                         </div>
                         <!--img 4 -->
-                        <div class="col-lg-3 col-sm-3 col-md-6 col-xs-6 " style="background:rgb(25, 44, 61)">
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/lapiz.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Numero 5 </p>
                         </div>                                                       
                     </div>
                 </form>
-                
-                <a href="#"> <button class="btn btn-block btn-warning"> Siguiente </button></a>
+
+                <a href="#"> <button class="btn btn-block btn-warning" id="siguiente"> <img class="img-responsive dedo" src="../img/siguiente.png"></button></a>
             </aside>
         </div>
     </div>
@@ -94,8 +115,9 @@
             <a href=""> <img class="img-responsive perfil" src="../img/perfil.png" style=" height:85px;width:85px"> </a>
         </div>
     </div>
-<script  src="prueba.js">
+<script  src="prueba.js">    
 </script>
+<script src="guardando_alumno.js"></script>
 
 </body>
 </html>

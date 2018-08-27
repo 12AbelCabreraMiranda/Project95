@@ -11,7 +11,17 @@ body{
     height: 70px;
     position: fixed;
 }
+.fondo_image_vocal{
+    height: 320px;
+}
+a #siguiente{
+    height: 60px;    
+}
 
+.dedo{
+    height: 50px; 
+    margin-left: 50%;
+}
 #atras{
     background-color: #e9b405; 
     height: 100%; 
