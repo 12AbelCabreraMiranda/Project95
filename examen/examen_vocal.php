@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cat. Frutas</title>
+    <title>Examen Vocal</title>
     <script src="../js/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="icon" href="../img/android.png">
@@ -50,10 +50,26 @@
                             <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>
                         </div>                        
                 </form>
-                <!--SEGUNDO FORMULARIO-->
-                <form action="examen_vocal.php" method="POST" id="insetarPuntos" enctype="multipart/form-data">
-                    <div  > <!-- type="hidden" id="nombre_alumno"-->
-                            <p id="nombre_alumno"></p>
+
+
+                 <!--IMAGEN CORRECTO-->
+                        <div class="row" id="mostrar_correcto">
+                            <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                                <input type="image" class="img-responsive" src="../img/correcto.png"> 
+                                <a href="#"> <button class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                            </div>         
+                        </div>
+                        <div class="row" id="mostrar_incorrecto">
+                            <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                                <input type="image" class="img-responsive" src="../img/incorrecto.png"> 
+                                <a href="#"> <button onclick="mostrar()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                            </div>         
+                        </div>
+                                   
+                <!--SEGUNDO FORMULARIO PRIMERA LISTA DE IMAGENES-->
+                <form action="examen_vocal.php" method="POST" class="insetarPuntos" enctype="multipart/form-data">
+                    <div > <!-- type="hidden" id="nombre_alumno"-->
+                            <p class="nombre_alumno"></p>                            
                     </div>
                     
                     <!--kaki va la lista --> 
@@ -63,20 +79,12 @@
                             <div id="respuesta">
 
                             </div>
-                        </center>
+                        </center>                       
 
-                        <!--img 1 -->                        
-                        <div  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(76, 55, 54)">                                                
-                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/aa.png">                                              
-                            <!-- <input type="checkbox" name="vehicle" value="Bike"> click<br>--> 
-                           
-                        </div>     
-                        
-                        
-
-
-
-
+                        <!--img correcto -->                        
+                        <div  onclick="inserbtP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
+                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/aa.png">                                                                                                                                
+                        </div>                                                     
     
                         <!--img 2 -->
                         <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
@@ -96,7 +104,44 @@
                     </div>
                 </form>
 
-                <a href="#"> <button class="btn btn-block btn-warning" id="siguiente"> <img class="img-responsive dedo" src="../img/siguiente.png"></button></a>
+                <!--TERCER FORMULARIO PRIMERA LISTA DE IMAGENES-->
+                <form action="examen_vocal.php" method="POST" class="insetarPuntos" enctype="multipart/form-data">
+                    <div > <!-- type="hidden" id="nombre_alumno"-->
+                            <p class="nombre_alumno"></p>                            
+                    </div>
+                    
+                    <!--kaki va la lista --> 
+                    <div class="espacioFrutas" >
+                        <h1 style="text-align:center; color:black">cual es la letra A</h1>
+                        <center>
+                            <div id="respuesta">
+
+                            </div>
+                        </center>                       
+
+                        <!--img correcto -->                        
+                        <div  onclick="inserbtP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
+                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/aa.png">                                                                                                                                
+                        </div>                                                     
+    
+                        <!--img 2 -->
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_ACIDO.png"> </a>
+                            <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
+                        </div>
+                        <!--img 3 --> 
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>
+                            <p style="text-align:center; color:honeydew; font-size:15px">Zorro </p>
+                        </div>
+                        <!--img 4 -->
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/lapiz.png"> </a>
+                            <p style="text-align:center; color:honeydew; font-size:15px">Numero 5 </p>
+                        </div>                                                       
+                    </div>
+                </form>
+                
             </aside>
         </div>
     </div>
