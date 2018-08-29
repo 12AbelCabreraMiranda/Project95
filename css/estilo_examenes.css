@@ -6,12 +6,18 @@
 body{
     background-color: rgb(116, 113, 113);
 }
+/*OCULTO LOS CHECK DE VERIFICACION   CORRECTO E INCORRECTO*/
 #mostrar_correcto{
+    display: none;
+}
+#mostrar_correcto2{
     display: none;
 }
 #mostrar_incorrecto{
     display: none;
 }
+
+/* OCULTO LOS FORM*/
 #form2{
     display: none;
 }

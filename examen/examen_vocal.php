@@ -50,7 +50,7 @@
                             <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>
                         </div>                        
                 </form>                
-                <!--  .................BOTONES CON IMAGENES................................................... -->
+            <!--  .................BOTONES CON IMAGENES................................................... -->
                 <!--IMAGEN CORRECTO 1-->
                 <div class="row" id="mostrar_correcto">
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
@@ -68,7 +68,12 @@
                 </div>
 
                 <!--IMAGEN CORRECTO 2-->
-                
+                <div class="row" id="mostrar_correcto2">
+                    <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                        <input type="image" class="img-responsive" src="../img/correcto.png"> 
+                        <a href="#"> <button  onclick="siguienteForm3()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                    </div>         
+                </div>
 
                 <!-- .................RESPUESTE DE LA BASE DE DATOS SI TODO FUE EXITOSAMENTE................... -->
                 <center>
@@ -93,7 +98,7 @@
                         </div>                                            
 
                         <!--img correcto -->                        
-                        <div  onclick="inserbtP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
+                        <div  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
                             <input type="image" class="img-responsive imgF" src="../img/examen/vocal/aa.png">                                                                                                                                
                         </div>                                                     
     
@@ -140,7 +145,7 @@
                             <p style="text-align:center; color:honeydew; font-size:15px">Manzana Verde </p>
                         </div>
                         <!--img 3 CORRECTO --> 
-                        <div onClick="inserbtP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onClick="insertP2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <input type="image" class="img-responsive imgF" src="../img/examen/vocal/ee.png">                             
                         </div>
                         <!--img 4 -->

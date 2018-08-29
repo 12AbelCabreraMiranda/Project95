@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    $(".insetarPuntos").submit(insertP)
+    $("#form2").submit(insertP)
     function insertP(evento){
         evento.preventDefault()
         //alert("funciona");
-        var datos = new FormData($(".insetarPuntos")[0])
+        var datos = new FormData($("#form2")[0])
         $("#respuesta").html("<img src='../img/cargando.gif' style='height:80px'> ")
         //$(".correcto").html("<a href='#'> <img class='img-responsive' src='../img/correcto.png'> </a>");        
         $('#mostrar_correcto').show();
-        $('.insetarPuntos').hide();
+        $('#form2').hide();
         
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
           $.ajax({
@@ -21,7 +21,35 @@ $(document).ready(function(){
               }
           })                 
     }
+    // otra funcion 2
+    $("#form3").submit(insertP2)
+    function insertP2(evento){
+        evento.preventDefault()
+        //alert("funciona");
+        var datos = new FormData($("#form3")[0])
+        $("#respuesta").html("<img src='../img/cargando.gif' style='height:80px'> ")
+        //$(".correcto").html("<a href='#'> <img class='img-responsive' src='../img/correcto.png'> </a>");        
+        $('#mostrar_correcto2').show();
+        $('#form3').hide();
+        $('#respuesta').show();
+        
+        var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
+          $.ajax({
+              url: 'prueba.php?nombre='+n,// nombre es una variable para ser redireccionado para php
+              type: 'POST',
+              data: datos,
+              contentType: false, //se anota porque se mandarán archivos
+              processData: false,
+              success: function(datos){
+                  $("#respuesta").html(datos)                  
+              }
+          })                 
+    }
+
+
 })
+
+
 //  -----------FUNCIONES PARA LA PRIMERA VALIDACION DEL FORMULARIO CON IMAGENES
 function guardando_alumno(){
     $('#form2').show();
@@ -31,7 +59,7 @@ function guardando_alumno(){
 
 function incorrecto(){
     $('#mostrar_incorrecto').show();
-    $('.insetarPuntos').hide();
+    $('#form2').hide();
 }
 // BOTON DE IMAGEN CORRECTO
 function siguienteForm(){
@@ -41,7 +69,11 @@ function siguienteForm(){
 }
 
 //  -----------FUNCIONES PARA LA SEGUNDA VALIDACION DEL FORMULARIO CON IMAGENES
-
+function siguienteForm3(){
+    $('#form4').show();
+    $('#mostrar_correcto2').hide();
+    $('#respuesta').hide();
+}
 
 
 
