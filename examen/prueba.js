@@ -22,7 +22,7 @@ $(document).ready(function(){
           })                 
     }
 })
-
+//  -----------FUNCIONES PARA LA PRIMERA VALIDACION DEL FORMULARIO CON IMAGENES
 function guardando_alumno(){
     $('#form2').show();
     $('.nombre_alumno').hide();
@@ -39,6 +39,15 @@ function siguienteForm(){
     $('#mostrar_correcto').hide();
     $('#respuesta').hide();
 }
+
+//  -----------FUNCIONES PARA LA SEGUNDA VALIDACION DEL FORMULARIO CON IMAGENES
+
+
+
+
+
+
+
 
 function clasesId(){
     //$(document).ready(function(){

@@ -50,25 +50,26 @@
                         </div>                        
                 </form>                
 
-                 <!--IMAGEN CORRECTO-->
-                        <div class="row" id="mostrar_correcto">
-                            <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
-                                <input type="image" class="img-responsive" src="../img/correcto.png"> 
-                                <a href="#"> <button  onclick="siguienteForm()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
-                            </div>         
-                        </div>
-                        <div class="row" id="mostrar_incorrecto">
-                            <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
-                                <input type="image" class="img-responsive" src="../img/incorrecto.png"> 
-                                <!--BOTON SIGUIENTE-->
-                                <a href="#"> <button class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
-                            </div>         
-                        </div>
-                        <center>
-                            <div id="respuesta">
-                                <!-- Aqui muestra el resultado si fue exito en la base de datos-->
-                            </div>
-                        </center>                     
+                 <!--IMAGEN CORRECTO 1-->
+                <div class="row" id="mostrar_correcto">
+                    <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                        <input type="image" class="img-responsive" src="../img/correcto.png"> 
+                        <a href="#"> <button  onclick="siguienteForm()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                    </div>         
+                </div>
+                <!--IMAGEN INCORRECTO 1-->
+                <div class="row" id="mostrar_incorrecto">
+                    <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                        <input type="image" class="img-responsive" src="../img/incorrecto.png"> 
+                        <!--BOTON SIGUIENTE-->
+                        <a href="#"> <button class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                    </div>         
+                </div>
+                <center>
+                    <div id="respuesta">
+                        <!-- Aqui muestra el resultado si fue exito en la base de datos-->
+                    </div>
+                </center>                     
                 <!--SEGUNDO FORMULARIO PRIMERA LISTA DE IMAGENES-->
                 <form action="examen_vocal.php" method="POST" id="form2" class="insetarPuntos" enctype="multipart/form-data">
                     <div > <!-- type="hidden" id="nombre_alumno"-->
@@ -79,7 +80,7 @@
                     <!--kaki va la lista --> 
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
-                                <p class="nombre_alumno2" style="text-align:center"></p>                            
+                                <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                                 <h1 style="text-align:center; color:black">cual es la letra A</h1>
                         </div>
                                             
@@ -110,7 +111,7 @@
                 <!--TERCER FORMULARIO PRIMERA LISTA DE IMAGENES-->
                 <form action="examen_vocal.php" method="POST" id="form3" class="insetarPuntos" enctype="multipart/form-data">
                     <div> <!-- type="hidden" id="nombre_alumno"-->
-                            <p class="nombre_alumno"></p>                            
+                        <p class="nombre_alumno"></p>                            
                     </div>
                     
                     <!--kaki va la lista --> 
