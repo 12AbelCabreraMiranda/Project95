@@ -75,6 +75,30 @@
                     </div>         
                 </div>
 
+                <!--IMAGEN CORRECTO 3-->
+                <div class="row" id="mostrar_correcto3">
+                    <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                        <input type="image" class="img-responsive" src="../img/correcto.png"> 
+                        <a href="#"> <button  onclick="siguienteForm4()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                    </div>         
+                </div>
+
+                <!--IMAGEN CORRECTO 4-->
+                <div class="row" id="mostrar_correcto4">
+                    <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                        <input type="image" class="img-responsive" src="../img/correcto.png"> 
+                        <a href="#"> <button  onclick="siguienteForm5()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                    </div>         
+                </div>
+
+                <!--IMAGEN CORRECTO 5-->
+                <div class="row" id="mostrar_correcto5">
+                    <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
+                        <input type="image" class="img-responsive" src="../img/correcto.png"> 
+                        <a href="#"> <button  onclick="siguienteForm6()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                    </div>         
+                </div>
+
                 <!-- .................RESPUESTE DE LA BASE DE DATOS SI TODO FUE EXITOSAMENTE................... -->
                 <center>
                     <div id="respuesta">
@@ -180,13 +204,13 @@
                             <a href="#"> <img class="img-responsive imgF"src="../img/abecedarios/J.png"> </a>                            
                         </div>
                         <!--img 3  --> 
-                        <div onClick="inserbtP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <input type="image" class="img-responsive imgF" src="../img/frutas/fruta_acida/uva.png">   
                             <p style="text-align:center; color:honeydew; font-size:15px">Uva </p>                          
                         </div>
                         <!--img 4 CORRECTO -->
-                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/examen/vocal/ii.png"> </a>                            
+                        <div onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)"> 
+                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/ii.png">                          
                         </div>                                                       
                     </div>
                 </form>
@@ -212,11 +236,11 @@
                         </div>                                                     
     
                         <!--img 2 CORRECTO-->
-                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/examen/vocal/oo.png"> </a>                            
+                        <div onClick="inserbtP4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                     
+                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/oo.png">                             
                         </div>
                         <!--img 3  --> 
-                        <div onClick="inserbtP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <input type="image" class="img-responsive imgF" src="../img/CuerpoHumano/dedo.png">   
                             <p style="text-align:center; color:honeydew; font-size:15px">Dedo </p>                          
                         </div>
@@ -254,13 +278,13 @@
                             <p style="text-align:center; color:honeydew; font-size:15px">Maestra </p>                           
                         </div>
                         <!--img 3  --> 
-                        <div onClick="inserbtP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <input type="image" class="img-responsive imgF" src="../img/animales/zorro.png">   
                             <p style="text-align:center; color:honeydew; font-size:15px">Zorro </p>                          
                         </div>
                         <!--img 4 CORRECTO-->
-                        <div onClick="probando()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/examen/vocal/uu.png"> </a>                                                          
+                        <div onClick="inserbtP5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
+                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/uu.png">                                                          
                         </div>                                                       
                     </div>
                 </form>

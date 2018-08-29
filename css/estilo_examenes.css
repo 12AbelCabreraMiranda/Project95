@@ -13,6 +13,16 @@ body{
 #mostrar_correcto2{
     display: none;
 }
+#mostrar_correcto3{
+    display: none;
+}
+#mostrar_correcto4{
+    display: none;
+}
+#mostrar_correcto5{
+    display: none;
+}
+/*INCORRECTOS*/
 #mostrar_incorrecto{
     display: none;
 }
