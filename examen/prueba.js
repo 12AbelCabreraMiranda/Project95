@@ -8,7 +8,7 @@ $(document).ready(function(){
         //$(".correcto").html("<a href='#'> <img class='img-responsive' src='../img/correcto.png'> </a>");        
         $('#mostrar_correcto').show();
         $('.insetarPuntos').hide();
-        //var n= document.getElementById("nombre_alumno").innerHTML ; //Extrae el valor de la etiqueta //ESTO ES PARA TRAER ID
+        
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
           $.ajax({
               url: 'prueba.php?nombre='+n,// nombre es una variable para ser redireccionado para php
@@ -20,18 +20,24 @@ $(document).ready(function(){
                   $("#respuesta").html(datos)                  
               }
           })                 
-
     }
 })
+
+function guardando_alumno(){
+    $('#form2').show();
+    $('.nombre_alumno').hide();
+    $('#guardarEstudiante').hide();
+}
 
 function probando(){
     $('#mostrar_incorrecto').show();
     $('.insetarPuntos').hide();
 }
-
-function mostrar(){
-    $('#mostrar_incorrecto').hide();
-    $('.insetarPuntos').show();
+// BOTON DE IMAGEN CORRECTO
+function siguienteForm(){
+    $('#form3').show();
+    $('#mostrar_correcto').hide();
+    $('#respuesta').hide();
 }
 
 function clasesId(){

@@ -11,17 +11,9 @@ include("../bd/conexion.php");
     $resultado= $conexion->query($query);
 
     if($resultado){
-        echo'Insertado';
+        echo'Respuesta Correcto';
     }
     else{
         echo'no insertado';
     }
-    //echo $nombre;
-        //Permite ver la descripcion dela imagen
-        /*
-    foreach($img as $key => $value){
-        echo $key." : ".$value."<br>";
-    }*/
-  
-
 ?>

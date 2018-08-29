@@ -15,5 +15,17 @@ $(document).ready(function(){
                   $(".nombre_alumno").html(datos)
               }
           })
+          //
+          $.ajax({
+            url: 'select_alumno.php',
+            type: 'POST',
+            data: datos,
+            contentType: false, //se anota porque se mandarán archivos
+            processData: false,
+            success: function(datos){
+                $(".nombre_alumno2").html(datos)
+            }
+        })
+          //
     }
 })
