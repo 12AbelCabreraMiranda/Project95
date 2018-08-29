@@ -29,7 +29,7 @@ function guardando_alumno(){
     $('#guardarEstudiante').hide();
 }
 
-function probando(){
+function incorrecto(){
     $('#mostrar_incorrecto').show();
     $('.insetarPuntos').hide();
 }
