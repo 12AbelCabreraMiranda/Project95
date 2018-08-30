@@ -23,10 +23,21 @@ body{
     display: none;
 }
 /*INCORRECTOS*/
-#mostrar_incorrecto{
+#incorrecto1{
     display: none;
 }
-
+#incorrecto2{
+    display: none;
+}
+#incorrecto3{
+    display: none;
+}
+#incorrecto4{
+    display: none;
+}
+#incorrecto5{
+    display: none;
+}
 /* OCULTO LOS FORM*/
 #form2{
     display: none;
@@ -43,6 +54,15 @@ body{
 #form6{
     display: none;
 }
+#fondo_puntos{
+    display: none;
+    margin-top: 100px;
+}
+#estilo_puntos{
+    border-radius: 10px;
+    background: rgb(13, 111, 114);
+    color: white;
+}
 .encabez{
     width: 100%;
     height: 70px;
@@ -55,7 +75,7 @@ body{
 
 .dedo{
     height: 50px; 
-    margin-left: 35%;
+    /*margin-left: 35%;*/
 }
 #atras{
     background-color: #e9b405; 
