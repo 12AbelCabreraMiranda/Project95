@@ -15,7 +15,7 @@ include("../bd/conexion.php");
 
         $suma =1; 
          //actualizar si ya existe
-        $query2 = "UPDATE prueba_estudiante SET puntos=$suma+'$puntaje' where nombre='$nombres'";
+        $query2 = "UPDATE prueba_estudiante SET puntos=$suma+'$puntaje' where nombre='$NombreCompleto'";
         $resultad2= $conexion->query($query2);
          
      }else{

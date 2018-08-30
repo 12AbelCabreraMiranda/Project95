@@ -195,7 +195,7 @@ function NextForm5(){
     $('#incorrecto4').hide();
     $('#form6').show();
 }
-//  -----------FUNCIONES PARA LA quinta VALIDACION DEL FORMULARIO CON IMAGENES ---------------
+//  -----------FUNCIONES PARA LA quinta VALIDACION DEL FORMULARIO CON IMAGENES ------CORRECTO---------
 $("#form_puntos_correctos").submit(siguienteForm6)
 function siguienteForm6(evento){
     evento.preventDefault()
@@ -223,7 +223,7 @@ function incorrecto5(){
     $('#incorrecto5').show();
     $('#form6').hide();
 }
-//  -----------FUNCIONES PARA LA CUARTA VALIDACION DEL FORMULARIO CON IMAGENES ---------------
+//  -----------FUNCIONES PARA LA quinta VALIDACION DEL FORMULARIO CON IMAGENES -------INCORRECTO--------
 $("#form_puntos").submit(verPuntos)
 function verPuntos(evento){
     evento.preventDefault()
