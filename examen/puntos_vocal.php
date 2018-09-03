@@ -2,10 +2,10 @@
    
 include("../bd/conexion.php");
 
-        $nombres = $_REQUEST["nombres"];        
+        $idAlumno = $_REQUEST["nombres"];        
         //SELECCION
         $PuntosAdquirido;
-        $query1 = ("SELECT puntos FROM prueba_estudiante where nombre='$nombres'");
+        $query1 = ("SELECT puntos FROM avancepuntos where id_estudiante='$idAlumno'");
         $result1 = $conexion->query($query1);
 
         if($row = $result1->fetch_assoc()){

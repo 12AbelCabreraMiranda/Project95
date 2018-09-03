@@ -2,43 +2,36 @@
    
 include("../bd/conexion.php");
 
-    $nombres = $_POST["elegir"];
-    $nom="AbelPrueba1";
-    $puntos='8';
-    echo $nombres;
+    $alumno = $_POST["elegir"];    
+    $curso = 6;
+    echo $alumno;
 
-
+   
     //SELECCION
     $NombreCompleto;
-    $query1 = ("SELECT id_estudiante FROM prueba where id_estudiante='$nombres'");
+    $query1 = ("SELECT id_estudianteA FROM mis_cursos where id_estudianteA='$alumno'");//PENDIENTE validar de si ya llevó el curso tambien 
     $result1 = $conexion->query($query1);
-    if($row = $result1->fetch_assoc()){
-       $NombreCompleto=$row['id_estudiante'];
-       //echo $NombreCompleto;
 
-        //actualizar si ya existe
-        $query2 = "UPDATE prueba_estudiante SET puntos=0 where nombre='$NombreCompleto'";
+    //VALIDACION DE EXISTENCIA DE ALUMNO
+    if($row = $result1->fetch_assoc()){
+       $NombreCompleto=$row['id_estudianteA'];//Si ya existe 
+
+        //Actualizar sus puntos (resetearlo a cero) para mejorar el punto
+        $query2 = "UPDATE avancepuntos SET puntos=0 where id_estudiante='$NombreCompleto'";//PENDIENTE validar de si ya llevó el curso tambien 
         $resultad2= $conexion->query($query2);
 
     }else{
         //INSERCION 
-        $query  = "insert into prueba(nombre,puntos, id_estudiante) VALUES('$nom','$puntos','$nombres')";
+        $query  = "INSERT into mis_cursos (id_estudianteA,id_cursoA) VALUES('$alumno','$curso')";
         $resultado= $conexion->query($query);
-    
+
         if($resultado){
-            echo $nombres;
+            echo $alumno;
         }
         else{
-            echo'no insertado';
+            echo'no insertado alumno';
         }
     }
-
-
-
-
-    
-
-        
 
 ?>
 

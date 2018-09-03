@@ -127,8 +127,8 @@ $(document).ready(function(){
 //  -----------FUNCIONES PARA LA PRIMERA VALIDACION DEL FORMULARIO CON IMAGENES
 function guardando_alumno(){
     $('#form2').show();
-    $('.nombre_alumno').hide();
-    $('#guardarEstudiante').hide();
+    $('.nombre_alumno').hide();   
+    $('#guardarEstudiante').hide(); 
 }
 
 // BOTON DE IMAGEN CORRECTO
