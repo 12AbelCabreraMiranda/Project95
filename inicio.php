@@ -17,6 +17,16 @@
 
 </head>
 <body>
+    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+    <?php // AGREGARLO EN LAS DEMAS PAGINAS PARA QUE LOS QUE ESTEN CON SESION INICIADO PUEDAN ACCEDER ELSE NOT ACCESS
+        session_start();
+        if(isset($_SESSION['u_usuario'])){
+        }else{
+            header("Location: login/login.php");
+        }
+    ?>
+    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+    
     <div class="container-fluid">
         <div class="row">
              <div class="col-md-12 col-xs-12 navegacion">
@@ -29,7 +39,7 @@
         <div class="row" style="margin-top:20px">
             <!--CUERPO DE IMAGENES-->
             <aside class="col-lg-8 fond " style="background:#333">
-
+                <h3 style="text-align:center; color:white; margin-top:8px">Método de Aprendizaje</h3>
                 <!--img 2 -->
                 <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
                     <a href="vocales.php"> <img class="img-responsive imgF"  src="img/inicio/Vocales.png"></a>
@@ -84,12 +94,12 @@
                     <p style="text-align:center; color:honeydew; font-size:14px"> </p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff">   
-                    <label for="">Abel Cabrera Miranda</label>  
-                    <label for="">Profesor</label>                             
+                    <p><?php echo $_SESSION['u_usuario'] ?></p>                      
+                    <label for="">Profesor</label> <br>
+                    <a href="login/cerrar_sesion.php">Desconectarme</a>                                               
                 </div>
                 <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos" style="background: #8e8d8d">   
-                <label>CURSOS</label>  
-                
+                    <h4>Evaluaciones</h4>
                     <table>
                         <tr>
                             <td>Nombre Curso</td>

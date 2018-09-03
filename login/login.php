@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="css/estilosLogin.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="../img/android.png">
+    <link rel="stylesheet" href="../css/estilosLogin.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     
 </head>
 
@@ -108,13 +109,12 @@
 
     <div id="formularios">
     
-        <!--INICIAR SESION -->
-        
-        <form action="validad.php" method="POST"> 
-            <p>Correo Electronico:</p>
+        <!--INICIAR SESION -->        
+        <form action="validar_usu.php" method="POST"> 
+            <p>Usuario:</p>
             <div class="field-container">
                 <i class="fa fa-envelope-o fa-lg" ></i>
-                <input REQUIRED type="text" class="field" name="usuario" placeholder="Correo o Usuario" > <br>
+                <input REQUIRED type="text" class="field" name="nombre_usuario" placeholder="Ingresar Usuario" > <br>
             </div>
 
             <p>Contraseña</p>

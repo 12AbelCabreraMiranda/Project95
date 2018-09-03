@@ -1,0 +1,19 @@
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgb(255, 255,255,0.3);
+    box-shadow: 0 1px 1px rgb(0, 0, 0,0.3);
+    color: white;
+}
+.btn-green{
+    color: write;
+    background-color: rgb(7, 102, 165);
+}
+.btn-green:hover{
+    background-color: rgb(14, 153, 247);
+}
+.btn-green:active{
+    background-color: rgb(7, 102, 165);
+}

@@ -1,48 +1,46 @@
 <?php 
     session_start();
-    include("database/conexion.php");
+    include("../bd/conexion.php");
 
     $nom = $_POST["nombre"];
     $apellido = $_POST["apellido"];
     $usuario = $_POST["usuario"];
     $contrasenia = $_POST["contrasenia"];
-    $direccion = $_POST["direccion"];
-    $telefono = $_POST["telefono"];
+    $establecimiento = $_POST["establecimiento"];
+    $profesion = $_POST["profesion"];
 
     $usua;
     $pass;
-    $query = ("SELECT nombre_usuario, password FROM usuarios where nombre_usuario='".$usuario."' and password = '".$contrasenia."'");
+    $query = ("SELECT nom_usuario, contrasenia FROM usuario where nom_usuario='".$usuario."' and contrasenia = '".$contrasenia."'");
     $result = $conexion->query($query);
     if($row =  $result->fetch_assoc()){
-        $usua =$row['nombre_usuario'];
-        $pass =$row['password'];
+        $usua =$row['nom_usuario'];
+        $pass =$row['contrasenia'];
         echo "<script>
         alert('YA EXISTE el USUARIO');
             window.location='registrarse.php';
-        </script>"; 
-        
-
+        </script>";         
     }else{
-        $query2="insert into empleados (nombre, apellido, direccion, celular, estado) 
-        values('$nom','$apellido','$direccion','$telefono',1)";
+        $query2="insert into maestro (nombre, apellido, establecimiento, profesion, estado) 
+        values('$nom','$apellido','$establecimiento','$profesion',1)";
         $resultad2= $conexion->query($query2);
 
-        //SELECT EMPLEADO
-        $id_empleado;
-        $query3 = ("SELECT idempleados FROM empleados where nombre='".$nom."' and apellido = '".$apellido."'");
+        //SELECT MAESTRO
+        $id_maestro;
+        $query3 = ("SELECT idmaestro FROM maestro where nombre='".$nom."' and apellido = '".$apellido."'");
         $result3 = $conexion->query($query3);
         if($row =  $result3->fetch_assoc()){
-            $id_empleado =$row['idempleados'];
+            $id_maestro =$row['idmaestro'];
         }
         //insert en USUARIO
-        $query4="insert into usuarios (nombre_usuario, password, id_tipo_usuario, id_empleado) 
-        values('$usuario ','$contrasenia',2,'$id_empleado')";
+        $query4="insert into usuario (nom_usuario, contrasenia, id_maestroU) 
+        values('$usuario ','$contrasenia','$id_maestro')";
         $resultad4= $conexion->query($query4);
         
-        $proceso= $conexion->query("select *from vista_usuarios WHERE nombre_usuario='$usuario' and password='$contrasenia' ");
+        $proceso= $conexion->query("select *from usuario WHERE nom_usuario='$usuario' and contrasenia='$contrasenia' ");
         if($resultado = mysqli_fetch_array($proceso)){
-            $_SESSION['usuario'] = $usuario;
-            header("Location: administrador.php");
+            $_SESSION['u_usuario'] = $usuario;
+            header("Location: ../inicio.php");
         }else{
             //header("Location: login.php");
         }

@@ -18,6 +18,16 @@
 </head>
 
 <body>
+    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+    <?php // AGREGARLO EN LAS DEMAS PAGINAS PARA QUE LOS QUE ESTEN CON SESION INICIADO PUEDAN ACCEDER ELSE NOT ACCESS
+        session_start();
+        if(isset($_SESSION['u_usuario'])){
+        }else{
+            header("Location: login/login.php");
+        }
+    ?>
+    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+    
     <div class="container-fluid">
         <!-- Fila Encabezado-->
         

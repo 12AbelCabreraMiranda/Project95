@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="css/estilosLogin.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="../img/android.png">
+    <link rel="stylesheet" href="../css/estilosLogin.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     
 </head>
 
@@ -136,17 +137,17 @@
                 <input REQUIRED name="contrasenia" type="password" class="field" placeholder="************"> <br>
             </div>
 
-            <div class="columns">
+            <div class="">
                 <div class="field-container">
-                    <p>DIRECCION</p>
+                    <p>ESTABLECIMIENTO</p>
                     <i class="fa fa-building fa-lg" aria-hidden="true"></i>
-                    <input REQUIRED name="direccion" type="text" class="field"placeholder="Direccion" > <br>
+                    <input REQUIRED name="establecimiento" type="text" class="field"placeholder="Establecimiento" > <br>
                 </div>
     
                 <div class="field-container">
-                    <p>TELEFONO</p>
-                    <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
-                    <input REQUIRED name="telefono" type="text" class="field" placeholder="No. Celular" > <br>
+                    <p>PROFESIÓN</p>
+                    <i class="fa fa-address-card fa-lg" aria-hidden="true"></i>
+                    <input REQUIRED name="profesion" type="text" class="field" placeholder="Profesión" > <br>
                 </div>
             </div>
             <p class="center-content"> <input type="submit" class="btn btn-green" value="Iniciar Sesion"> </p>
