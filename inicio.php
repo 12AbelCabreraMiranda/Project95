@@ -112,7 +112,7 @@
                         </tr>
                         <tr>
                             <td>Abecedarios</td>
-                            <td> <a href="#">Evaluación</a> </td>
+                            <td> <a href="examen_abecedario/examen_abecedario.php">Evaluación</a> </td>
                         </tr>
                         <tr>
                             <td>Colores</td>

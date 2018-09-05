@@ -3,13 +3,13 @@
 include("../bd/conexion.php");
 
     $alumno = $_POST["elegir"];    
-    $curso = 6;
+    $curso = 2;
     echo $alumno;
 
    
     //SELECCION
     $NombreCompleto;
-    $query1 = ("SELECT id_estudianteA FROM mis_cursos where id_estudianteA='$alumno' AND id_cursoA='$curso'");
+    $query1 = ("SELECT id_estudianteA FROM mis_cursos where id_estudianteA='$alumno' AND id_cursoA='$curso' ");
     $result1 = $conexion->query($query1);
 
     //VALIDACION DE EXISTENCIA DE ALUMNO
@@ -17,7 +17,7 @@ include("../bd/conexion.php");
        $NombreCompleto=$row['id_estudianteA'];//Si ya existe 
 
         //Actualizar sus puntos (resetearlo a cero) para mejorar el punto
-        $query2 = "UPDATE avancepuntos SET puntos=0 where id_estudiante='$NombreCompleto' AND id_curso='$curso'";
+        $query2 = "UPDATE avancepuntos SET puntos=0 where id_estudiante='$NombreCompleto' AND id_curso='$curso' ";
         $resultad2= $conexion->query($query2);
 
     }else{
