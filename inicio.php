@@ -128,7 +128,7 @@
                         </tr>
                         <tr>
                             <td>Números</td>
-                            <td> <a href="#">Evaluación</a> </td>
+                            <td> <a href="examen_numeros/examen.php">Evaluación</a> </td>
                         </tr>
                         <tr>
                             <td>Frutas</td>
