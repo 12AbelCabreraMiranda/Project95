@@ -6,7 +6,7 @@ include("../bd/conexion.php");
             
         //SELECCION
         $PuntosAdquirido;
-        $query1 = ("SELECT puntos FROM avancepuntos where id_estudiante='$idAlumno' and id_curso=3 ");
+        $query1 = ("SELECT puntos FROM avancepuntos where id_estudiante='$idAlumno' and id_curso=1 ");
         $result1 = $conexion->query($query1);
 
         if($row = $result1->fetch_assoc()){

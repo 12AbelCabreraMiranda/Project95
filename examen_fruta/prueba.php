@@ -2,7 +2,7 @@
    
 include("../bd/conexion.php");
     $id_estudiante = $_REQUEST["nombre"];
-    $id_curso=3;
+    $id_curso=1;
     $init_punto = 1;
 
      //SELECCION EN LA TABLA avancepuntos

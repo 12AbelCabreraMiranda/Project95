@@ -3,7 +3,7 @@
 include("../bd/conexion.php");
 
     $alumno = $_POST["elegir"];    
-    $curso = 3;
+    $curso = 1;
     echo $alumno;
 
    

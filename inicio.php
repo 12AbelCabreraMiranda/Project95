@@ -132,7 +132,7 @@
                         </tr>
                         <tr>
                             <td>Frutas</td>
-                            <td> <a href="#">Evaluación</a> </td>
+                            <td> <a href="examen_fruta/examen.php">Evaluación</a> </td>
                         </tr>
                         <tr>
                             <td>Escuela</td>
