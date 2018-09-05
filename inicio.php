@@ -14,6 +14,14 @@
     <script src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/estilo_inicio.css">
     <link rel="stylesheet" href="css/estiloFrutas.css">
+    <style>
+        a{
+            color:black;
+        }
+        td{
+            color:white;
+        }
+    </style>
 
 </head>
 <body>
@@ -95,15 +103,15 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff">   
                     <p><?php echo $_SESSION['u_usuario'] ?></p>                      
-                    <label for="">Profesor</label> <br>
-                    <a href="login/cerrar_sesion.php">Desconectarme</a>                                               
+                    <label for="">Profesor</label> <br><br><br><br><br><br><br>
+                    <a href="login/cerrar_sesion.php">Cerrar Sesión</a>                                               
                 </div>
                 <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos" style="background: #8e8d8d">   
                     <h4>Evaluaciones</h4>
                     <table>
                         <tr>
-                            <td>Nombre Curso</td>
-                            <td>Comenzar</td>                                
+                            <td>CURSOS</td>
+                            <td>COMENZAR</td>                                
                         </tr>                       
                         <!-- cuerpo de la tabla-->
                         <tr>
@@ -116,7 +124,7 @@
                         </tr>
                         <tr>
                             <td>Colores</td>
-                            <td> <a href="#">Evaluación</a> </td>
+                            <td> <a href="examen_colores/examen.php">Evaluación</a> </td>
                         </tr>
                         <tr>
                             <td>Números</td>

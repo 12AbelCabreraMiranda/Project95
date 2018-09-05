@@ -11,7 +11,7 @@
 
     $usua;
     $pass;
-    $query = ("SELECT nom_usuario, contrasenia FROM usuario where nom_usuario='".$usuario."' and contrasenia = '".$contrasenia."'");
+    $query = ("SELECT nom_usuario, contrasenia FROM usuario where nom_usuario='".$usuario."'");
     $result = $conexion->query($query);
     if($row =  $result->fetch_assoc()){
         $usua =$row['nom_usuario'];

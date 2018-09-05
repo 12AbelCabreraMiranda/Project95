@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Examen Abecedario</title>
+    <title>Examen Colores</title>
     <script src="../js/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="icon" href="../img/android.png">
@@ -30,7 +30,7 @@
                     <img src="../img/inicio.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Abecedarios”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Colores”</h1></div>
         </header>
 
         <!-- FILA DE CUERPO DE IMAGENES-->
@@ -39,7 +39,7 @@
             <!--CUERPO DE IMAGENES-->
             <aside class="col-lg-12 " style="background:white; height:500px">
                 <!--FORM PARA GUARDAR EL ESTUDIANTE PARA LA EVALUACIÓN-->
-                <form action="examen_abecedario.php" method="post" id="guardarEstudiante" enctype="multipart/form-data" style="margin-top:10px">                                                          
+                <form action="examen.php" method="post" id="guardarEstudiante" enctype="multipart/form-data" style="margin-top:10px">                                                          
                         <div class="col-md-12" style="color:black"> Estudiante
                             <select name="elegir" style="color:black; width:150px; border-radius:5px"  id="id_estudiante">
                             <?php while($row = $resultado->fetch_assoc()){  ?>
@@ -89,7 +89,7 @@
                 </div>
 
                 <!--IMAGEN - INCORRECTO 5-->
-                <form action="examen_abecedario.php" method="POST" id="form_puntos" class="insetarPuntos" enctype="multipart/form-data">
+                <form action="examen.php" method="POST" id="form_puntos" class="insetarPuntos" enctype="multipart/form-data">
                     <p class="nombre_alumno" ></p> 
                     <div class="row" id="incorrecto5">
                         <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
@@ -136,7 +136,7 @@
                 </div>
 
                 <!--IMAGEN CORRECTO 5 FINAL-->
-                <form action="examen_abecedario.php" method="POST" id="form_puntos_correctos" class="insetarPuntos" enctype="multipart/form-data">
+                <form action="examen.php" method="POST" id="form_puntos_correctos" class="insetarPuntos" enctype="multipart/form-data">
                     <p class="nombre_alumno" ></p> 
                     <div class="row" id="mostrar_correcto5">
                         <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
@@ -169,7 +169,7 @@
                 <!-- .................FORM DE IMAGENES................... -->
 
                 <!--SEGUNDO FORMULARIO PRIMERA LISTA DE IMAGENES-->
-                <form action="examen_abecedario.php" method="POST" id="form2" class="insetarPuntos" enctype="multipart/form-data">
+                <form action="examen.php" method="POST" id="form2" class="insetarPuntos" enctype="multipart/form-data">
                     <div > <!-- type="hidden" id="nombre_alumno"-->
                         <p class="nombre_alumno" ></p>                            
                     </div>
@@ -178,34 +178,34 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra S</h1>
+                            <h1 style="text-align:center; color:black">Cuál es el color Rojo</h1>
                         </div>                                                                                                                        
     
                         <!--img 2 -->
                         <div onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/CuerpoHumano/dedo.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Dedo </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/pato.png"> </a>
+                            <p style="text-align:center; color:honeydew; font-size:15px">Pato </p>
                         </div>
+                        <!--img CORRECTO -->                        
+                        <div  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
+                            <input type="image" class="img-responsive imgF" src="../img/colores/rojo.png">                                                                                                                                
+                        </div> 
                         <!--img 3 --> 
                         <div onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/borrador.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Borrador </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/loro.png"> </a>
+                            <p style="text-align:center; color:honeydew; font-size:15px">Loro </p>
                         </div>
                         <!--img 4 -->
                         <div onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/banano.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Banano </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/gris.png"> </a>                            
                         </div> 
-                        <!--img correcto -->                        
-                        <div  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
-                            <input type="image" class="img-responsive imgF" src="../img/abecedarios/S.png">                                                                                                                                
-                        </div> 
+                        
 
                     </div>
                 </form>
 
                 <!--TERCER FORMULARIO SEGUNDA LISTA DE IMAGENES-->
-                <form action="examen_abecedario.php" method="POST" id="form3" class="insetarPuntos" enctype="multipart/form-data">
+                <form action="examen.php" method="POST" id="form3" class="insetarPuntos" enctype="multipart/form-data">
                     <div> <!-- type="hidden" id="nombre_alumno"-->
                         <p class="nombre_alumno"></p>                            
                     </div>
@@ -214,34 +214,31 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra M</h1>
+                            <h1 style="text-align:center; color:black">Cuál es el color Verde</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
-
-                        <!--img 1 -->                        
-                        <div  onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
-                            <a href="#"> <img class="img-responsive imgF"src="../img/examen/vocal/ii.png"> </a>                                                                                                                              
-                        </div>                                                     
-    
                         <!--img 3 CORRECTO --> 
                         <div onClick="insertP2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <input type="image" class="img-responsive imgF" src="../img/abecedarios/M.png">                                                                             
+                            <input type="image" class="img-responsive imgF" src="../img/colores/verde.png">                                                                             
                         </div>
+                        <!--img 1 -->                        
+                        <div  onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/negro.png"> </a>                                                                                                                              
+                        </div>                                                     
+                            
                         <!--img 2 -->
                         <div onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/sandia.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Sandía </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/inicio/Numero.png"> </a>                            
                         </div>
                         <!--img 4 -->
                         <div onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/fruta_acida/tamarindo.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Tamarindo </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/EXAMEN/vocal/aa.png"> </a>                            
                         </div>                                                       
                     </div>
                 </form>
 
                 <!--CUARTO FORMULARIO TERCERA LISTA DE IMAGENES-->
-                <form action="examen_abecedario.php" method="POST" id="form4" class="insetarPuntos" enctype="multipart/form-data">
+                <form action="examen.php" method="POST" id="form4" class="insetarPuntos" enctype="multipart/form-data">
                     <div> <!-- type="hidden" id="nombre_alumno"-->
                         <p class="nombre_alumno"></p>                            
                     </div>
@@ -250,7 +247,7 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra J</h1>
+                            <h1 style="text-align:center; color:black">Cual es el color Azul</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
@@ -262,23 +259,22 @@
     
                         <!--img 2 -->
                         <div onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/CuerpoHumano/cabeza.png"> </a>    
-                            <p style="text-align:center; color:honeydew; font-size:15px">Cabeza </p>                         
-                        </div>
-                        <!--img 4 CORRECTO -->
-                        <div onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)"> 
-                            <input type="image" class="img-responsive imgF" src="../img/abecedarios/J.png">                          
-                        </div>    
+                            <a href="#"> <img class="img-responsive imgF"src="../img/EXAMEN/vocal/uu.png"> </a>                                                         
+                        </div>                        
                         <!--img 3  --> 
                         <div onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_NEUTRO.png"> </a>                                                         
+                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_NEUTRO.png"> </a>                                                      
                         </div>
+                         <!--img 4 CORRECTO -->
+                         <div onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)"> 
+                            <input type="image" class="img-responsive imgF" src="../img/colores/azul.png">                          
+                        </div>   
                                                                            
                     </div>
                 </form>
                 
                 <!--QUINTO FORMULARIO CUARTA LISTA DE IMAGENES-->
-                <form action="examen_abecedario.php" method="POST" id="form5" class="insetarPuntos" enctype="multipart/form-data">
+                <form action="examen.php" method="POST" id="form5" class="insetarPuntos" enctype="multipart/form-data">
                     <div> <!-- type="hidden" id="nombre_alumno"-->
                         <p class="nombre_alumno"></p>                            
                     </div>
@@ -287,35 +283,31 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra F</h1>
+                            <h1 style="text-align:center; color:black">Cual es el color Amarillo</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
-
-                        <!--img 2 CORRECTO-->
-                        <div onClick="inserbtP4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                     
-                            <input type="image" class="img-responsive imgF" src="../img/abecedarios/F.png">                             
-                        </div>
-
                         <!--img 1 -->                        
                         <div  onclick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                         
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/manzana_roja.png"> </a> 
-                            <p style="text-align:center; color:honeydew; font-size:15px">Manzana Roja </p>                                                                                                                               
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/fusia.png"> </a>                                                                                                                                                           
                         </div>                                                     
                             
                         <!--img 3  --> 
                         <div onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                             
-                            <a href="#"> <img class="img-responsive imgF"src="../img/CuerpoHumano/lengua.png"> </a>  
-                            <p style="text-align:center; color:honeydew; font-size:15px">Lengua </p>                          
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/corinto.png"> </a>                                                    
+                        </div>
+                        <!--img 2 CORRECTO-->
+                        <div onClick="inserbtP4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                     
+                            <input type="image" class="img-responsive imgF" src="../img/colores/amarillo.png">                             
                         </div>
                         <!--img 4 -->
                         <div onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/abecedarios/T.png"> </a>                                                         
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/menta.png"> </a>                                                         
                         </div>                                                       
                     </div>
                 </form>
 
                 <!--SEXTO FORMULARIO QUINTA LISTA DE IMAGENES-->
-                <form action="examen_abecedario.php" method="POST" id="form6" class="insetarPuntos" enctype="multipart/form-data">
+                <form action="examen.php" method="POST" id="form6" class="insetarPuntos" enctype="multipart/form-data">
                     <div> <!-- type="hidden" id="nombre_alumno"-->
                         <p class="nombre_alumno"></p>                            
                     </div>
@@ -324,28 +316,25 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra C</h1>
+                            <h1 style="text-align:center; color:black">Cual es el color Blanco</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
                         <div  onclick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/pera.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Pera </p>                                                                                                                               
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/negro.png"> </a>                                                                                                                                                          
                         </div>                                                     
                         <!--img 4 CORRECTO-->
                         <div onClick="inserbtP5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
-                            <input type="image" class="img-responsive imgF" src="../img/abecedarios/C.png">                                                          
+                            <input type="image" class="img-responsive imgF" src="../img/colores/blanco.png">                                                          
                         </div>  
                         <!--img 2 -->
                         <div onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/crayon.png"> </a> 
-                            <p style="text-align:center; color:honeydew; font-size:15px">Crayón </p>                           
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/lila.png"> </a>                                                     
                         </div>
                         <!--img 3  --> 
                         <div onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
-                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/culebra.png"> </a>   
-                            <p style="text-align:center; color:honeydew; font-size:15px">Culebra </p>                          
+                            <a href="#"> <img class="img-responsive imgF"src="../img/colores/verde.png"> </a>                                                     
                         </div>
                                                                             
                     </div>
