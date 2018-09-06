@@ -136,7 +136,7 @@
                         </tr>
                         <tr>
                             <td>Escuela</td>
-                            <td> <a href="#">Evaluación</a> </td>
+                            <td> <a href="examen_escuela/examen.php">Evaluación</a> </td>
                         </tr>
                         <tr>
                             <td>Cuerpo Humano</td>
