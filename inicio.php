@@ -144,7 +144,7 @@
                         </tr>
                         <tr>
                             <td>Animales</td>
-                            <td> <a href="#">Evaluación</a> </td>
+                            <td> <a href="examen_animales/examen.php">Evaluación</a> </td>
                         </tr>                        
                     </table>                                                
                                                 
