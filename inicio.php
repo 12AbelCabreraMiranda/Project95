@@ -140,7 +140,7 @@
                         </tr>
                         <tr>
                             <td>Cuerpo Humano</td>
-                            <td> <a href="#">Evaluación</a> </td>
+                            <td> <a href="examen_cuerpoHumano/examen.php">Evaluación</a> </td>
                         </tr>
                         <tr>
                             <td>Animales</td>
