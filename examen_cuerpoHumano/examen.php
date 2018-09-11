@@ -1,6 +1,16 @@
 <?php
     require('..//bd/conexion.php');
-    $query = "select idEstudiante, nombre from estudiante";
+    session_start();
+    $usuMaestro = $_SESSION['u_usuario'];
+
+    $id;
+    $query1 = ("SELECT id_maestroU FROM usuario where nom_usuario='$usuMaestro'");
+    $result1 = $conexion->query($query1);
+    if($row = $result1->fetch_assoc()){      
+        $id =$row['id_maestroU'];
+     }
+
+    $query = "select idEstudiante, nombre from estudiante WHERE id_usuario_maestro='$id' ";
     $resultado = $conexion->query($query);
 ?>
 
@@ -22,6 +32,16 @@
 
 </head>
 <body>
+    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+    <?php // AGREGARLO EN LAS DEMAS PAGINAS PARA QUE LOS QUE ESTEN CON SESION INICIADO PUEDAN ACCEDER ELSE NOT ACCESS
+        session_start();
+        if(isset($_SESSION['u_usuario'])){
+        }else{
+            header("Location: ../login/login.php");  
+        }
+    ?>
+    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+
     <div class="container-fluid">
         <!-- Fila Encabezado-->
         <header class="row encabez" >        
