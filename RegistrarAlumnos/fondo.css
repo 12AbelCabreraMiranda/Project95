@@ -1,0 +1,37 @@
+body{
+    background: url(lago.jpg)no-repeat center fixed ;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black; 
+}
+.fondo_form{
+    background-color: rgba(0, 0, 0, 0.815);
+    height: 490px;
+    border-radius: 8px;
+}
+h1{
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+    font-weight: bold
+}
+h3{
+    color: rgb(6, 204, 253);
+}
+label{
+    color: white;
+}
+#boton{
+    margin-top: 35px;    
+    width: 200px;
+}
+#botonInicio{
+    margin-top: 5px;
+}
+#registradoAlumno{
+    position:absolute; z-index:1;
+    color: yellow;  
+    font-weight: bold  
+}

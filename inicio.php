@@ -98,12 +98,12 @@
             <!--PERFIL -->
             <div class="col-lg-4 fondo_perfil">
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
-                    <a href="vocales.php"> <img class="img-responsive imgF img-circle"  src="img/abel.jpg"></a>
-                    <p style="text-align:center; color:honeydew; font-size:14px"> </p>
+                    <a> <img class="img-responsive imgF img-circle"  src="img/maestro.png"></a>                    
+                    <p style="text-align:center; color:honeydew; font-size:14px"><?php echo $_SESSION['u_usuario'] ?></p>  
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff">   
-                    <p><?php echo $_SESSION['u_usuario'] ?></p>                      
-                    <label for="">Profesor</label> <br><br><br><br><br><br><br>
+                <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff"> <br>
+                    <a href="RegistrarAlumnos/misAlumnos.php"> <button class="btn btn-info btn-block">Registrar Alumnos</button></a>  <br>                                                               
+                    <button class="btn btn-success btn-block">NOTAS</button> <br>
                     <a href="login/cerrar_sesion.php">Cerrar Sesión</a>                                               
                 </div>
                 <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos" style="background: #8e8d8d">   
