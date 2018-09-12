@@ -23,8 +23,40 @@
     /*codigo tabla responsive*/
     .scrollable{
         height: 360px;
-        overflow: scroll;
-        
+        overflow: scroll;        
     }
+    /*TABLAS DESACTIVADOS*/
+    #vocales{
+      background-color: rgba(4, 124, 204, 0.979);
+      color: white;
+    }
+    a.list-group-item{
+      color: rgba(4, 124, 204, 0.979);
+      cursor:pointer;
+    }
+    #tabla_abecedarios{
+      display: none;
+    }
+    #tabla_colores{
+      display: none;
+    }
+    #tabla_numeros{
+      display: none;
+    }
+    #tabla_frutas{
+      display: none;
+    }
+    #tabla_escuela{
+      display: none;
+    }
+    #tabla_cuerpoHumano{
+      display: none;
+    }
+    #tabla_animales{
+      display: none;
+    }
+    
+
+
   
 }
