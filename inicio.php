@@ -102,7 +102,8 @@
                     <p style="text-align:center; color:honeydew; font-size:14px"><?php echo $_SESSION['u_usuario'] ?></p>  
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff"> <br>
-                    <a href="RegistrarAlumnos/misAlumnos.php"> <button class="btn btn-info btn-block">Registrar Alumnos</button></a>  <br>                                                               
+                    <a href="RegistrarAlumnos/misAlumnos.php"> <button class="btn btn-info btn-block">Registrar Alumnos</button></a>  <br>
+                    <a href="misAlumnos/misAlumnos.php"> <button class="btn btn-warning btn-block">MIS ALUMNOS</button> </a>   <br>                                                            
                     <a href="Notas/notas.php"> <button class="btn btn-success btn-block">NOTAS</button> </a>
                     <a href="login/cerrar_sesion.php">Cerrar Sesión</a>                                               
                 </div>

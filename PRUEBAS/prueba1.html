@@ -4,8 +4,9 @@
 		<meta charset = "UTF-8 " >
 		<meta  name = " viewport "  content = " width = device-width, user-escalable = no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0 " >
 		<title > Código Wolf </title >
-		<link  rel = " stylesheet "  href = " https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css " >
-		<link  rel = " stylesheet "  href = " estilos.css " >
+		<!-- <link  rel = " stylesheet "  href = " https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css " >-->
+        <link  rel = " stylesheet "  href = " estilos.css " >
+        <link rel="stylesheet" href="../css/bootstrap.min.css"> 
     </head>
     <style>
         #cabecera{
@@ -29,9 +30,12 @@
 				</div>
 			</section>
 		</section>
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js "integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"> 
-        </script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+		<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js "integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"> 
+        </script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> -->
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../js/bootstrap.min.js" ></script>
+        <script src="../misAlumnos/detalles_curso.js"></script>
 
         <script>
             $(function(){
@@ -42,16 +46,20 @@
                     .done(function(info){
                         //console.log(info);
                         var productos = JSON.parse(info); //cambiarlo por curso despues
-                        //console.log(pruductos);
+                        //console.log(productos);
                        
                         var html = "";
 
                         for(var i in productos.data){
-                            //console.log(productos.data[i].idCursos);
-                            //console.log(productos.data[i].nombreCurso);                            
-                            html+=` <p class="h3" >ID <b>${productos.data[i].idCursos} </b> </p>
-                                    <p> nombre: ${productos.data[i].nombreCurso}</p>
-                                    <p> codigoCurso: ${productos.data[i].codigo}</p>`
+                            //console.log(productos.data[i].idImagenes);
+                            //console.log(productos.data[i].nombreImagen);  
+
+                           html+=` <p class="h3" id="codigoAlumno">ID <b>${productos.data[i].idImagenes} </b> </p>
+                                    <p> nombre: ${productos.data[i].nombreImagen}</p>
+                                    <p> codigoCurso: ${productos.data[i].id_cursoI}</p>
+                                    <button class="btn btn-success" onclick="detalleCursos()">                                        
+                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>                                                                              
+                                    </button> `
                                 
                         }                   //jQuery //variable  
                         $("#data_productos").html(html);
