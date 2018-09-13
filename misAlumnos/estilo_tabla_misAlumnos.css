@@ -13,25 +13,6 @@
       text-align:center; 
       color:honeydew
     }
-    .fondo_perfil{
-      height: 500px;
-      background-color: #0f0f0f;
-    }
-    .fondo_cursos{
-      height:250px;
-    }
-    /*codigo tabla responsive*/
-    .scrollable{
-        height: 360px;
-        overflow: scroll;        
-    }
-    /*TABLAS DESACTIVADOS*/
-    #vocales{
-      background-color: rgba(4, 124, 204, 0.979);
-      color: white;
-    }
-    #detalle_cursos{
-      display: none;
-    }
+
   
 }
