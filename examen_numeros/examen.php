@@ -10,7 +10,7 @@
         $id =$row['id_maestroU'];
      }
 
-    $query = "select idEstudiante, nombre from estudiante WHERE id_usuario_maestro='$id' ";
+    $query = "select idEstudiante, nombre,codigoEstudiante from estudiante WHERE id_usuario_maestro='$id' ";
     $resultado = $conexion->query($query);
 ?>
 
@@ -63,7 +63,9 @@
                             <select name="elegir" style="color:black; width:150px; border-radius:5px"  id="id_estudiante">
                             <?php while($row = $resultado->fetch_assoc()){  ?>
                             <option class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
-                            <?php  echo $row['nombre']; ?> </option>
+                                <?php  echo $row['nombre']; ?> 
+                                <?php  echo $row['codigoEstudiante']; ?>
+                            </option>
                             <?php }?>
                             </select> 
                             <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>
