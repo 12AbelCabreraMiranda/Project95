@@ -1,5 +1,8 @@
 /* Large Desktop*/
 @media (min-width:1200px){
+  .noDisponibleMovil{
+    display: none;
+  }
   div.navegacion{
     background-color: #000000; 
       height: 60px; 
@@ -15,7 +18,7 @@
         pointer-events: stroke;
     }
   .fond{
-    height: 500px;;
+    height: 540px;;
     }
   #tituloINICIO{
     font-size:15px; 
@@ -23,12 +26,38 @@
     color:honeydew
   }
   .fondo_perfil{
-    height: 500px;
+    height: 540px;
     background-color: #0f0f0f;
   }
+ 
   .fondo_cursos{
-    height:250px;
-}
+    height:330px;
+    background-color: rgb(214, 210, 210);
+  }
+  .fondoFila{
+    background-color: rgb(0, 128, 111);
+  }
+  .fondoFilaEncabezado{
+    background-color: rgb(39, 42, 43);
+    font-weight: bold;
+    text-align: center;
+  }
+  .fondoFilaEvaluacion{
+    background-color: rgb(3, 174, 226);
+    text-decoration: none;
+  }
+  .fondoFilaEvaluacion a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  a.botonesMenu{
+    text-decoration: none;
+  }
+  .btn{
+    margin-top: 7px;
+  }
 
   }
 
@@ -48,5 +77,21 @@
     text-align:center; 
     color:honeydew
   }
+  /*DESACTIVADO PARA MOVIL*/
+  .fond{
+    display: none;
+  }
+  .fondo_perfil{
+    display: none;
+  }
+  .noDisponibleMovil{
+    display: show;
+    text-align: center;
+    color: white;
+  }
+  .container-fluid{
+    display: none;
+  }
 }
+
   

@@ -102,60 +102,79 @@
                     <p style="text-align:center; color:honeydew; font-size:14px;text-transform: uppercase"> <b> <?php echo $_SESSION['u_usuario'] ?></b> </p>  
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff"> <br>
-                    <a href="RegistrarAlumnos/misAlumnos.php"> <button class="btn btn-info btn-block">
+                    <!--BOTONES -->
+                    <a href="RegistrarAlumnos/misAlumnos.php" class="botonesMenu"> <button class="btn btn-info btn-block">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> &nbsp;Registrar Alumnos</button>
-                    </a>  <br>
-                    <a href="misAlumnos/alumnosYcursos.php"> <button class="btn btn-warning btn-block">
+                    </a>
+                    <a href="misAlumnos/alumnosYcursos.php" class="botonesMenu"> <button class="btn btn-warning btn-block">
                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp; MIS ALUMNOS</button> 
-                    </a>   <br>                                                            
-                    <a href="Notas/notas.php"> <button class="btn btn-success btn-block">
+                    </a>                                                           
+                    <a href="Notas/notas.php" class="botonesMenu"> <button class="btn btn-success btn-block">
                         <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp;NOTAS</button> 
                     </a>
-                    <a href="login/cerrar_sesion.php"><button class="btn btn-danger btn-block"> 
+                    <a href="login/cerrar_sesion.php" class="botonesMenu"><button class="btn btn-danger btn-block"> 
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span> &nbsp;Cerrar Sesión</button>
                     </a>                                             
                 </div>
-                <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos" style="background: #8e8d8d">   
-                    <h4>Evaluaciones</h4>
-                    <table>
-                        <tr>
-                            <td>CURSOS</td>
-                            <td>COMENZAR</td>                                
-                        </tr>                       
-                        <!-- cuerpo de la tabla-->
-                        <tr>
-                            <td>Vocales</td>
-                            <td> <a href="examen/examen_vocal.php">Evaluación</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Abecedarios</td>
-                            <td> <a href="examen_abecedario/examen_abecedario.php">Evaluación</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Colores</td>
-                            <td> <a href="examen_colores/examen.php">Evaluación</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Números</td>
-                            <td> <a href="examen_numeros/examen.php">Evaluación</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Frutas</td>
-                            <td> <a href="examen_fruta/examen.php">Evaluación</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Escuela</td>
-                            <td> <a href="examen_escuela/examen.php">Evaluación</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Cuerpo Humano</td>
-                            <td> <a href="examen_cuerpoHumano/examen.php">Evaluación</a> </td>
-                        </tr>
-                        <tr>
-                            <td>Animales</td>
-                            <td> <a href="examen_animales/examen.php">Evaluación</a> </td>
-                        </tr>                        
-                    </table>                                                
+                <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos">   
+                    <h4 style="text-align:center">CURSOS DE EVALUACIONES</h4>
+                    <div class="table-responsive" style="border-radius:5px">
+                        <table class="table table-striped table-bordered table-hover table-condensed">
+                            <tr>
+                                <td class="fondoFilaEncabezado">CURSOS</td>
+                                <td class="fondoFilaEncabezado">COMENZAR</td>                                
+                            </tr>                       
+                            <!-- cuerpo de la tabla-->
+                            <tr>
+                                <td class="fondoFila">Vocales</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen/examen_vocal.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fondoFila">Abecedarios</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen_abecedario/examen_abecedario.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fondoFila"> Colores</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen_colores/examen.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fondoFila">Números</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen_numeros/examen.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fondoFila">Frutas</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen_fruta/examen.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fondoFila">Escuela</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen_escuela/examen.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fondoFila">Cuerpo Humano</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen_cuerpoHumano/examen.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fondoFila">Animales</td>
+                                <td class="fondoFilaEvaluacion"> <a href="examen_animales/examen.php">
+                                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp; &nbsp;Evaluación</a> 
+                                </td>
+                            </tr>                        
+                        </table>                                                
+                    </div>
                                                 
                 </div>
             </div>
@@ -165,17 +184,23 @@
 
     <div class="footers">
         <div class="izquierda" >
-            <a href="inicio.html"> <img class="img-responsive casa" src="img/casa.png" > </a> <!-- style=" height:90px;width:90px"-->
+            <a href="#"> <img class="img-responsive casa" src="img/casa.png" > </a> <!-- style=" height:90px;width:90px"-->
         </div>
         <div class="centro">
-            <a href=""> <img class="img-responsive test" src="img/test.png"> </a>
+            <a href="#"> <img class="img-responsive test" src="img/test.png"> </a>
         </div>
         <div class="derecha">
-            <a href=""> <img class="img-responsive avances"  src="img/avance.png"> </a>
+            <a href="#"> <img class="img-responsive avances"  src="img/avance.png"> </a>
         </div>
         <div class="derecha2">
-            <a href=""> <img class="img-responsive perfil" src="img/perfil.png"> </a>
+            <a href="#"> <img class="img-responsive perfil" src="img/perfil.png"> </a>
         </div>
+    </div>
+
+    <div class="noDisponibleMovil">   
+        <p>Sistema aún no disponible para Móvil</p>     
+        <p>Sistema en Contrucción</p>
+        <a href="#"> <img class="img-responsive" src="img/tecnologia.png"> </a>
     </div>
 
 </body>
