@@ -14,6 +14,10 @@ if($row = $result1->fetch_assoc()){
 	$id =$row['id_maestroU'];
  }
 
+
+
+
+//$query = "SELECT * FROM mis_estudiantes_y_cursos where id_usuario_maestro ='$id' ";
 $query = "SELECT * FROM mis_estudiantes_y_cursos where id_usuario_maestro ='$id' ";
 $statement = $connect->prepare($query);
 $statement->execute();
@@ -21,12 +25,13 @@ $result = $statement->fetchAll();
 $total_row = $statement->rowCount();
 $output = '
 <table class="table table-striped table-bordered">
+	<tr class="warning"><td  style="text-align:center" colspan="5" rowspan="1">MIS ALUMNOS EVALUADOS</td></tr>
 	<tr >
 		<th style="text-align:center">CODIGO</th>
 		<th style="text-align:center">NOMBRE</th>		
 		<th style="text-align:center">APELLIDO</th>
 		<th style="text-align:center">EDAD</th>
-		<th style="text-align:center">EXAMEN HECHO</th>
+		<th style="text-align:center">EXAMEN</th>
 	</tr>
 ';
 if($total_row > 0)
@@ -34,13 +39,13 @@ if($total_row > 0)
 	foreach($result as $row)
 	{
 		$output .= '
-		<tr>
+		<tr>			
 			<td>'.$row["codigoEstudiante"].'</td>	
 			<td>'.$row["nombre"].'</td>	
 			<td>'.$row["apellido"].'</td>
-			<td>'.$row["edad"].'</td>
+			<td style="text-align:center">'.$row["edad"].'</td>
 					
-			<td>
+			<td style="text-align:center">
 				<button class="btn btn-success">
 					<span class="badge">'. $row['cant_examen_hecho'].'</span>                                        
 				</button>

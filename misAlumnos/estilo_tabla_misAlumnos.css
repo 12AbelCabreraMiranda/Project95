@@ -14,5 +14,27 @@
       color:honeydew
     }
 
+    #datos{
+      display: none;
+    }
+    #todosALumnos{
+      display: show;
+    }
+
+    #todos{
+      cursor: pointer;
+      background-color: rgba(4, 124, 204, 0.979);
+      color: white;
+    }
+    #evaluados{
+      cursor: pointer;
+      color: rgba(4, 124, 204, 0.979);
+    }
+
+    /*ALERTA*/
+    #accion_alerta{
+      background-color: rgb(243, 182, 69);
+    }
+
   
 }
