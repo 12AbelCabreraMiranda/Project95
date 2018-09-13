@@ -20,7 +20,14 @@
         }
     ?>
 	<!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
-	
+	<div class="container-fluid">
+
+		<div class="row">
+             <div class="col-md-12 col-xs-12 navegacion">
+                 <h1 id="tituloINICIO">“APLICACIÓN EDUCATIVA PARA EL APRENDIZAJE DEL HABLA NIVEL DE EDUCACIÓN PRE-PRIMARIA”</h1>
+             </div>         
+        </div>
+	</div>
         <div class="container">
 			<br />			
 			<h3 align="center">Alumnos y sus Examenes Realizados</a></h3><br/><br/>

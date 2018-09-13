@@ -98,14 +98,22 @@
             <!--PERFIL -->
             <div class="col-lg-4 fondo_perfil">
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
-                    <a> <img class="img-responsive imgF img-circle"  src="img/maestro.png"></a>                    
-                    <p style="text-align:center; color:honeydew; font-size:14px"><?php echo $_SESSION['u_usuario'] ?></p>  
+                    <a> <img class="img-responsive imgF img-rounded"  src="img/maestro.png"></a>                    
+                    <p style="text-align:center; color:honeydew; font-size:14px;text-transform: uppercase"> <b> <?php echo $_SESSION['u_usuario'] ?></b> </p>  
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff"> <br>
-                    <a href="RegistrarAlumnos/misAlumnos.php"> <button class="btn btn-info btn-block">Registrar Alumnos</button></a>  <br>
-                    <a href="misAlumnos/alumnosYcursos.php"> <button class="btn btn-warning btn-block">MIS ALUMNOS</button> </a>   <br>                                                            
-                    <a href="Notas/notas.php"> <button class="btn btn-success btn-block">NOTAS</button> </a>
-                    <a href="login/cerrar_sesion.php">Cerrar Sesión</a>                                               
+                    <a href="RegistrarAlumnos/misAlumnos.php"> <button class="btn btn-info btn-block">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> &nbsp;Registrar Alumnos</button>
+                    </a>  <br>
+                    <a href="misAlumnos/alumnosYcursos.php"> <button class="btn btn-warning btn-block">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp; MIS ALUMNOS</button> 
+                    </a>   <br>                                                            
+                    <a href="Notas/notas.php"> <button class="btn btn-success btn-block">
+                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span> &nbsp;NOTAS</button> 
+                    </a>
+                    <a href="login/cerrar_sesion.php"><button class="btn btn-danger btn-block"> 
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span> &nbsp;Cerrar Sesión</button>
+                    </a>                                             
                 </div>
                 <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos" style="background: #8e8d8d">   
                     <h4>Evaluaciones</h4>
