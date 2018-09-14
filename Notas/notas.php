@@ -125,12 +125,12 @@
             <div class="col-lg-2 col-lg-offset-2 list-group">   <br><br>     
                 <a  class="list-group-item" onclick="vocales()" id="vocales">VOCALES <span id="vocales1" class="badge"><?php echo $row3['cursos_en_vocales'];?></span>  </a>
                 <a  class="list-group-item" onclick="abecedarios()" id="abecedarios">ABECEDARIOS <span id="abecedarios1" class="badge"><?php echo $row10['cursos_en_abecedarios'];?></span> </a>
-                <a  class="list-group-item" onclick="colores()" id="colores">COLORES <span class="badge"><?php echo $row11['cursos_en_colores'];?></span> </a>
-                <a  class="list-group-item" onclick="numeros()" id="numeros">NÚMEROS <span class="badge"><?php echo $row12['cursos_en_numeros'];?></span> </a>
-                <a  class="list-group-item" onclick="frutas()" id="frutas">FRUTAS <span class="badge"><?php echo $row13['cursos_en_frutas'];?></span> </a>
-                <a  class="list-group-item" onclick="escuela()" id="escuela">ESCUELA <span class="badge"><?php echo $row1['cursos_en_escuela'];?></span> </a>
-                <a  class="list-group-item" onclick="humano()" id="humano">CUERPO HUMANO <span class="badge"><?php echo $row14['cursos_en_cuerpoHumano'];?></span> </a>
-                <a  class="list-group-item" onclick="animales()" id="animales">ANIMALES <span class="badge"><?php echo $row15['cursos_en_animales'];?></span> </a>
+                <a  class="list-group-item" onclick="colores()" id="colores">COLORES <span id="colores1" class="badge"><?php echo $row11['cursos_en_colores'];?></span> </a>
+                <a  class="list-group-item" onclick="numeros()" id="numeros">NÚMEROS <span id="numeros1" class="badge"><?php echo $row12['cursos_en_numeros'];?></span> </a>
+                <a  class="list-group-item" onclick="frutas()" id="frutas">FRUTAS <span id="frutas1" class="badge"><?php echo $row13['cursos_en_frutas'];?></span> </a>
+                <a  class="list-group-item" onclick="escuela()" id="escuela">ESCUELA <span  id="escuela1" class="badge"><?php echo $row1['cursos_en_escuela'];?></span> </a>
+                <a  class="list-group-item" onclick="humano()" id="humano">CUERPO HUMANO <span id="humano1" class="badge"><?php echo $row14['cursos_en_cuerpoHumano'];?></span> </a>
+                <a  class="list-group-item" onclick="animales()" id="animales">ANIMALES <span id="animales1" class="badge"><?php echo $row15['cursos_en_animales'];?></span> </a>
                 <a href="../inicio.php"> <button class="btn btn-success btn-block"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</button> </a>                
             </div>
 

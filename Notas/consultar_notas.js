@@ -27,6 +27,27 @@ function vocales(){
     document.getElementById("vocales1").style.backgroundColor = "white";
     document.getElementById("vocales1").style.color = "rgba(4, 124, 204, 0.979)"; 
 
+    document.getElementById("abecedarios1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("abecedarios1").style.color = "white";
+
+    document.getElementById("colores1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("colores1").style.color = "white";
+
+    document.getElementById("numeros1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("numeros1").style.color = "white";
+
+    document.getElementById("frutas1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("frutas1").style.color = "white"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("escuela1").style.color = "white"; 
+
+    document.getElementById("humano1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("humano1").style.color = "white"; 
+
+    document.getElementById("animales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("animales1").style.color = "white"; 
+
 
 
     // DESACTIVAR    
@@ -65,9 +86,30 @@ function abecedarios(){
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
 
-    //menus opciones
+    //menus opciones    
+    document.getElementById("vocales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("vocales1").style.color = "white";
+    
     document.getElementById("abecedarios1").style.backgroundColor = "white";
-    document.getElementById("abecedarios1").style.color = "rgba(4, 124, 204, 0.979)"; 
+    document.getElementById("abecedarios1").style.color = "rgba(4, 124, 204, 0.979)";
+
+    document.getElementById("colores1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("colores1").style.color = "white";
+
+    document.getElementById("numeros1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("numeros1").style.color = "white";
+
+    document.getElementById("frutas1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("frutas1").style.color = "white"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("escuela1").style.color = "white"; 
+
+    document.getElementById("humano1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("humano1").style.color = "white"; 
+
+    document.getElementById("animales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("animales1").style.color = "white"; 
     
     // DESACTIVAR    
     $('#tabla_vocal').hide();
@@ -105,6 +147,32 @@ function colores(){
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
     
+    //MENÚ DE OPCIONES
+    document.getElementById("vocales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("vocales1").style.color = "white"; 
+
+    document.getElementById("abecedarios1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("abecedarios1").style.color = "white";
+
+    document.getElementById("colores1").style.backgroundColor = "white";
+    document.getElementById("colores1").style.color = "rgba(4, 124, 204, 0.979)";
+
+    document.getElementById("numeros1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("numeros1").style.color = "white";
+
+    document.getElementById("frutas1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("frutas1").style.color = "white"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("escuela1").style.color = "white"; 
+
+    document.getElementById("humano1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("humano1").style.color = "white"; 
+
+    document.getElementById("animales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("animales1").style.color = "white"; 
+
+
     // DESACTIVAR    
     $('#tabla_vocal').hide();
     $('#tabla_abecedarios').hide();
@@ -140,6 +208,32 @@ function numeros(){
 
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+    //MENÚ DE OPCIONES
+    document.getElementById("vocales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("vocales1").style.color = "white"; 
+
+    document.getElementById("abecedarios1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("abecedarios1").style.color = "white";
+
+    document.getElementById("colores1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("colores1").style.color = "white";
+
+    document.getElementById("numeros1").style.backgroundColor = "white";
+    document.getElementById("numeros1").style.color = "rgba(4, 124, 204, 0.979)";
+
+    document.getElementById("frutas1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("frutas1").style.color = "white"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("escuela1").style.color = "white"; 
+
+    document.getElementById("humano1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("humano1").style.color = "white"; 
+
+    document.getElementById("animales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("animales1").style.color = "white"; 
+
     
     // DESACTIVAR    
     $('#tabla_vocal').hide();
@@ -176,6 +270,31 @@ function frutas(){
 
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+    //MENÚ DE OPCIONES
+    document.getElementById("vocales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("vocales1").style.color = "white"; 
+
+    document.getElementById("abecedarios1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("abecedarios1").style.color = "white";
+
+    document.getElementById("colores1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("colores1").style.color = "white";
+
+    document.getElementById("numeros1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("numeros1").style.color = "white";
+
+    document.getElementById("frutas1").style.backgroundColor = "white";
+    document.getElementById("frutas1").style.color = "rgba(4, 124, 204, 0.979)"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("escuela1").style.color = "white"; 
+
+    document.getElementById("humano1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("humano1").style.color = "white"; 
+
+    document.getElementById("animales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("animales1").style.color = "white"; 
     
     // DESACTIVAR    
     $('#tabla_vocal').hide();
@@ -212,6 +331,31 @@ function escuela(){
 
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+    //MENÚ DE OPCIONES
+    document.getElementById("vocales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("vocales1").style.color = "white"; 
+
+    document.getElementById("abecedarios1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("abecedarios1").style.color = "white";
+
+    document.getElementById("colores1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("colores1").style.color = "white";
+
+    document.getElementById("numeros1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("numeros1").style.color = "white";
+
+    document.getElementById("frutas1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("frutas1").style.color = "white"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "white";
+    document.getElementById("escuela1").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+    document.getElementById("humano1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("humano1").style.color = "white"; 
+
+    document.getElementById("animales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("animales1").style.color = "white"; 
     
     // DESACTIVAR    
     $('#tabla_vocal').hide();
@@ -248,6 +392,31 @@ function humano(){
 
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+    //MENÚ DE OPCIONES
+    document.getElementById("vocales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("vocales1").style.color = "white"; 
+
+    document.getElementById("abecedarios1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("abecedarios1").style.color = "white";
+
+    document.getElementById("colores1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("colores1").style.color = "white";
+
+    document.getElementById("numeros1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("numeros1").style.color = "white";
+
+    document.getElementById("frutas1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("frutas1").style.color = "white"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("escuela1").style.color = "white"; 
+
+    document.getElementById("humano1").style.backgroundColor = "white";
+    document.getElementById("humano1").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+    document.getElementById("animales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("animales1").style.color = "white"; 
     
     // DESACTIVAR    
     $('#tabla_vocal').hide();
@@ -284,6 +453,31 @@ function animales(){
 
     document.getElementById("animales").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
     document.getElementById("animales").style.color = "white"; 
+
+    //MENÚ DE OPCIONES
+    document.getElementById("vocales1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("vocales1").style.color = "white"; 
+
+    document.getElementById("abecedarios1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("abecedarios1").style.color = "white";
+
+    document.getElementById("colores1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("colores1").style.color = "white";
+
+    document.getElementById("numeros1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("numeros1").style.color = "white";
+
+    document.getElementById("frutas1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("frutas1").style.color = "white"; 
+    
+    document.getElementById("escuela1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("escuela1").style.color = "white"; 
+
+    document.getElementById("humano1").style.backgroundColor = "rgba(4, 124, 204, 0.979)";
+    document.getElementById("humano1").style.color = "white"; 
+
+    document.getElementById("animales1").style.backgroundColor = "white";
+    document.getElementById("animales1").style.color = "rgba(4, 124, 204, 0.979)"; 
     
     // DESACTIVAR    
     $('#tabla_vocal').hide();
