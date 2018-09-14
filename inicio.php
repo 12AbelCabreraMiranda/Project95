@@ -14,6 +14,8 @@
     <script src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/estilo_inicio.css">
     <link rel="stylesheet" href="css/estiloFrutas.css">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Racing+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
     <style>
         a{
             color:black;
@@ -38,7 +40,7 @@
     <div class="container-fluid">
         <div class="row">
              <div class="col-md-12 col-xs-12 navegacion">
-                 <h1 id="tituloINICIO">“APLICACIÓN EDUCATIVA PARA EL APRENDIZAJE DEL HABLA NIVEL DE EDUCACIÓN PRE-PRIMARIA”</h1>
+                 <h1 id="tituloINICIO" style="font-family: 'Racing Sans One', cursive; font-size:20px">“APLICACIÓN EDUCATIVA PARA EL APRENDIZAJE DEL HABLA NIVEL DE EDUCACIÓN PRE-PRIMARIA”</h1>
              </div>         
         </div>
 
@@ -47,7 +49,7 @@
         <div class="row" style="margin-top:20px">
             <!--CUERPO DE IMAGENES-->
             <aside class="col-lg-8 fond " style="background:#333">
-                <h3 style="text-align:center; color:white; margin-top:8px">Método de Aprendizaje</h3>
+                <h3 style="text-align:center; color:white; margin-top:8px;font-family: 'Lalezar', cursive;">Método de Aprendizaje</h3>
                 <!--img 2 -->
                 <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
                     <a href="vocales.php"> <img class="img-responsive imgF"  src="img/inicio/Vocales.png"></a>
@@ -98,7 +100,7 @@
             <!--PERFIL -->
             <div class="col-lg-4 fondo_perfil">
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
-                    <a> <img class="img-responsive imgF img-rounded"  src="img/maestro.png"></a>                    
+                    <a> <img class="img-responsive imgF img-rounded"  style="margin-top:5px" src="img/maestro.png"></a>                    
                     <p style="text-align:center; color:honeydew; font-size:14px;text-transform: uppercase"> <b> <?php echo $_SESSION['u_usuario'] ?></b> </p>  
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff"> <br>
@@ -117,9 +119,10 @@
                     </a>                                             
                 </div>
                 <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos">   
-                    <h4 style="text-align:center">CURSOS DE EVALUACIONES</h4>
+                    
                     <div class="table-responsive" style="border-radius:5px">
                         <table class="table table-striped table-bordered table-hover table-condensed">
+                            <tr><td class="fondoFilaEncabezado" colspan="2" rowspan="1" style="text-align:center">CURSOS DE EVALUACIONES</td> </tr>
                             <tr>
                                 <td class="fondoFilaEncabezado">CURSOS</td>
                                 <td class="fondoFilaEncabezado">COMENZAR</td>                                
