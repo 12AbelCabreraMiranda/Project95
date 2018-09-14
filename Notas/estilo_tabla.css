@@ -30,6 +30,14 @@
       background-color: rgba(4, 124, 204, 0.979);
       color: white;
     }
+    #vocales1{
+      background-color: white;
+      color: rgba(4, 124, 204, 0.979);
+    }
+    .badge{
+      background-color: rgba(4, 124, 204, 0.979);
+      color: white;
+    }
     a.list-group-item{
       color: rgba(4, 124, 204, 0.979);
       cursor:pointer;
@@ -55,7 +63,7 @@
     #tabla_animales{
       display: none;
     }
-    
+
 
 
   

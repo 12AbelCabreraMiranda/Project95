@@ -23,6 +23,12 @@ function vocales(){
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
     
+    //MENÚ DE OPCIONES
+    document.getElementById("vocales1").style.backgroundColor = "white";
+    document.getElementById("vocales1").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+
+
     // DESACTIVAR    
     $('#tabla_vocal').show();
     $('#tabla_abecedarios').hide();
@@ -58,6 +64,10 @@ function abecedarios(){
 
     document.getElementById("animales").style.backgroundColor = "white";
     document.getElementById("animales").style.color = "rgba(4, 124, 204, 0.979)"; 
+
+    //menus opciones
+    document.getElementById("abecedarios1").style.backgroundColor = "white";
+    document.getElementById("abecedarios1").style.color = "rgba(4, 124, 204, 0.979)"; 
     
     // DESACTIVAR    
     $('#tabla_vocal').hide();
