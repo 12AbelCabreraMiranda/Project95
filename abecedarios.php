@@ -45,8 +45,12 @@
                 </div>
 
                 <div class="botones">
-                    <div class="anteriorVocal" onClick="antLetra()" > <p>Anterior</p> </div>
-                    <div class="siguienteVocal" onClick="sigLetra()"> <p>Siguiente</p> </div>
+                    <div class="anteriorVocal" onClick="antLetra()" > 
+                        <p><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Anterior</p>  
+                    </div>
+                    <div class="siguienteVocal" onClick="sigLetra()"> 
+                        <p>Siguiente&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></p> 
+                    </div>
                 </div>
             </div>
 

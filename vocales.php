@@ -10,6 +10,8 @@
     <script src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/vocales.css">
     <script src="js/jquery-3.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    
 </head>
 <body>
     <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
@@ -24,13 +26,13 @@
     
     <div class="container-fluid">
         <!-- NAVEGACION-->
-        <header class="row encabez" >        
-            <div id="atras"> 
-                <a href="inicio.php" class="iconINICIO" >
+        <header class="row encabez">        
+            <div id="atras">
+                <a href="inicio.php" class="iconINICIO">
                     <img src="img/inicio.png" class="img-responsive">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Aprendiendo las Vocales”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces" style="font-family: 'Francois One', sans-serif;">“Aprendiendo las Vocales”</h1></div>
         </header>
     
         <div class="row cuerpo1">
@@ -44,8 +46,12 @@
                 </div>
 
                 <div class="botones">
-                    <div class="anteriorVocal" onClick="antVocal()" > <p>Anterior</p> </div>
-                    <div class="siguienteVocal" onClick="sigVocal()"> <p>Siguiente</p> </div>
+                    <div class="anteriorVocal" onClick="antVocal()" > 
+                        <p><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Anterior</p> 
+                    </div>
+                    <div class="siguienteVocal" onClick="sigVocal()"> 
+                        <p>Siguiente&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></p> 
+                    </div>
                 </div>
             </div>
 

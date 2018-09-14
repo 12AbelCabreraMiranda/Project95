@@ -24,7 +24,7 @@ $statement->execute();
 $result = $statement->fetchAll();
 $total_row = $statement->rowCount();
 $output = '
-<table class="table table-striped table-bordered">
+<table class="table table-striped table-bordered table-hover table-condensed"">
 	<tr class="warning"><td  style="text-align:center" colspan="5" rowspan="1">MIS ALUMNOS EVALUADOS</td></tr>
 	<tr >
 		<th style="text-align:center">CODIGO</th>

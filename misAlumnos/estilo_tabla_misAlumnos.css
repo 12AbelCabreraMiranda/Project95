@@ -4,6 +4,9 @@
       background-color: #000000; 
         height: 60px; 
     }
+    body{
+      background-color: rgb(172, 170, 170);
+    }
     
     .fond{
       height: 500px;;
@@ -35,6 +38,5 @@
     #accion_alerta{
       background-color: rgb(243, 182, 69);
     }
-
   
 }

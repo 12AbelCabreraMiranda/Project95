@@ -40,7 +40,7 @@
 			<!--Muestra TODO LOS ESTUDIANTES --> 
 			<div class="col-lg-6 col-lg-offset-1" id="todosALumnos" >
                 <!-- TABLA  CURSO VOCALES-->    
-                <div class="table-responsive scrollable " style="border-radius:5px" id="tabla_vocal">
+                <div class="table-responsive " style="border-radius:5px" id="tabla_vocal">
                     <table class="table table-striped table-bordered table-hover table-condensed">  
 						<tr class="info"><td  style="text-align:center" colspan="5" rowspan="1">MIS ALUMNOS REGISTRADOS</td></tr>                      
                         <tr class="success">
