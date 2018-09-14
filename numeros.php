@@ -34,7 +34,7 @@
         </header>
     
         <div class="row cuerpo1">
-            <div class="col-md-5 col-xs-12 vocal">
+            <div class="col-md-5 col-xs-12 vocal" style="cursor:pointer" onclick="nombreFuncion()">
                
                 <!-- VOCAL CENTRO -->
                 <div class="espacioVocales">
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="col-md-7 col-xs-12 animal">
+            <div class="col-md-7 col-xs-12 animal" style="cursor:pointer" onclick="nombreFuncion()">
                 <div class="animalVocal">
                     
                 </div>

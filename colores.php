@@ -43,41 +43,41 @@
 
                 <!--img 2 -->
                 
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:white">                    
+                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:white;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:black; font-size:14px">Blanco </p>
                 </div>
                 <!--img 3 -->
-                <div class="col-lg-3 col-md-6  col-xs-6 fondoIMG" style="background:blue">                    
+                <div class="col-lg-3 col-md-6  col-xs-6 fondoIMG img-rounded" style="background:blue;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Azul </p>
                 </div>
                 <!--img 4 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:red">                    
+                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:red;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Rojo </p>
                 </div>
 
                 <!-- SEGUNDA FILA DE IMAGENES -->
 
                 <!--img 1 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:green">                    
+                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:green;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Verde </p>
                 </div>
                 <!--img 2 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:yellow">                    
+                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:yellow;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:black; font-size:14px">Amarillo </p>
                 </div>
                 <!--img 3 -->
-                <div class="col-lg-3  col-md-6 col-xs-6 fondoIMG" style="background:black">                    
+                <div class="col-lg-3  col-md-6 col-xs-6 fondoIMG img-rounded" style="background:black;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Negro </p>
                 </div>
 
                 <!-- TERCERA FILA DE IMAGENES -->
 
                 <!--img 1 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:#422020 ">                    
+                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#422020;cursor:pointer;margin-top:10px " onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Café </p>
                 </div>
                 <!--img 2 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:#e80b7d">                    
+                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#e80b7d;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Rosado </p>
                 </div>
 

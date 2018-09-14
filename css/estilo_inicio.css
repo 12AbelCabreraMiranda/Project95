@@ -18,21 +18,36 @@
         pointer-events: stroke;
     }
   .fond{
-    height: 540px;;
+    height: 460px;;
+    border-radius: 8px;
+    }
+  .fondoMetodoAprendizaje{
+    height: 500px;;
+    border-radius: 8px;
     }
   #tituloINICIO{
     font-size:15px; 
     text-align:center; 
     color:honeydew
   }
-  .fondo_perfil{
+  /*.fondo_perfil{
     height: 540px;
     background-color: #0f0f0f;
+  }*/
+  .fondoIMG{
+    border-top-left-radius: 8px;
+    background:#ffffff;
+    color: rgb(2, 85, 78);
   }
- 
+ .fondoBotonesAcciones{
+  border-top-right-radius: 8px;
+  height: 210px;
+ }
   .fondo_cursos{
     height:330px;
-    background-color: rgb(214, 210, 210);
+    background-color: rgb(253, 252, 252);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
   .fondoFila{
     background-color: rgb(0, 128, 111);

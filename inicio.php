@@ -48,62 +48,70 @@
 
         <div class="row" style="margin-top:20px">
             <!--CUERPO DE IMAGENES-->
-            <aside class="col-lg-8 fond " style="background:#333">
+            <aside class="col-lg-8 fondoMetodoAprendizaje " style="background:#333">
                 <h3 style="text-align:center; color:white; margin-top:8px;font-family: 'Lalezar', cursive;">Método de Aprendizaje</h3>
-                <!--img 2 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
-                    <a href="vocales.php"> <img class="img-responsive imgF"  src="img/inicio/Vocales.png"></a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">Vocales </p>
-                </div>
-                <!--img 3 -->
-                <div class="col-lg-3 col-md-6  col-xs-6 fondoIMG" style="background:rgb(76, 55, 54)">
-                    <a href="abecedarios.php"> <img class="img-responsive imgF"  src="img/inicio/Abecedario.png"> </a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">Abecedarios </p>
-                </div>
-                <!--img 4 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(11, 21, 66)">
-                    <a href="numeros.php"> <img class="img-responsive imgF"  src="img/inicio/Numero.png"> </a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">Números </p>
+                
+                <!-- CONTENEDOR METODO DE APRENDIZAJE-->
+                <div style="margin-top:20px"> 
+
+                    <!--img 2 -->
+                    <div class="col-lg-3 col-md-6 col-xs-6 img-rounded fondoIMG" style="background:rgb(25, 44, 61);border: 1px solid rgb(245, 242, 242);">
+                        <a href="vocales.php"> <img class="img-responsive imgF"  src="img/inicio/Vocales.png"></a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">Vocales </p>
+                    </div>
+                    <!--img 3 -->
+                    <div class="col-lg-3 col-md-6  col-xs-6 img-rounded  fondoIMG" style="background:rgb(76, 55, 54);border: 1px solid rgb(245, 242, 242);">
+                        <a href="abecedarios.php"> <img class="img-responsive imgF"  src="img/inicio/Abecedario.png"> </a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">Abecedarios </p>
+                    </div>
+                    <!--img 4 -->
+                    <div class="col-lg-3 col-md-6 col-xs-6 img-rounded  fondoIMG" style="background:rgb(11, 21, 66);border: 1px solid rgb(245, 242, 242);">
+                        <a href="numeros.php"> <img class="img-responsive imgF"  src="img/inicio/Numero.png"> </a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">Números </p>
+                    </div>
+    
+                    <!-- SEGUNDA FILA DE IMAGENES -->
+    
+                    <!--img 1 -->
+                    <div class="col-lg-3 col-md-6 col-xs-6 img-rounded  fondoIMG" style="background:rgb(20, 19, 12);border: 1px solid rgb(245, 242, 242);">
+                        <a href="colores.php"> <img class="img-responsive imgF"  src="img/inicio/Colores.png"> </a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">Colores </p>
+                    </div>
+                    <!--img 2 -->
+                    <div class="col-lg-3 col-md-6 col-xs-6 img-rounded  fondoIMG" style="background:rgb(46, 20, 3);border: 1px solid rgb(245, 242, 242);">
+                        <a href="catFrutas.php" class="img_miniatura"> <img class="img-responsive imgF"   src="img/inicio/Frutas.png"> </a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">Fruta </p>
+                    </div>
+                    <!--img 3 -->
+                    <div class="col-lg-3  col-md-6 col-xs-6 img-rounded  fondoIMG" style="background:rgb(105, 3, 3);border: 1px solid rgb(245, 242, 242);">
+                        <a href="animales.php"> <img class="img-responsive imgF"  src="img/inicio/Animales.png"> </a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">Animales </p>
+                    </div>
+    
+                    <!-- TERCERA FILA DE IMAGENES -->
+    
+                    <!--img 1 -->
+                    <div class="col-lg-3 col-md-6 col-xs-6 img-rounded  fondoIMG" style="background:rgba(55, 82, 109);border: 1px solid rgb(245, 242, 242);">
+                        <a href="escuela.php"> <img class="img-responsive imgF"   src="img/inicio/Escuela.png"> </a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">Escuela </p>
+                    </div>
+                    <!--img 2 -->
+                    <div class="col-lg-3 col-md-6 col-xs-6 img-rounded  fondoIMG" style="background:rgb(10, 59, 27);border: 1px solid rgb(245, 242, 242);">
+                        <a href="cuerpoHumano.php"> <img class="img-responsive imgF"  src="img/inicio/CuerpoHumano.png"> </a>
+                        <p style="text-align:center; color:honeydew; font-size:14px">El Cuerpo Humano </p>
+                    </div>
                 </div>
 
-                <!-- SEGUNDA FILA DE IMAGENES -->
-
-                <!--img 1 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(20, 19, 12)">
-                    <a href="colores.php"> <img class="img-responsive imgF"  src="img/inicio/Colores.png"> </a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">Colores </p>
-                </div>
-                <!--img 2 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(46, 20, 3)">
-                    <a href="catFrutas.php" class="img_miniatura"> <img class="img-responsive imgF"   src="img/inicio/Frutas.png"> </a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">Fruta </p>
-                </div>
-                <!--img 3 -->
-                <div class="col-lg-3  col-md-6 col-xs-6 fondoIMG" style="background:rgb(105, 3, 3)">
-                    <a href="animales.php"> <img class="img-responsive imgF"  src="img/inicio/Animales.png"> </a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">Animales </p>
-                </div>
-
-                <!-- TERCERA FILA DE IMAGENES -->
-
-                <!--img 1 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgba(55, 82, 109)">
-                    <a href="escuela.php"> <img class="img-responsive imgF"   src="img/inicio/Escuela.png"> </a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">Escuela </p>
-                </div>
-                <!--img 2 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG" style="background:rgb(10, 59, 27)">
-                    <a href="cuerpoHumano.php"> <img class="img-responsive imgF"  src="img/inicio/CuerpoHumano.png"> </a>
-                    <p style="text-align:center; color:honeydew; font-size:14px">El Cuerpo Humano </p>
-                </div>
             </aside>
-            <!--PERFIL -->
+            <!--ESPACIO LATERAL DERECHO -->
             <div class="col-lg-4 fondo_perfil">
-                <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background:rgb(25, 44, 61)">
+                <!--PERFIL -->
+                <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" >
                     <a> <img class="img-responsive imgF img-rounded"  style="margin-top:5px" src="img/maestro.png"></a>                    
-                    <p style="text-align:center; color:honeydew; font-size:14px;text-transform: uppercase"> <b> <?php echo $_SESSION['u_usuario'] ?></b> </p>  
+                    <p style="text-align:center; font-size:14px;text-transform: uppercase"> <b> <?php echo $_SESSION['u_usuario'] ?></b> </p>  
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" style="background: #ffffff"> <br>
+                <!--BOTONES de ACCIONES -->
+                <div class="col-lg-6 col-md-6 col-xs-6 fondoBotonesAcciones" style="background: #ffffff"> <br>
                     <!--BOTONES -->
                     <a href="RegistrarAlumnos/misAlumnos.php" class="botonesMenu"> <button class="btn btn-info btn-block">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> &nbsp;Registrar Alumnos</button>
@@ -118,11 +126,13 @@
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span> &nbsp;Cerrar Sesión</button>
                     </a>                                             
                 </div>
+
+                <!-- ESPACIO DE TABLA DE EVALUACIONES-->
                 <div class="col-lg-12 col-md-6 col-xs-6 fondo_cursos">   
                     
                     <div class="table-responsive" style="border-radius:5px">
                         <table class="table table-striped table-bordered table-hover table-condensed">
-                            <tr><td class="fondoFilaEncabezado" colspan="2" rowspan="1" style="text-align:center">CURSOS DE EVALUACIONES</td> </tr>
+                            <tr><td class="fondoFilaEncabezado" colspan="2" rowspan="1" style="text-align:center">EVALUACIONES DE CURSOS</td> </tr>
                             <tr>
                                 <td class="fondoFilaEncabezado">CURSOS</td>
                                 <td class="fondoFilaEncabezado">COMENZAR</td>                                
@@ -180,11 +190,12 @@
                     </div>
                                                 
                 </div>
+
             </div>
 
         </div>
     </div>
-
+    <!--FOOTER -->
     <div class="footers">
         <div class="izquierda" >
             <a href="#"> <img class="img-responsive casa" src="img/casa.png" > </a> <!-- style=" height:90px;width:90px"-->

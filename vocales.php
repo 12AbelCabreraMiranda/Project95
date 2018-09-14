@@ -36,7 +36,7 @@
         </header>
     
         <div class="row cuerpo1">
-            <div class="col-md-5 col-xs-12 vocal">
+            <div class="col-md-5 col-xs-12 vocal" style="cursor:pointer" onclick="escucharVocal()">
                 <div class="tam_miniatura">
                     <p class="view_vocal" id="vocalActual">a</p>
                 </div>
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col-md-7 col-xs-12 animal">
+            <div class="col-md-7 col-xs-12 animal" style="cursor:pointer" onclick="escucharVocalAnimal()">
                 <div class="animalVocal">
                     <a href="#" > <img class="img-responsive"  src="img/vocales/abeja.png"> </a>
                 </div>
@@ -212,5 +212,6 @@
     
     </script>
     <script src="js/vocales.js" ></script>
+    <script src="js/vocal_audio.js" ></script>
 </body>
 </html>
