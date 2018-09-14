@@ -78,7 +78,9 @@
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
                         <input type="image" class="img-responsive" src="../img/incorrecto.png"> 
                         <!--BOTON SIGUIENTE-->
-                        <a href="#"> <button onclick="NextForm2()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <center>
+                        <a href="#"> <button onclick="NextForm2()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center>
                     </div>         
                 </div>
 
@@ -87,7 +89,9 @@
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
                         <input type="image" class="img-responsive" src="../img/incorrecto.png"> 
                         <!--BOTON SIGUIENTE-->
-                        <a href="#"> <button onclick="NextForm3()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <center>
+                        <a href="#"> <button onclick="NextForm3()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center>
                     </div>         
                 </div>
 
@@ -96,7 +100,9 @@
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
                         <input type="image" class="img-responsive" src="../img/incorrecto.png"> 
                         <!--BOTON SIGUIENTE-->
-                        <a href="#"> <button onclick="NextForm4()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <center>
+                        <a href="#"> <button onclick="NextForm4()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center>
                     </div>         
                 </div>
 
@@ -105,7 +111,9 @@
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
                         <input type="image" class="img-responsive" src="../img/incorrecto.png"> 
                         <!--BOTON SIGUIENTE-->
-                        <a href="#"> <button onclick="NextForm5()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <center>
+                        <a href="#"> <button onclick="NextForm5()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center>
                     </div>         
                 </div>
 
@@ -128,7 +136,9 @@
                 <div class="row" id="mostrar_correcto">
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
                         <input type="image" class="img-responsive" src="../img/correcto.png"> 
-                        <a href="#"> <button  onclick="siguienteForm()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <center>
+                        <a href="#"> <button  onclick="siguienteForm()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center>
                     </div>         
                 </div>
 
@@ -136,15 +146,19 @@
                 <div class="row" id="mostrar_correcto2">
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
                         <input type="image" class="img-responsive" src="../img/correcto.png"> 
-                        <a href="#"> <button  onclick="siguienteForm3()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <center> 
+                        <a href="#"> <button  onclick="siguienteForm3()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center>
                     </div>         
                 </div>
 
                 <!--IMAGEN CORRECTO 3-->
                 <div class="row" id="mostrar_correcto3">
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
-                        <input type="image" class="img-responsive" src="../img/correcto.png"> 
-                        <a href="#"> <button  onclick="siguienteForm4()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <input type="image" class="img-responsive" src="../img/correcto.png">
+                        <center> 
+                        <a href="#"> <button  onclick="siguienteForm4()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center> 
                     </div>         
                 </div>
 
@@ -152,7 +166,9 @@
                 <div class="row" id="mostrar_correcto4">
                     <div class="col-lg-3 col-lg-offset-4" style="height: 380px">                                                
                         <input type="image" class="img-responsive" src="../img/correcto.png"> 
-                        <a href="#"> <button  onclick="siguienteForm5()" class="btn btn-block btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        <center>
+                        <a href="#"> <button  onclick="siguienteForm5()" class="btn btn-warning "> <img class="img-responsive dedo" src="../img/siguiente.png"></button>  </a>                                                                                                                            
+                        </center> 
                     </div>         
                 </div>
 
@@ -174,11 +190,11 @@
 
 
                 <!-- .................RESPUESTE DE LA BASE DE DATOS SI TODO FUE EXITOSAMENTE................... -->
-                <center>
+                <!--<center>
                     <div id="respuesta">
-                        <!-- Aqui muestra el resultado si fue exito en la base de datos-->
+                        <!- Aqui muestra el resultado si fue exito en la base de datos->
                     </div>
-                </center>
+                </center>-->
                 
                 <div class="row" id="fondo_puntos" >
                     <div class="col-lg-3 col-lg-offset-4 text-center " id="estilo_puntos" style="height: 300px"> 
@@ -234,7 +250,7 @@
                     <!--kaki va la lista --> 
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
-                            <p class="nombre_alumno2" style="text-align:center"></p>                            
+                            <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 style="text-align:center; color:black">cual es la letra M</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
@@ -270,7 +286,7 @@
                     <!--kaki va la lista --> 
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
-                            <p class="nombre_alumno2" style="text-align:center"></p>                            
+                            <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 style="text-align:center; color:black">cual es la letra J</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
@@ -307,7 +323,7 @@
                     <!--kaki va la lista --> 
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
-                            <p class="nombre_alumno2" style="text-align:center"></p>                            
+                            <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 style="text-align:center; color:black">cual es la letra F</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
@@ -344,7 +360,7 @@
                     <!--kaki va la lista --> 
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
-                            <p class="nombre_alumno2" style="text-align:center"></p>                            
+                            <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 style="text-align:center; color:black">cual es la letra C</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
