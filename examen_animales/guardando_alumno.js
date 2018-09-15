@@ -2,6 +2,13 @@ $(document).ready(function(){
     $("#guardarEstudiante").submit(guardando_alumno)
     function guardando_alumno(evento){
         evento.preventDefault()
+
+        // AUDIO AUTOMATICO
+        setTimeout(function(){
+            var audio = document.getElementById("audio1");               
+            audio.play();
+        },2000); // 2000ms = 3s	
+
         //alert("funciona");
         var datos = new FormData($("#guardarEstudiante")[0])
         $(".nombre_alumno").html("<img src='../img/cargando.gif' style='height:80px'> ")

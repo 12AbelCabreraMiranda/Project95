@@ -129,6 +129,7 @@ function guardando_alumno(){
     $('#form2').show();
     $('.nombre_alumno').hide();   
     $('#guardarEstudiante').hide(); 
+
 }
 
 // BOTON DE IMAGEN CORRECTO
@@ -136,6 +137,12 @@ function siguienteForm(){
     $('#form3').show();
     $('#mostrar_correcto').hide();
     $('#respuesta').hide();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio2");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 
 // INCORRECTOS
@@ -146,6 +153,12 @@ function incorrecto1(){
 function NextForm2(){
     $('#incorrecto1').hide();
     $('#form3').show();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio2");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 
 
@@ -154,6 +167,12 @@ function siguienteForm3(){
     $('#form4').show();
     $('#mostrar_correcto2').hide();
     $('#respuesta').hide();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio3");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 
 // INCORRECTOS
@@ -164,12 +183,24 @@ function incorrecto2(){
 function NextForm3(){
     $('#incorrecto2').hide();
     $('#form4').show();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio3");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 //  -----------FUNCIONES PARA LA tercera VALIDACION DEL FORMULARIO CON IMAGENES ---------------
 function siguienteForm4(){
     $('#form5').show();
     $('#mostrar_correcto3').hide();
     $('#respuesta').hide();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio4");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 //INCORRECTOS
 function incorrecto3(){
@@ -179,6 +210,12 @@ function incorrecto3(){
 function NextForm4(){
     $('#incorrecto3').hide();
     $('#form5').show();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio4");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 
 //  -----------FUNCIONES PARA LA cuarta VALIDACION DEL FORMULARIO CON IMAGENES ---------------
@@ -186,6 +223,12 @@ function siguienteForm5(){
     $('#form6').show();
     $('#mostrar_correcto4').hide();
     $('#respuesta').hide();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio5");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 function incorrecto4(){
     $('#incorrecto4').show();
@@ -194,6 +237,12 @@ function incorrecto4(){
 function NextForm5(){
     $('#incorrecto4').hide();
     $('#form6').show();
+
+    // AUDIO AUTOMATICO
+    setTimeout(function(){
+        var audio = document.getElementById("audio5");               
+        audio.play();
+    },2000); // 2000ms = 3s
 }
 //  -----------FUNCIONES PARA LA quinta VALIDACION DEL FORMULARIO CON IMAGENES ------CORRECTO---------
 $("#form_puntos_correctos").submit(siguienteForm6)
