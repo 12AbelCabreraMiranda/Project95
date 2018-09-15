@@ -1000,6 +1000,6 @@
     
     </script>
 
-  <script src="audio.js" ></script>
+  <script src="js/audios/frutasAcidas_audios.js" ></script>
 </body>
 </html>

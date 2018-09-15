@@ -36,9 +36,9 @@
         </header>
     
         <div class="row cuerpo1">
-            <div class="col-md-5 col-xs-12 vocal" style="cursor:pointer" onclick="escucharVocal()">
+            <div class="col-md-5 col-xs-12 vocal"  onclick="escucharVocal()">
                 <div class="tam_miniatura">
-                    <p class="view_vocal" id="vocalActual">a</p>
+                    <p class="view_vocal" id="vocalActual" style="cursor:pointer">a</p>
                 </div>
                 <!-- VOCAL CENTRO -->
                 <div class="espacioVocales">
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="col-md-7 col-xs-12 animal" style="cursor:pointer" onclick="escucharVocalAnimal()">
+            <div class="col-md-7 col-xs-12 animal"  onclick="escucharVocalAnimal()">
                 <div class="animalVocal">
                     <a href="#" > <img class="img-responsive"  src="img/vocales/abeja.png"> </a>
                 </div>
@@ -76,7 +76,7 @@
         }            
        
         //INICIALIZACION
-        $(".espacioVocales").html("<a href='#' > <img class='img-responsive' src='img/vocales/a.png'> </a>");
+        $(".espacioVocales").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive' src='img/vocales/a.png'> </a>");
         //INICIO DE CONDICIONES PARA IR CAMBIANDO IMAGENES
        
         function sigVocal(){ 
@@ -90,7 +90,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive' src='img/vocales/e.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/elefante.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -104,7 +104,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/i.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive' src='img/vocales/i.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/iguana.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -118,7 +118,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/o.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive' src='img/vocales/o.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img  class='img-responsive' src='img/vocales/oso.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -132,7 +132,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/u.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive' src='img/vocales/u.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/urraca.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -150,7 +150,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/a.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive' src='img/vocales/a.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/abeja.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -164,7 +164,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/e.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive' src='img/vocales/e.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/elefante.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -178,7 +178,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/i.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive' src='img/vocales/i.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img  class='img-responsive' src='img/vocales/iguana.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -192,7 +192,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".espacioVocales").html("<a href='#'> <img class='img-responsive' src='img/vocales/o.png'> </a>");
+                        $(".espacioVocales").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive' src='img/vocales/o.png'> </a>");
                         $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/oso.png'> </a>");                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
@@ -211,7 +211,6 @@
 
     
     </script>
-    <script src="js/vocales.js" ></script>
-    <script src="js/vocal_audio.js" ></script>
+    <script src="js/audios/vocales_audios.js" ></script>
 </body>
 </html>

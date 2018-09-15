@@ -116,7 +116,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/ciruela.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/ciruela.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/durazno.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -133,7 +133,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/durazno.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/durazno.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/fresa.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -150,7 +150,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/fresa.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/fresa.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/guanaba.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -167,7 +167,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/guanaba.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/guanaba.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/lima.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -184,7 +184,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/lima.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/lima.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/limon.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -201,7 +201,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/limon.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/limon.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mandarina.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -218,7 +218,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mandarina.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mandarina.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/maranion.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -235,7 +235,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/maranion.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/maranion.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mora.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -252,7 +252,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mora.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz11.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mora.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/naranja.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -269,7 +269,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/naranja.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz12.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/naranja.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pataxte.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -286,7 +286,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pataxte.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz13.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pataxte.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pinia.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -303,7 +303,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pinia.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz14.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pinia.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/tamarindo.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -320,7 +320,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/tamarindo.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz15.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/tamarindo.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/uva.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -337,7 +337,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/uva.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz16.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/uva.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("");                        
                         //$("#cambiar").html(frutNex);                      
@@ -375,7 +375,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/cereza.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/cereza.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/ciruela.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -392,7 +392,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/ciruela.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/ciruela.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/durazno.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -409,7 +409,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/durazno.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/durazno.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/fresa.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -426,7 +426,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/fresa.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/fresa.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/guanaba.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -443,7 +443,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/guanaba.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/guanaba.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/lima.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -460,7 +460,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/lima.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/lima.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/limon.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -477,7 +477,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/limon.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/limon.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mandarina.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -494,7 +494,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mandarina.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mandarina.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/maranion.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -511,7 +511,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/maranion.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/maranion.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mora.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -528,7 +528,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mora.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz11.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/mora.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/naranja.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -545,7 +545,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/naranja.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz12.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/naranja.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pataxte.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -562,7 +562,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pataxte.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz13.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pataxte.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pinia.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -579,7 +579,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pinia.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz14.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/pinia.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/tamarindo.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -596,7 +596,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/tamarindo.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz15.play()'> <img class='img-responsive img-circle' src='img/frutas/fruta_acida/tamarindo.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/frutas/fruta_acida/uva.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -625,6 +625,6 @@
     
     </script>
 
-  <script src="audio.js" ></script>
+  <script src="js/audios/frutasAcidas_audio.js" ></script>
 </body>
 </html>

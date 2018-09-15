@@ -116,7 +116,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/cuaderno.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/Escuela/cuaderno.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/lapiz.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -133,7 +133,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/lapiz.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/Escuela/lapiz.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/maestra.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -150,7 +150,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/maestra.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/Escuela/maestra.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/mesa.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -167,7 +167,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/mesa.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/Escuela/mesa.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/mochila.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -184,7 +184,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/mochila.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/Escuela/mochila.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/pelota.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -201,7 +201,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/pelota.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/Escuela/pelota.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/pizarron.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -218,7 +218,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/pizarron.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/Escuela/pizarron.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/regla.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -235,7 +235,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/regla.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/Escuela/regla.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/sacapuntas.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -252,7 +252,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/sacapuntas.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz11.play()'> <img class='img-responsive img-circle' src='img/Escuela/sacapuntas.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/silla.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -269,7 +269,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/silla.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz12.play()'> <img class='img-responsive img-circle' src='img/Escuela/silla.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/tijera.png'> </a>");                        
                         //$("#cambiar").html(frutNex);                      
@@ -286,7 +286,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/tijera.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz13.play()'> <img class='img-responsive img-circle' src='img/Escuela/tijera.png'> </a>");
                         //SobrePone imagen View Minieatura
                         $(".siguiente").html("");                        
                         //$("#cambiar").html(frutNex);                      
@@ -324,7 +324,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/crayon.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive img-circle' src='img/Escuela/crayon.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/cuaderno.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -341,7 +341,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/cuaderno.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive img-circle' src='img/Escuela/cuaderno.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/lapiz.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -358,7 +358,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/lapiz.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive img-circle' src='img/Escuela/lapiz.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/maestra.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -375,7 +375,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/maestra.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive img-circle' src='img/Escuela/maestra.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/mesa.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -392,7 +392,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/mesa.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz6.play()'> <img class='img-responsive img-circle' src='img/Escuela/mesa.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/mochila.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -409,7 +409,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/mochila.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz7.play()'> <img class='img-responsive img-circle' src='img/Escuela/mochila.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/pelota.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -426,7 +426,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/pelota.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz8.play()'> <img class='img-responsive img-circle' src='img/Escuela/pelota.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/pizarron.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -443,7 +443,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/pizarron.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz9.play()'> <img class='img-responsive img-circle' src='img/Escuela/pizarron.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/regla.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -460,7 +460,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/regla.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz10.play()'> <img class='img-responsive img-circle' src='img/Escuela/regla.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/sacapuntas.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -477,7 +477,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/sacapuntas.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz11.play()'> <img class='img-responsive img-circle' src='img/Escuela/sacapuntas.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/silla.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -494,7 +494,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#titulos").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo CENTRO
-                        $("#fruta").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive img-circle' src='img/Escuela/silla.png'> </a>");
+                        $("#fruta").html("<a href='#' onmousedown='voz12.play()'> <img class='img-responsive img-circle' src='img/Escuela/silla.png'> </a>");
                         //SobrePone imagen View Minieatura SIGUIENTE
                         $(".siguiente").html("<a href='#' onClick='siguientes()' > <img class='img-responsive img-circle' src='img/Escuela/tijera.png'> </a>");
                         //Miniatura view ANTERIOR
@@ -520,6 +520,6 @@
     
     </script>
 
-  <script src="audio.js" ></script>
+  <script src="js/audios/escuela_audio.js" ></script>
 </body>
 </html>

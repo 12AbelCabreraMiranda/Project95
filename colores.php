@@ -43,41 +43,41 @@
 
                 <!--img 2 -->
                 
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:white;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
+                <div onmousedown='voz1.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:white;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:black; font-size:14px">Blanco </p>
                 </div>
                 <!--img 3 -->
-                <div class="col-lg-3 col-md-6  col-xs-6 fondoIMG img-rounded" style="background:blue;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
+                <div onmousedown='voz2.play()' class="col-lg-3 col-md-6  col-xs-6 fondoIMG img-rounded" style="background:blue;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Azul </p>
                 </div>
                 <!--img 4 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:red;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
+                <div onmousedown='voz3.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:red;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Rojo </p>
                 </div>
 
                 <!-- SEGUNDA FILA DE IMAGENES -->
 
                 <!--img 1 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:green;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
+                <div onmousedown='voz4.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:green;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Verde </p>
                 </div>
                 <!--img 2 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:yellow;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
+                <div onmousedown='voz5.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:yellow;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:black; font-size:14px">Amarillo </p>
                 </div>
                 <!--img 3 -->
-                <div class="col-lg-3  col-md-6 col-xs-6 fondoIMG img-rounded" style="background:black;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
+                <div onmousedown='voz6.play()' class="col-lg-3  col-md-6 col-xs-6 fondoIMG img-rounded" style="background:black;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Negro </p>
                 </div>
 
                 <!-- TERCERA FILA DE IMAGENES -->
 
                 <!--img 1 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#422020;cursor:pointer;margin-top:10px " onclick="nombreFuncion()">                    
+                <div onmousedown='voz7.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#422020;cursor:pointer;margin-top:10px " onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Café </p>
                 </div>
                 <!--img 2 -->
-                <div class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#e80b7d;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
+                <div onmousedown='voz8.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#e80b7d;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
                     <p style="text-align:center; color:honeydew; font-size:14px">Rosado </p>
                 </div>
 
@@ -101,5 +101,6 @@
         </div>
     </div>
 
+    <script src="js/audios/colores_audio.js"></script>
 </body>
 </html>

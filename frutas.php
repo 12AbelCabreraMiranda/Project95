@@ -58,7 +58,7 @@
 
                     <!-- IMAGENES CENTRO-->
                     <div id="fruta">
-                        <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"></a>
+                       <a href="#" onmousedown="voz1.play()" > <img class="img-responsive " src="img/frutas/manzana_roja.png"></a>
                     </div>                                        
                     <!-- IMAGENES VISTAS MINIATURAS SIGUIENTES-->
                     <div class="siguiente" id="siguienteP" style=" height:90px;width:90px">
@@ -464,6 +464,6 @@
     
     </script>
 
-  <script src="audio.js" ></script>
+  <script src="js/audios/frutasDulces_audios.js" ></script>
 </body>
 </html>
