@@ -22,3 +22,17 @@ voz6.src = "../audio/vocales/respuestacorrecta.mp3";
 
 var voz7= new Audio();
 voz7.src = "../audio/vocales/eleccionequivocada.mp3";
+
+//audio 1 AUTOMATICO
+/*
+function guardando_alumno(){
+
+    setTimeout(function(){
+        //alert("Han pasado los tres segundos");
+                var audio = document.getElementById("audio");   
+        
+        audio.play();
+    },5000); // 3000ms = 3s
+}   
+*/
+

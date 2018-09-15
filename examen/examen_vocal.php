@@ -56,6 +56,25 @@
         <!-- FILA DE CUERPO DE IMAGENES-->
 
         <div class="row" style="margin-top:100px">
+            <!-- AUDIOS-->
+            <audio style="display: none" id="audio1" controls>
+                <source type="audio/mp3" src="../audio/vocales/cualeslaletra_a.mp3">
+            </audio>
+            <audio style="display: none" id="audio2" controls>
+                <source type="audio/mp3" src="../audio/vocales/cualeslaletra_e.mp3">
+            </audio>
+            <audio style="display: none" id="audio3" controls>
+                <source type="audio/mp3" src="../audio/vocales/cualeslaletra_i.mp3">
+            </audio>
+            <audio style="display: none" id="audio4" controls>
+                <source type="audio/mp3" src="../audio/vocales/cualeslaletra_o.mp3">
+            </audio>
+            <audio style="display: none" id="audio5" controls>
+                <source type="audio/mp3" src="../audio/vocales/cualeslaletra_u.mp3">
+            </audio>
+
+
+
             <!--CUERPO DE IMAGENES-->
             <aside class="col-lg-12 " style="background:white; height:500px">
                 <!--FORM PARA GUARDAR EL ESTUDIANTE PARA LA EVALUACIÓN-->
