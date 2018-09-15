@@ -37,7 +37,11 @@
             <div class="col-md-5 col-xs-12 vocal" style="cursor:pointer" onclick="nombreFuncion()">
                
                 <!-- VOCAL CENTRO -->
+                
                 <div class="espacioVocales">
+                    <audio style="display: none" id="audio" controls>
+                        <source type="audio/mp3" src="audio/numeros/cero.mp3">
+                    </audio>
                     <p id="numActual">0</p>
                 </div>
 
@@ -60,6 +64,10 @@
     </div>
         <!-- funciones de JavaScript, Squery y Json-->
     <script>
+
+        var audio = document.getElementById("audio");   
+        audio.play();
+
         $(function(){
             listar();
         });
@@ -74,9 +82,9 @@
         //INICIALIZACION
         //$(".espacioVocales").html("<a href='#' > <img class='img-responsive' src='img/vocales/a.png'> </a>");
         //INICIO DE CONDICIONES PARA IR CAMBIANDO IMAGENES
-       
+        voz1.play(); 
         function sigNumero(){ 
-            var num = document.getElementById("numActual").innerHTML ; //obtengo el valor del texto de la etiqueta para se comparado                                                        
+            var num = $("#numActual").html(); //obtengo el valor del texto de la etiqueta para se comparado                                                        
            //NUMERO 1        
            if(num==0){
                 for(var i in productos.data){                                          
@@ -86,7 +94,9 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/uno.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz12.play()' > <img class='img-responsive' src='img/numero/uno.jpg'> </a>");  
+                        voz2.play();  
+                                          
                     }                                       
                 }                                                                                                                                  
             }
@@ -99,7 +109,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz13.play()'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");  
+                        voz3.play();                      
                     }                                       
                 }                                                                                                                                  
             }            
@@ -112,7 +123,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz14.play()'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");  
+                        voz4.play();                       
                     }                                       
                 }                                                                                                                                  
             }
@@ -125,7 +137,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz15.play()'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");
+                        voz5.play();                         
                     }                                       
                 }                                                                                                                                  
             } 
@@ -138,7 +151,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz16.play()'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
+                        voz6.play(); 
                     }                                       
                 }                                                                                                                                  
             }  
@@ -151,7 +165,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz17.play()'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
+                        voz7.play(); 
                     }                                       
                 }                                                                                                                                  
             }
@@ -164,7 +179,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz18.play()'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
+                        voz8.play(); 
                     }                                       
                 }                                                                                                                                  
             }  
@@ -177,7 +193,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz19.play()'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
+                        voz9.play(); 
                     }                                       
                 }                                                                                                                                  
             }
@@ -190,7 +207,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz20.play()'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
+                        voz10.play(); 
                     }                                       
                 }                                                                                                                                  
             }  
@@ -203,12 +221,15 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/diez.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz21.play()'> <img class='img-responsive' src='img/numero/diez.jpg'> </a>"); 
+                        voz11.play();                        
                     }                                       
                 }                                                                                                                                  
             }
 
         }    
+
+
         function antNumero(){ 
             var num = document.getElementById("numActual").innerHTML ; //obtengo el valor del texto de la etiqueta para se comparado                                                        
            //NUMERO 0        
@@ -220,7 +241,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("");                        
+                        $(".animalVocal").html("");   
+                        voz1.play();                      
                     }                                       
                 }                                                                                                                                  
             }
@@ -233,7 +255,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/uno.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz12.play()'> <img class='img-responsive' src='img/numero/uno.jpg'> </a>");
+                        voz2.play();                         
                     }                                       
                 }                                                                                                                                  
             }            
@@ -246,7 +269,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz13.play()'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");                        
+                        voz3.play(); 
                     }                                       
                 }                                                                                                                                  
             }
@@ -259,7 +283,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz14.play()'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");                        
+                        voz4.play(); 
                     }                                       
                 }                                                                                                                                  
             } 
@@ -272,7 +297,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz15.play()'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");                        
+                        voz5.play(); 
                     }                                       
                 }                                                                                                                                  
             }  
@@ -285,7 +311,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz16.play()'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
+                        voz6.play(); 
                     }                                       
                 }                                                                                                                                  
             }
@@ -298,7 +325,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz17.play()'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
+                        voz7.play(); 
                     }                                       
                 }                                                                                                                                  
             }  
@@ -311,7 +339,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz18.play()'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
+                        voz8.play(); 
                     }                                       
                 }                                                                                                                                  
             }
@@ -324,7 +353,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz19.play()'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
+                        voz9.play(); 
                     }                                       
                 }                                                                                                                                  
             }  
@@ -337,7 +367,8 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
+                        $(".animalVocal").html("<a href='#' onmousedown='voz20.play()'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
+                        voz10.play(); 
                     }                                       
                 }                                                                                                                                  
             }
@@ -355,6 +386,6 @@
 
     
     </script>
-    <script src="js/vocales.js" ></script>
+    <script src="js/audios/numero_audio.js"></script>
 </body>
 </html>
