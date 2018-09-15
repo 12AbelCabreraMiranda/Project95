@@ -38,6 +38,9 @@
         <div class="row cuerpo1">
             <div class="col-md-5 col-xs-12 vocal"  onclick="escucharVocal()">
                 <div class="tam_miniatura">
+                    <audio style="display: none" id="audio" controls>
+                        <source type="audio/mp3" src="audio/vocales/a.mp3">
+                    </audio>
                     <p class="view_vocal" id="vocalActual" style="cursor:pointer">a</p>
                 </div>
                 <!-- VOCAL CENTRO -->
@@ -57,13 +60,16 @@
 
             <div class="col-md-7 col-xs-12 animal"  onclick="escucharVocalAnimal()">
                 <div class="animalVocal">
-                    <a href="#" > <img class="img-responsive"  src="img/vocales/abeja.png"> </a>
+                    <a href="#" onmousedown='vozz1.play()'> <img class="img-responsive"  src="img/vocales/abeja.png"> </a>
                 </div>
             </div>
         </div>        
     </div>
         <!-- funciones de JavaScript, Squery y Json-->
     <script>
+        var audio = document.getElementById("audio");   
+        audio.play();
+
         $(function(){
             listar();
         });
@@ -91,7 +97,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive' src='img/vocales/e.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/elefante.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz2.play()'> <img class='img-responsive' src='img/vocales/elefante.png'> </a>"); 
+                        voz2.play();                                                                    
                     }                                                                                                 
                 }                                                                                                                                  
             } 
@@ -105,7 +112,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive' src='img/vocales/i.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/iguana.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz3.play()'> <img class='img-responsive' src='img/vocales/iguana.png'> </a>");   
+                        voz3.play();                                                                  
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -119,7 +127,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive' src='img/vocales/o.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img  class='img-responsive' src='img/vocales/oso.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz4.play()'> <img  class='img-responsive' src='img/vocales/oso.png'> </a>");
+                        voz4.play();                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -133,7 +142,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz5.play()'> <img class='img-responsive' src='img/vocales/u.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/urraca.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz5.play()'> <img class='img-responsive' src='img/vocales/urraca.png'> </a>");
+                        voz5.play();                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -151,7 +161,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz1.play()'> <img class='img-responsive' src='img/vocales/a.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/abeja.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz1.play()'> <img class='img-responsive' src='img/vocales/abeja.png'> </a>"); 
+                        voz1.play();                                                                     
                     }                                                                                                 
                 }                                                                                                                                  
             } 
@@ -165,7 +176,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz2.play()'> <img class='img-responsive' src='img/vocales/e.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/elefante.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz2.play()'> <img class='img-responsive' src='img/vocales/elefante.png'> </a>");
+                        voz2.play();                                                                      
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -179,7 +191,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz3.play()'> <img class='img-responsive' src='img/vocales/i.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img  class='img-responsive' src='img/vocales/iguana.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz3.play()'> <img  class='img-responsive' src='img/vocales/iguana.png'> </a>");  
+                        voz3.play();                                                                    
                     }                                                                                                 
                 }                                                                                                                                  
             }
@@ -193,7 +206,8 @@
                         $(".view_vocal").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
                         $(".espacioVocales").html("<a href='#' onmousedown='voz4.play()'> <img class='img-responsive' src='img/vocales/o.png'> </a>");
-                        $(".animalVocal").html("<a href='#'> <img class='img-responsive' src='img/vocales/oso.png'> </a>");                                                                     
+                        $(".animalVocal").html("<a href='#' onmousedown='vozz4.play()'> <img class='img-responsive' src='img/vocales/oso.png'> </a>");
+                        voz4.play();                                                                      
                     }                                                                                                 
                 }                                                                                                                                  
             }
