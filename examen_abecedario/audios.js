@@ -1,19 +1,19 @@
 // AUDIO VOCALES
 
 var voz1= new Audio();
-voz1.src = "../audio/vocales/cualeslaletra_a.mp3";
+voz1.src = "../audio/abecedarios/cualeslaletra_s.mp3";
 
 var voz2= new Audio();
-voz2.src = "../audio/vocales/cualeslaletra_e.mp3";
+voz2.src = "../audio/abecedarios/cualeslaletra_m.mp3";
 
 var voz3= new Audio();
-voz3.src = "../audio/vocales/cualeslaletra_i.mp3";
+voz3.src = "../audio/abecedarios/cualeslaletra_j.mp3";
 
 var voz4= new Audio();
-voz4.src = "../audio/vocales/cualeslaletra_o.mp3";
+voz4.src = "../audio/abecedarios/cualeslaletra_f.mp3";
 
 var voz5= new Audio();
-voz5.src = "../audio/vocales/cualeslaletra_u.mp3";
+voz5.src = "../audio/abecedarios/cualeslaletra_c.mp3";
 
 // validacion 
 
