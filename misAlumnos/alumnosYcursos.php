@@ -88,7 +88,7 @@
 
 		<!--ALERTA DE CONFIRMACION DEL DATO ELIMINADO --> 
 		
-		<div id="accion_alerta" title="Action"></div>
+		<div id="accion_alerta" title="cerrar"></div>
 		
 		
     </body>  

@@ -216,26 +216,26 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra A</h1>
+                            <h1 onmousedown='voz1.play()' style="text-align:center; color:black;cursor:pointer">cual es la letra A</h1>
                         </div>                                            
 
                         <!--img correcto -->                        
-                        <div  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
-                            <input type="image" class="img-responsive imgF" src="../img/examen/vocal/aa.png">                                                                                                                                
+                        <div onmousedown='voz6.play()' onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
+                            <input  type="image" class="img-responsive imgF" src="../img/examen/vocal/aa.png">                                                                                                                                
                         </div>                                                     
     
                         <!--img 2 -->
-                        <div onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_ACIDO.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
                         </div>
                         <!--img 3 --> 
-                        <div onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Zorro </p>
                         </div>
                         <!--img 4 -->
-                        <div onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/lapiz.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Lapiz </p>
                         </div>                                                       
@@ -252,26 +252,26 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center;font-size:27px"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra E</h1>
+                            <h1 onmousedown='voz2.play()' style="text-align:center; color:black;cursor:pointer">cual es la letra E</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
-                        <div  onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
+                        <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/examen/vocal/aa.png"> </a>                                                                                                                              
                         </div>                                                     
     
                         <!--img 2 -->
-                        <div onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/frutas/manzanaVerde.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Manzana Verde </p>
                         </div>
                         <!--img 3 CORRECTO --> 
-                        <div onClick="insertP2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz6.play()' onClick="insertP2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <input type="image" class="img-responsive imgF" src="../img/examen/vocal/ee.png">                             
                         </div>
                         <!--img 4 -->
-                        <div onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/pelota.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Pelota </p>
                         </div>                                                       
@@ -288,26 +288,26 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra i</h1>
+                            <h1 onmousedown='voz3.play()' style="text-align:center; color:black;cursor:pointer">cual es la letra i</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
-                        <div  onclick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
+                        <div onmousedown='voz7.play()'  onclick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/abecedarios/abeja.png"> </a>                                                                                                                                
                         </div>                                                     
     
                         <!--img 2 -->
-                        <div onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/abecedarios/J.png"> </a>                            
                         </div>
                         <!--img 3  --> 
-                        <div onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
+                        <div onmousedown='voz7.play()' onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/frutas/fruta_acida/uva.png"> </a>   
                             <p style="text-align:center; color:honeydew; font-size:15px">Uva </p>                          
                         </div>
                         <!--img 4 CORRECTO -->
-                        <div onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)"> 
+                        <div onmousedown='voz6.play()' onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)"> 
                             <input type="image" class="img-responsive imgF" src="../img/examen/vocal/ii.png">                          
                         </div>                                                       
                     </div>
@@ -323,27 +323,27 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra O</h1>
+                            <h1 onmousedown='voz4.play()' style="text-align:center; color:black;cursor:pointer">cual es la letra O</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
-                        <div  onclick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                         
+                        <div onmousedown='voz7.play()'  onclick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                         
                             <a href="#"> <img class="img-responsive imgF"src="../img/frutas/sandia.png"> </a> 
                             <p style="text-align:center; color:honeydew; font-size:15px">Sandía </p>                                                                                                                               
                         </div>                                                     
     
                         <!--img 2 CORRECTO-->
-                        <div onClick="inserbtP4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                     
+                        <div onmousedown='voz6.play()' onClick="inserbtP4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                     
                             <input type="image" class="img-responsive imgF" src="../img/examen/vocal/oo.png">                             
                         </div>
                         <!--img 3  --> 
-                        <div onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                             
+                        <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                             
                             <a href="#"> <img class="img-responsive imgF"src="../img/CuerpoHumano/dedo.png"> </a>  
                             <p style="text-align:center; color:honeydew; font-size:15px">Dedo </p>                          
                         </div>
                         <!--img 4 -->
-                        <div onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/animales/Mariposa.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Mariposa </p>                              
                         </div>                                                       
@@ -360,28 +360,28 @@
                     <div class="espacioFrutas" >
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
-                            <h1 style="text-align:center; color:black">cual es la letra U</h1>
+                            <h1 onmousedown='voz5.play()' style="text-align:center; color:black; cursor:pointer">cual es la letra U</h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
-                        <div  onclick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
+                        <div onmousedown='voz7.play()' onclick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/frutas/Banano.png"> </a>
                             <p style="text-align:center; color:honeydew; font-size:15px">Banano </p>                                                                                                                               
                         </div>                                                     
     
                         <!--img 2 -->
-                        <div onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
                             <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/maestra.png"> </a> 
                             <p style="text-align:center; color:honeydew; font-size:15px">Maestra </p>                           
                         </div>
                         <!--img 3  --> 
-                        <div onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
+                        <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>   
                             <p style="text-align:center; color:honeydew; font-size:15px">Zorro </p>                          
                         </div>
                         <!--img 4 CORRECTO-->
-                        <div onClick="inserbtP5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
+                        <div onmousedown='voz6.play()' onClick="inserbtP5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
                             <input type="image" class="img-responsive imgF" src="../img/examen/vocal/uu.png">                                                          
                         </div>                                                       
                     </div>
@@ -413,6 +413,7 @@
 <script  src="prueba.js">    
 </script>
 <script src="guardando_alumno.js"></script>
+<script src="audios.js"></script>
 
 </body>
 </html>
