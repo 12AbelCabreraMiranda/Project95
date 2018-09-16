@@ -25,9 +25,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="icon" href="../img/android.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css"> <!--No funciona los iconos -->
-    <script src="../js/bootstrap.min.js" ></script> 
-    <link rel="stylesheet" href="../css/estilo_inicio.css">   
-    
+    <script src="../js/bootstrap.min.js" ></script>     
     <link rel="stylesheet" href="../css/estilo_examenes.css">
     
 
@@ -422,11 +420,15 @@
             <a href="#"> <img class="img-responsive perfil" src="../img/perfil.png" style=" height:85px;width:85px"> </a>
         </div>
     </div>
+
+    <!--NO DISPONIBLE PARA MOVIL, SISTEMA EN CONTRUCCIÓN -->
     <div class="noDisponibleMovil">   
-        <p>Sistema aún no disponible para Móvil</p>     
-        <p>Sistema en Contrucción</p>
+        <p>Sistema aún no disponible para Móvil</p>    
+        <hr> 
+        <p>SITEMA EN CONSTRUCCIÓN</p>
         <a href="#"> <img class="img-responsive" src="../img/tecnologia.png"> </a>
     </div>
+    
 <script  src="prueba.js">    
 </script>
 <script src="guardando_alumno.js"></script>

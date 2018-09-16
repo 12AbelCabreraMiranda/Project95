@@ -39,10 +39,10 @@
     background:#ffffff;
     color: rgb(2, 85, 78);
   }
- .fondoBotonesAcciones{
-  border-top-right-radius: 8px;
-  height: 210px;
- }
+  .fondoBotonesAcciones{
+    border-top-right-radius: 8px;
+    height: 210px;
+  }
   .fondo_cursos{
     height:330px;
     background-color: rgb(253, 252, 252);
@@ -74,8 +74,54 @@
     margin-top: 7px;
   }
 
+}
+
+/* Medium Desktop*/
+@media (max-width: 1199px) and (min-width: 1023px){
+  .footers{
+      display: none;
   }
 
+  .fond{
+    display: none;
+  }
+  .fondo_perfil{
+    display: none;
+  }
+  .noDisponibleMovil{
+    display: show;
+    text-align: center;
+    color: rgb(211, 234, 248);
+    font-size: 23px;
+  }
+  .container-fluid{
+    display: none;
+  }
+
+}
+
+/* Tablets*/
+@media (max-width: 1024px) and (min-width: 768px){
+  .footers{
+    display: none;
+}
+
+.fond{
+  display: none;
+}
+.fondo_perfil{
+  display: none;
+}
+.noDisponibleMovil{
+  display: show;
+  text-align: center;
+  color: rgb(211, 234, 248);
+  font-size: 23px;
+}
+.container-fluid{
+  display: none;
+}
+}
 
   /* Phones*/
 @media (max-width: 767px){
@@ -102,11 +148,15 @@
   .noDisponibleMovil{
     display: show;
     text-align: center;
-    color: white;
+    color: rgb(211, 234, 248);
+    font-size: 23px;
   }
   .container-fluid{
     display: none;
   }
+  .footers{
+    display: none;
+}
 }
 
   

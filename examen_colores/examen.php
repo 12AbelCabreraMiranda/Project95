@@ -421,6 +421,15 @@
             <a href=""> <img class="img-responsive perfil" src="../img/perfil.png" style=" height:85px;width:85px"> </a>
         </div>
     </div>
+
+    <!--NO DISPONIBLE PARA MOVIL, SISTEMA EN CONTRUCCIÓN -->
+    <div class="noDisponibleMovil">   
+        <p>Sistema aún no disponible para Móvil</p>    
+        <hr> 
+        <p>SITEMA EN CONSTRUCCIÓN</p>
+        <a href="#"> <img class="img-responsive" src="../img/tecnologia.png"> </a>
+    </div>
+
 <script  src="prueba.js">    
 </script>
 <script src="guardando_alumno.js"></script>

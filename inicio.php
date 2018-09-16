@@ -211,10 +211,16 @@
         </div>
     </div>
 
+
+    <!--NO DISPONIBLE PARA MOVIL, SISTEMA EN CONTRUCCIÓN -->
     <div class="noDisponibleMovil">   
         <p>Sistema aún no disponible para Móvil</p>     
-        <p>Sistema en Contrucción</p>
+        <hr> 
+        <p>SITEMA EN CONSTRUCCIÓN</p>
         <a href="#"> <img class="img-responsive" src="img/tecnologia.png"> </a>
+        <a href="login/cerrar_sesion.php" class="botonesMenu"><button class="btn btn-danger btn-block"> 
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span> &nbsp;Cerrar Sesión</button>
+        </a> 
     </div>
 
 </body>
