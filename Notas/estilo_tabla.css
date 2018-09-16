@@ -1,7 +1,7 @@
 /* Large Desktop*/
 @media (min-width:1200px){
     div.navegacion{
-      background-color: #000000; 
+      background-color: #023e72; 
         height: 60px; 
     }
     
@@ -9,9 +9,12 @@
       height: 500px;;
       }
     #tituloINICIO{
+      margin-top: 9px;
       font-size:15px; 
       text-align:center; 
-      color:honeydew
+      color:honeydew;
+      font-weight: bold;
+      font-size: 28px;
     }
     .fondo_perfil{
       height: 500px;

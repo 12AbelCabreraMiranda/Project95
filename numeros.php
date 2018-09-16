@@ -8,7 +8,7 @@
     <link rel="icon" href="img/android.png">
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!--No funciona los iconos -->
     <script src="js/bootstrap.min.js" ></script>
-    <link rel="stylesheet" href="css/numero.css">
+    <link rel="stylesheet" href="css/numero.css">    
     <script src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
@@ -30,7 +30,7 @@
                     <img src="img/inicio.png" class="img-responsive">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Aprendiendo los Números”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces" >“Aprendiendo los Números”</h1></div>
         </header>
     
         <div class="row cuerpo1">
@@ -47,10 +47,14 @@
 
                 <div class="botones">
                     <div class="anteriorVocal" onClick="antNumero()" > 
-                        <p><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Anterior</p>  
+                        <p>
+                            <img  src="img/atras1.png" class="sigui">&nbsp;&nbsp;&nbsp;Anterior
+                        </p> 
                     </div>
                     <div class="siguienteVocal" onClick="sigNumero()"> 
-                        <p>Siguiente&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></p> 
+                        <p>Siguiente&nbsp;&nbsp;&nbsp;
+                            <img  src="img/siguiente1.png" class="sigui">
+                        </p>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-xs-12 navegacion">
-                <h1 id="tituloINICIO">“APLICACIÓN EDUCATIVA PARA EL APRENDIZAJE DEL HABLA NIVEL DE EDUCACIÓN PRE-PRIMARIA”</h1>
+                <h1 id="tituloINICIO">Notas de Alumnos</h1>
             </div>         
         </div>
         <div class="row">

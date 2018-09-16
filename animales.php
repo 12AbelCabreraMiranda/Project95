@@ -8,8 +8,8 @@
     <script src="js/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js" ></script>        
-    <link rel="icon" href="img/android.png">
-    <link rel="stylesheet" href="css/animales.css">
+    <link rel="icon" href="img/android.png">    
+    <link rel="stylesheet" href="css/estiloFrutas.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">    
 </head>

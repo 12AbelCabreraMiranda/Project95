@@ -20,15 +20,19 @@
   .fond{
     height: 460px;;
     border-radius: 8px;
+    background:#fcfdfd;
+
     }
   .fondoMetodoAprendizaje{
     height: 500px;;
     border-radius: 8px;
     }
-  #tituloINICIO{
-    font-size:15px; 
+  #tituloINICIO{    
     text-align:center; 
-    color:honeydew
+    color:honeydew;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 23px;
   }
   /*.fondo_perfil{
     height: 540px;
@@ -73,6 +77,11 @@
   .btn{
     margin-top: 7px;
   }
+  .nombColor{
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+  }
 
 }
 
@@ -104,23 +113,23 @@
 @media (max-width: 1024px) and (min-width: 768px){
   .footers{
     display: none;
-}
+  }
 
-.fond{
-  display: none;
-}
-.fondo_perfil{
-  display: none;
-}
-.noDisponibleMovil{
-  display: show;
-  text-align: center;
-  color: rgb(211, 234, 248);
-  font-size: 23px;
-}
-.container-fluid{
-  display: none;
-}
+  .fond{
+    display: none;
+  }
+  .fondo_perfil{
+    display: none;
+  }
+  .noDisponibleMovil{
+    display: show;
+    text-align: center;
+    color: rgb(211, 234, 248);
+    font-size: 23px;
+  }
+  .container-fluid{
+    display: none;
+  }
 }
 
   /* Phones*/

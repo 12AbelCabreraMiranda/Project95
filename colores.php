@@ -32,53 +32,93 @@
                     <img src="img/inicio.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">Los Colores</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">"Conociendo Los Colores"</h1></div>
         </header>
 
         <!-- FILA DE CUERPO DE IMAGENES-->
 
         <div class="row" style="margin-top:100px">
             <!--CUERPO DE IMAGENES-->
-            <aside class="col-lg-8 fond col-lg-offset-2" style="background:#333">
+            <aside class="col-lg-8 fond col-lg-offset-2" >
 
                 <!--img 2 -->
                 
-                <div onmousedown='voz1.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:white;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:black; font-size:14px">Blanco </p>
+                <div onmousedown='voz1.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:white;cursor:pointer;margin-top:15px;border: 2px solid #2b2b2a" onclick="nombreFuncion()">                    
+                    <p style="text-align:center; color:black" class="nombColor"> Blanco </p>
+                    <center>
+                        <h1>
+                            <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
                 <!--img 3 -->
                 <div onmousedown='voz2.play()' class="col-lg-3 col-md-6  col-xs-6 fondoIMG img-rounded" style="background:blue;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:honeydew; font-size:14px">Azul </p>
+                    <p style="text-align:center; color:honeydew"class="nombColor">Azul </p>
+                    <center>
+                        <h1>
+                            <span style="color:white" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
                 <!--img 4 -->
-                <div onmousedown='voz3.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:red;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:honeydew; font-size:14px">Rojo </p>
+                <div onmousedown='voz3.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#e20022;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
+                    <p style="text-align:center; color:honeydew"class="nombColor">Rojo </p>
+                    <center>
+                        <h1>
+                            <span style="color:white" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
 
                 <!-- SEGUNDA FILA DE IMAGENES -->
 
                 <!--img 1 -->
-                <div onmousedown='voz4.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:green;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:honeydew; font-size:14px">Verde </p>
+                <div onmousedown='voz4.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#016d25;cursor:pointer;margin-top:15px" onclick="nombreFuncion()">                    
+                    <p style="text-align:center; color:honeydew"class="nombColor">Verde </p>
+                    <center>
+                        <h1>
+                            <span style="color:white" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
                 <!--img 2 -->
-                <div onmousedown='voz5.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:yellow;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:black; font-size:14px">Amarillo </p>
+                <div onmousedown='voz5.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#f7de00;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
+                    <p style="text-align:center; color:black"class="nombColor">Amarillo </p>
+                    <center>
+                        <h1>
+                            <span style="color:black" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
                 <!--img 3 -->
                 <div onmousedown='voz6.play()' class="col-lg-3  col-md-6 col-xs-6 fondoIMG img-rounded" style="background:black;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:honeydew; font-size:14px">Negro </p>
+                    <p style="text-align:center; color:honeydew"class="nombColor">Negro </p>
+                    <center>
+                        <h1>
+                            <span style="color:white" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
 
                 <!-- TERCERA FILA DE IMAGENES -->
 
                 <!--img 1 -->
                 <div onmousedown='voz7.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#422020;cursor:pointer;margin-top:10px " onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:honeydew; font-size:14px">Café </p>
+                    <p style="text-align:center; color:honeydew"class="nombColor">Café </p>
+                    <center>
+                        <h1>
+                            <span style="color:white" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
                 <!--img 2 -->
                 <div onmousedown='voz8.play()' class="col-lg-3 col-md-6 col-xs-6 fondoIMG img-rounded" style="background:#e80b7d;cursor:pointer;margin-top:10px" onclick="nombreFuncion()">                    
-                    <p style="text-align:center; color:honeydew; font-size:14px">Rosado </p>
+                    <p style="text-align:center; color:honeydew"class="nombColor">Rosado </p>
+                    <center>
+                        <h1>
+                            <span style="color:white" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                        </h1>
+                    </center>
                 </div>
 
             </aside>

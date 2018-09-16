@@ -16,10 +16,11 @@
     }
 
     #atras{
-        background-color: #e9b405; 
+        background-color: #023e72; 
         height: 100%; 
         width: 7%;
         float: left;
+        border-bottom: 2px solid rgb(245, 242, 242);
     }
     .iconINICIO{
         height:55px; 
@@ -32,27 +33,33 @@
     }
 
     div#encabezadoFruta{
-        background-color: #6d0b04; 
+        background-color: #11663e; 
         height: 100%; 
         float: left;
         width: 93%;
+        border-bottom: 2px solid rgb(245, 242, 242);
+
     }
     div h1#TituloFrutasDulces{
+        margin-top: 9px;
         color: white;
         text-align: center;
+        font-weight: bold;
+        font-size: 40px;
     }
 
     .cuerpo1{
         margin-top: 100px;  
     }
     .vocal{
-        background-color: rgb(255, 208, 0);
+        background-color: #023e72;
         height: 480px; 
         left: 10px;
     }
     .espacioVocales{
         text-align: center;
         font-size: 300px;   
+        color: white;
     }
 
     .animal{
@@ -73,7 +80,7 @@
     }
     .botones{
         background-color: blue;
-        height: 30px; 
+        height: 50px; 
         width: 100%;
         position: absolute;
         left: 0;
@@ -84,18 +91,26 @@
         height: 100%; 
         width: 50%;
         float: left;
-        background-color: rgb(14, 13, 13);
+        background-color: #11663e;
         cursor: pointer;
         text-align: center;
-        color: white;
+        color: white;   
+        font-weight: bold;
+        font-size: 25px;
     }
     .siguienteVocal{
         height: 100%; 
         width: 50%;
         float: left;
-        background-color: rgb(241, 232, 232);
+        background-color: #f7db04;
         cursor: pointer;
         text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .sigui{   
+        margin-top: 3px;     
+        width: 17%;
     }
     .noDisponibleMovil{
         display: none;

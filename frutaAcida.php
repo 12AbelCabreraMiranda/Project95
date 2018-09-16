@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js" ></script>
     <link rel="icon" href="img/android.png">
-    <link rel="stylesheet" href="css/fruta_acida.css">
+    <link rel="stylesheet" href="css/estiloFrutas.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>

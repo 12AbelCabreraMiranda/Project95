@@ -10,7 +10,7 @@
     <script src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/vocales.css">
     <script src="js/jquery-3.2.1.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    
     
 </head>
 <body>
@@ -32,7 +32,7 @@
                     <img src="img/inicio.png" class="img-responsive">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces" style="font-family: 'Francois One', sans-serif;">“Aprendiendo las Vocales”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Aprendiendo las Vocales”</h1></div>
         </header>
     
         <div class="row cuerpo1">
@@ -50,17 +50,21 @@
 
                 <div class="botones">
                     <div class="anteriorVocal" onClick="antVocal()" > 
-                        <p><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Anterior</p> 
+                        <p>
+                            <img  src="img/atras1.png" class="sigui">&nbsp;&nbsp;&nbsp;Anterior
+                        </p> 
                     </div>
                     <div class="siguienteVocal" onClick="sigVocal()"> 
-                        <p>Siguiente&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></p> 
+                        <p>Siguiente&nbsp;&nbsp;&nbsp;
+                            <img  src="img/siguiente1.png" class="sigui">
+                        </p> 
                     </div>
                 </div>
             </div>
-
+            <!--ESPACIO ANIMAL VOCAL -->
             <div class="col-md-7 col-xs-12 animal"  onclick="escucharVocalAnimal()">
                 <div class="animalVocal">
-                    <a href="#" onmousedown='vozz1.play()'> <img class="img-responsive"  src="img/vocales/abeja.png"> </a>
+                    <a href="#" onmousedown='vozz1.play()'> <img class="img-responsive "  src="img/vocales/abeja.png"> </a>
                 </div>
             </div>
         </div>        

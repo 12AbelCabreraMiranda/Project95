@@ -1,7 +1,7 @@
 /* Large Desktop*/
 @media (min-width:1200px){
     div.navegacion{
-      background-color: #000000; 
+      background-color: #023e72; 
         height: 60px; 
     }
     body{
@@ -11,10 +11,12 @@
     .fond{
       height: 500px;;
       }
-    #tituloINICIO{
-      font-size:15px; 
+    #tituloINICIO{     
+      margin-top: 9px; 
       text-align:center; 
-      color:honeydew
+      color:honeydew;
+      font-weight: bold;
+      font-size: 28px;
     }
 
     #datos{
