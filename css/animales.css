@@ -1,104 +1,101 @@
-*{
-    padding-top: 0;
-    margin-top: 0;
-}
-
-body{
-    background-color: rgb(116, 113, 113);
-}
-.encabez{
-    width: 100%;
-    height: 70px;
-    position: fixed;
-}
-
-#atras{
-    background-color: #e9b405; 
-    height: 100%; 
-    width: 7%;
-    float: left;
-}
-.iconINICIO{
-    height:55px; 
-    width: 55px;
-    position: absolute;
-    top: 5px;
-    left: 10px;    
-    margin: auto;
-    pointer-events: stroke;    
-}
-
-div#encabezadoFruta{
-    background-color: #6d0b04; 
-    height: 100%; 
-    float: left;
-    width: 93%;
-}
-div h1#TituloFrutasDulces{
-    color: white;
-    text-align: center;
-}
-#anterior{
-    margin-top: 150px;
-    height:200px;    
-}
-.sep{
-    margin-top: 90px;
-}
-.fondo_fruta{
-    background:rgba(2, 89, 139, 0.959);
-    height:500px;
-    border-radius: 15px;
-    /*width: 60%;*/
-    /*margin-left: 20px;*/
-}
-#siguiente{
-    margin-top: 150px;
-    height:200px; 
-}
-#fruta{
-    position: absolute;
-    top: 45px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    pointer-events: stroke;
-    height:430px; 
-    width: 430px;
-}
-
-
-#titulos{
-    padding-top: 0px;
-    color: white;
-    font-size: 40px;
-    font-family: 'Russo One', sans-serif;
-}
-.avance{
-    margin-left: 30px;
-    background:rgba(4, 119, 185, 0.959); 
-    height:500px;
-    border-radius: 15px;
-}
-
-
-.next{
-    font-size: 30px;
-    color: rgb(11, 142, 230);
-}
-.miniaturasIMG{
-    position: absolute;
-    bottom: 5px;
-    height: 50px;
-    left: 0;
-}
-table tr td{
-    width: 130px;
-    border: solid 1px #000000;
-}
 /* Large Desktop*/
 @media (min-width:1200px){
+
+    *{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    body{
+        background-color: rgb(116, 113, 113);
+    }
+    .encabez{
+        width: 100%;
+        height: 70px;
+        position: fixed;
+    }
+
+    #atras{
+        background-color: #e9b405; 
+        height: 100%; 
+        width: 7%;
+        float: left;
+    }
+    .iconINICIO{
+        height:55px; 
+        width: 55px;
+        position: absolute;
+        top: 5px;
+        left: 10px;    
+        margin: auto;
+        pointer-events: stroke;    
+    }
+
+    div#encabezadoFruta{
+        background-color: #6d0b04; 
+        height: 100%; 
+        float: left;
+        width: 93%;
+    }
+    div h1#TituloFrutasDulces{
+        color: white;
+        text-align: center;
+    }
+    #anterior{
+        margin-top: 150px;
+        height:200px;    
+    }
+    .sep{
+        margin-top: 90px;
+    }
+    .fondo_fruta{
+        background:rgba(2, 89, 139, 0.959);
+        height:500px;
+        border-radius: 15px;
+        /*width: 60%;*/
+        /*margin-left: 20px;*/
+    }
+    #siguiente{
+        margin-top: 150px;
+        height:200px; 
+    }
+    #fruta{
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        pointer-events: stroke;
+        height:430px; 
+        width: 430px;
+    }
+    #titulos{
+        padding-top: 0px;
+        color: white;
+        font-size: 40px;
+        font-family: 'Russo One', sans-serif;
+    }
+    .avance{
+        margin-left: 30px;
+        background:rgba(4, 119, 185, 0.959); 
+        height:500px;
+        border-radius: 15px;
+    }
+    .next{
+        font-size: 30px;
+        color: rgb(11, 142, 230);
+    }
+    .miniaturasIMG{
+        position: absolute;
+        bottom: 5px;
+        height: 50px;
+        left: 0;
+    }
+    table tr td{
+        width: 130px;
+        border: solid 1px #000000;
+    }
     .footers{
         display: none;
     }
@@ -111,15 +108,42 @@ table tr td{
     #anteriorP{
         display: none;
     }
+    .noDisponibleMovil{
+        display: none;
+    }
+
 }
+
 /* Medium Desktop*/
 @media (max-width: 1199px) and (min-width: 1023px){
+    .noDisponibleMovil{
+        display: show;
+        text-align: center;
+        color: rgb(5, 76, 117);
+        font-size: 23px;
+      }
+    
+    .container-fluid{
+    display: none;
+    }
 
 }
+
 /* Tablets*/
 @media (max-width: 1024px) and (min-width: 768px){
-
+    .noDisponibleMovil{
+        display: show;
+        text-align: center;
+        color: rgb(5, 76, 117);
+        font-size: 23px;
+      }
+    
+    .container-fluid{
+    display: none;
+    }
 }
+
+
 /* Phones*/
 @media (max-width: 767px){
     #anterior{
@@ -210,7 +234,7 @@ table tr td{
         display: none;
     }
 
-/*Configuracion Footer*/
+    /*Configuracion Footer*/
     .footers{
        background-color: white;
         width: 100%;
@@ -292,5 +316,15 @@ table tr td{
         margin-top: 15px;
     }
 
+    .noDisponibleMovil{
+        display: show;
+        text-align: center;
+        color: rgb(5, 76, 117);
+        font-size: 23px;
+      }
+    
+    .container-fluid{
+    display: none;
+    }
        
 }

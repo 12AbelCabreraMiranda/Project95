@@ -64,6 +64,13 @@
             </div>
         </div>        
     </div>
+    <!--NO DISPONIBLE PARA MOVIL, SISTEMA EN CONTRUCCIÓN -->
+    <div class="noDisponibleMovil">   
+        <p>Sistema aún no disponible para Móvil</p>    
+        <hr> 
+        <p>SITEMA EN CONSTRUCCIÓN</p>
+        <a href="#"> <img class="img-responsive" src="img/tecnologia.png"> </a>
+    </div>
         <!-- funciones de JavaScript, Squery y Json-->
     <script>
         var audio = document.getElementById("audio");   

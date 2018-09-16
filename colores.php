@@ -101,6 +101,15 @@
         </div>
     </div>
 
+    <!--NO DISPONIBLE PARA MOVIL, SISTEMA EN CONTRUCCIÓN -->
+    <div class="noDisponibleMovil">   
+        <p>Sistema aún no disponible para Móvil</p>    
+        <hr> 
+        <p>SITEMA EN CONSTRUCCIÓN</p>
+        <a href="#"> <img class="img-responsive" src="img/tecnologia.png"> </a>
+    </div>
+
+
     <script src="js/audios/colores_audio.js"></script>
 </body>
 </html>

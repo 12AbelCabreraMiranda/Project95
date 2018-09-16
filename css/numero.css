@@ -1,97 +1,319 @@
-*{
-    padding-top: 0;
-    margin-top: 0;
+/* Large Desktop*/
+@media (min-width:1200px){
+
+    *{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    body{
+        background-color: rgb(116, 113, 113);
+    }
+    .encabez{
+        width: 100%;
+        height: 70px;
+        position: absolute;
+    }
+
+    #atras{
+        background-color: #e9b405; 
+        height: 100%; 
+        width: 7%;
+        float: left;
+    }
+    .iconINICIO{
+        height:55px; 
+        width: 55px;
+        position: absolute;
+        top: 5px;
+        left: 10px;    
+        margin: auto;
+        pointer-events: stroke;    
+    }
+
+    div#encabezadoFruta{
+        background-color: #6d0b04; 
+        height: 100%; 
+        float: left;
+        width: 93%;
+    }
+    div h1#TituloFrutasDulces{
+        color: white;
+        text-align: center;
+    }
+
+    .cuerpo1{
+        margin-top: 100px;  
+    }
+    .vocal{
+        background-color: rgb(255, 208, 0);
+        height: 480px; 
+        left: 10px;
+    }
+    .espacioVocales{
+        text-align: center;
+        font-size: 300px;   
+    }
+
+    .animal{
+        background-color: white;
+        height: 480px; 
+        right: 10px;
+    }
+    .animalVocal{
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        pointer-events: stroke;
+        height:500px; 
+        width: 500px;  
+    }
+    .botones{
+        background-color: blue;
+        height: 30px; 
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .anteriorVocal{
+        height: 100%; 
+        width: 50%;
+        float: left;
+        background-color: rgb(14, 13, 13);
+        cursor: pointer;
+        text-align: center;
+        color: white;
+    }
+    .siguienteVocal{
+        height: 100%; 
+        width: 50%;
+        float: left;
+        background-color: rgb(241, 232, 232);
+        cursor: pointer;
+        text-align: center;
+    }
+    .noDisponibleMovil{
+        display: none;
+    }
+
 }
 
-body{
-    background-color: rgb(116, 113, 113);
-}
-.encabez{
-    width: 100%;
-    height: 70px;
-    position: absolute;
+
+/* Medium Desktop*/
+@media (max-width: 1199px) and (min-width: 1023px){
+    .noDisponibleMovil{
+        display: show;
+        text-align: center;
+        color: rgb(5, 76, 117);
+        font-size: 23px;
+      }
+    
+    .container-fluid{
+    display: none;
+    }
+
 }
 
-#atras{
-    background-color: #e9b405; 
-    height: 100%; 
-    width: 7%;
-    float: left;
-}
-.iconINICIO{
-    height:55px; 
-    width: 55px;
-    position: absolute;
-    top: 5px;
-    left: 10px;    
-    margin: auto;
-    pointer-events: stroke;    
+/* Tablets*/
+@media (max-width: 1024px) and (min-width: 768px){
+    .noDisponibleMovil{
+        display: show;
+        text-align: center;
+        color: rgb(5, 76, 117);
+        font-size: 23px;
+      }
+    
+    .container-fluid{
+    display: none;
+    }
 }
 
-div#encabezadoFruta{
-    background-color: #6d0b04; 
-    height: 100%; 
-    float: left;
-    width: 93%;
-}
-div h1#TituloFrutasDulces{
-    color: white;
-    text-align: center;
-}
+/* Phones*/
+@media (max-width: 767px){
+    #anterior{
+        display: none;
+    }
+    #siguiente{
+        display: none;
+    }
+    
+    #inicio{
+        background-color: #000000; 
+        height: 40px; 
+    }
+    .fondo_fruta{
+        background:rgb(2, 85, 78);
+        height:540px;
+        border-radius: 15px;
+        width: 100%;
+        margin-left: 0;
+    }
 
-.cuerpo1{
-    margin-top: 100px;  
-}
-.vocal{
-    background-color: rgb(255, 208, 0);
-    height: 480px; 
-    left: 10px;
-}
-.espacioVocales{
-    text-align: center;
-    font-size: 300px;   
-}
+    .iconINICIO{
+        height:40px;
+        width: 40px; 
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        right: 30px;
+        margin: auto;
+        pointer-events: stroke;    
+    }
+    div .fondoIMG{
+        height: 180px;
+    }
+    div#encabezadoFruta{
+        background-color: #000000; 
+        height: 40px;   
+    }
+    div h1#TituloFrutasDulces{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        
+    }
+    .fondo_fruta{
+        margin-top:-5px;
+    }
+    #titulos{
+        padding-top: 0px;
+        color: white;
+        font-size: 30px;
+        font-family: 'Russo One', sans-serif;
+        text-align: center;
+    }
+    #fruta{
+        position: absolute;
+        top: 250px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        pointer-events: stroke;
+        height:500px; 
+        width: auto;
+    }
+    
+    #anteriorP{
+        height:90px; 
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }
+    
+    #siguienteP{
+        height:90px; 
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }
+    .avance{
+        display: none;
+    }
 
-.animal{
-    background-color: white;
-    height: 480px; 
-    right: 10px;
-}
-.animalVocal{
-    position: absolute;
-    top: 45px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    pointer-events: stroke;
-    height:500px; 
-    width: 500px;  
-}
-.botones{
-    background-color: blue;
-    height: 30px; 
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.anteriorVocal{
-    height: 100%; 
-    width: 50%;
-    float: left;
-    background-color: rgb(14, 13, 13);
-    cursor: pointer;
-    text-align: center;
-    color: white;
-}
-.siguienteVocal{
-    height: 100%; 
-    width: 50%;
-    float: left;
-    background-color: rgb(241, 232, 232);
-    cursor: pointer;
-    text-align: center;
-}
+    /*Configuracion Footer*/
+    .footers{
+       background-color: white;
+        width: 100%;
+        height: 90px;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        color: white;
+    }
+    .izquierda{
+        width: 25%;
+        height: 100%;        
+        float: left;
+        border-top: 1px solid #333;
+        border-right: 1px solid  #333;
+    }
+    /*
+    .casa{
+        position: absolute;
+        top: 0;        
+        left: -2px;
+        bottom: 8px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+        height: ;
+    }*/
+    .centro{
+        width: 25%;
+        height: 100%;    
+        float: left;
+        border-top: 1px solid #333;
+        border-right: 1px solid #333;
+    }
+    /*
+    .test{       
+        position: absolute;
+        top: 0;        
+        left: 27%;
+        bottom: 3px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }*/
+    .derecha{
+        width: 25%;
+        height: 100%;        
+        float: left;
+        border-top: 1px solid #333;
+        border-right: 1px solid #333;
+    }
+    /*
+    .avances{
+        position: absolute;
+        top: 0;                
+        right: 28%;
+        bottom: 5px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }*/
+    .derecha2{
+        width: 25%;
+        height: 100%;        
+        float: left;
+        border-top: 1px solid #333;
+    }
+    /*
+    .perfil{
+        position: absolute;
+        top: 0;                
+        right: 11px;
+        bottom: 5px;
+        margin: auto;
+        pointer-events: stroke;
+        width: auto;
+    }*/
+    .imgF{
+        margin-top: 15px;
+    }
 
+    .noDisponibleMovil{
+        display: show;
+        text-align: center;
+        color: rgb(5, 76, 117);
+        font-size: 23px;
+      }
+    
+    .container-fluid{
+    display: none;
+    }
+       
+}
