@@ -1,4 +1,4 @@
-// AUDIO FRUTAS DULCES
+// AUDIO 
 
 var voz1= new Audio();
 voz1.src = "audio/escuela/borrador.mp3";

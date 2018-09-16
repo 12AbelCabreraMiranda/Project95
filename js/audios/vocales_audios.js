@@ -1,4 +1,4 @@
-// AUDIO VOCALES
+// AUDIO 
 
 var voz1= new Audio();
 voz1.src = "audio/vocales/a.mp3";
