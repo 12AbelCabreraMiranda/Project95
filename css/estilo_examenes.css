@@ -1,192 +1,8 @@
-*{
-    padding-top: 0;
-    margin-top: 0;
-}
-
-body{
-    background-color: rgb(116, 113, 113);
-}
-/*OCULTO LOS CHECK DE VERIFICACION   CORRECTO E INCORRECTO*/
-#mostrar_correcto{
-    display: none;
-}
-#mostrar_correcto2{
-    display: none;
-}
-#mostrar_correcto3{
-    display: none;
-}
-#mostrar_correcto4{
-    display: none;
-}
-#mostrar_correcto5{
-    display: none;
-}
-/*INCORRECTOS*/
-#incorrecto1{
-    display: none;
-}
-#incorrecto2{
-    display: none;
-}
-#incorrecto3{
-    display: none;
-}
-#incorrecto4{
-    display: none;
-}
-#incorrecto5{
-    display: none;
-}
-/* OCULTO LOS FORM de IMAGENES*/
-#form2{
-    display: show;
-}
-#form3{
-    display: show;
-}
-#form4{
-    display: show;
-}
-#form5{
-    display: show;
-}
-#form6{
-    display: show;
-}
+/* Medium Desktop*/
+@media (max-width: 1199px) and (min-width: 1023px){
 
 
-#fondo_puntos{
-    display: none;
-    margin-top: 100px;
 }
-#estilo_puntos{
-    border-radius: 10px;
-    background: rgb(13, 111, 114);
-    color: white;
-}
-.encabez{
-    width: 100%;
-    height: 70px;
-    position: fixed;
-}
-.fondo_image_vocal{
-    height: 320px;
-}
-
-
-.dedo{
-    height: 50px; 
-    /*margin-left: 35%;*/
-}
-#atras{
-    background-color: #e9b405; 
-    height: 100%; 
-    width: 7%;
-    float: left;
-}
-.iconINICIO{
-    height:55px; 
-    width: 55px;
-    position: absolute;
-    top: 5px;
-    left: 10px;    
-    margin: auto;
-    pointer-events: stroke;    
-}
-
-div#encabezadoFruta{
-    background-color: #6d0b04; 
-    height: 100%; 
-    float: left;
-    width: 93%;
-}
-div h1#TituloFrutasDulces{
-    color: white;
-    text-align: center;
-}
-#anterior{
-    margin-top: 150px;
-    height:200px;    
-}
-.sep{
-    margin-top: 90px;
-}
-.fondo_fruta{
-    background:rgba(2, 89, 139, 0.959);
-    height:500px;
-    border-radius: 15px;
-    /*width: 60%;*/
-    /*margin-left: 20px;*/
-}
-#siguiente{
-    margin-top: 150px;
-    height:200px; 
-}
-#fruta{
-    position: absolute;
-    top: 45px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    pointer-events: stroke;
-    height:430px; 
-    width: 430px;
-}
-
-
-#titulos{
-    padding-top: 0px;
-    color: white;
-    font-size: 40px;
-    font-family: 'Russo One', sans-serif;
-}
-.avance{
-    margin-left: 30px;
-    background:rgba(4, 119, 185, 0.959); 
-    height:500px;
-    border-radius: 15px;
-}
-
-
-.next{
-    font-size: 30px;
-    color: rgb(11, 142, 230);
-}
-.miniaturasIMG{
-    position: absolute;
-    bottom: 5px;
-    height: 50px;
-    left: 0;
-}
-table tr td{
-    width: 130px;
-    border: solid 1px #000000;
-}
-.vocal{
-    height: 320px;
-}
-.view_vocal{
-    margin-top: -40px;
-    font-size: 130px;
-    margin-left: 10px;
-    color: white;
-    font-weight: bold;
-    -webkit-text-stroke: 1.5px black;
-}
-.tam_miniatura{
-    background-color: red;
-    position: absolute;
-    z-index:0;
-    top: 0;
-    right: 0;
-    margin: auto;
-    pointer-events: stroke;
-    height:100px; 
-    width: 100px; 
-}
-
 /* Large Desktop*/
 @media (min-width:1200px){
     .footers{
@@ -201,9 +17,209 @@ table tr td{
     #anteriorP{
         display: none;
     }
-}
-/* Medium Desktop*/
-@media (max-width: 1199px) and (min-width: 1023px){
+
+
+    *{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    body{
+        background-color: rgb(116, 113, 113);
+    }
+    /*OCULTO LOS CHECK DE VERIFICACION   CORRECTO E INCORRECTO*/
+    #mostrar_correcto{
+        display: none;
+        margin-top: 5%;
+    }
+    #mostrar_correcto2{
+        display: none;
+        margin-top: 5%;
+    }
+    #mostrar_correcto3{
+        display: none;
+        margin-top: 5%;
+    }
+    #mostrar_correcto4{
+        display: none;
+        margin-top: 5%;
+    }
+    #mostrar_correcto5{
+        display: none;
+        margin-top: 5%;
+    }
+
+    /*INCORRECTOS*/
+    #incorrecto1{
+        display: none;
+        margin-top: 5%;
+    }
+    #incorrecto2{
+        display: none;
+        margin-top: 5%;
+    }
+    #incorrecto3{
+        display: none;
+        margin-top: 5%;
+    }
+    #incorrecto4{
+        display: none;
+        margin-top: 5%;
+    }
+    #incorrecto5{
+        display: none;
+        margin-top: 5%;
+    }
+
+    /* OCULTO LOS FORM de IMAGENES*/
+    #form2{
+        display: none;
+    }
+    #form3{
+        display: none;
+    }
+    #form4{
+        display: none;
+    }
+    #form5{
+        display: none;
+    }
+    #form6{
+        display: none;
+    }
+
+
+    #fondo_puntos{
+        display: none;
+        margin-top: 100px;
+    }
+    #estilo_puntos{
+        border-radius: 10px;
+        background: rgb(13, 111, 114);
+        color: white;
+    }
+    .encabez{
+        width: 100%;
+        height: 70px;
+        position: fixed;
+    }
+    .fondo_image_vocal{
+        height: 320px;
+    }
+
+
+    .dedo{
+        height: 50px; 
+        /*margin-left: 35%;*/
+    }
+    #atras{
+        background-color: #11663e; 
+        height: 100%; 
+        width: 7%;
+        float: left;
+    }
+    .iconINICIO{
+        height:55px; 
+        width: 55px;
+        position: absolute;
+        top: 5px;
+        left: 10px;    
+        margin: auto;
+        pointer-events: stroke;    
+    }
+
+    div#encabezadoFruta{
+        background-color: #fafafa; 
+        height: 100%; 
+        float: left;
+        width: 93%;
+    }
+    div h1#TituloFrutasDulces{
+        color: #023e72;
+        text-align: center;
+    }
+    #anterior{
+        margin-top: 150px;
+        height:200px;    
+    }
+    .sep{
+        margin-top: 90px;
+    }
+    .fondo_fruta{
+        background:rgba(2, 89, 139, 0.959);
+        height:500px;
+        border-radius: 15px;
+        /*width: 60%;*/
+        /*margin-left: 20px;*/
+    }
+    #siguiente{
+        margin-top: 150px;
+        height:200px; 
+    }
+    #fruta{
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        pointer-events: stroke;
+        height:430px; 
+        width: 430px;
+    }
+
+
+    #titulos{
+        padding-top: 0px;
+        color: white;
+        font-size: 40px;
+        font-family: 'Russo One', sans-serif;
+    }
+    .avance{
+        margin-left: 30px;
+        background:rgba(4, 119, 185, 0.959); 
+        height:500px;
+        border-radius: 15px;
+    }
+
+
+    .next{
+        font-size: 30px;
+        color: rgb(11, 142, 230);
+    }
+    .miniaturasIMG{
+        position: absolute;
+        bottom: 5px;
+        height: 50px;
+        left: 0;
+    }
+    table tr td{
+        width: 130px;
+        border: solid 1px #000000;
+    }
+    .vocal{
+        height: 320px;
+    }
+    .view_vocal{
+        margin-top: -40px;
+        font-size: 130px;
+        margin-left: 10px;
+        color: white;
+        font-weight: bold;
+        -webkit-text-stroke: 1.5px black;
+    }
+    .tam_miniatura{
+        background-color: red;
+        position: absolute;
+        z-index:0;
+        top: 0;
+        right: 0;
+        margin: auto;
+        pointer-events: stroke;
+        height:100px; 
+        width: 100px; 
+    }
+
 
 }
 /* Tablets*/
@@ -381,6 +397,8 @@ table tr td{
     .imgF{
         margin-top: 15px;
     }
-
+    .footers{
+        display: none;
+    }
        
 }

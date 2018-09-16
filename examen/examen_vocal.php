@@ -50,7 +50,7 @@
                     <img src="../img/inicio.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Vocal”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Evaluación de las Vocales”</h1></div>
         </header>
 
         <!-- FILA DE CUERPO DE IMAGENES-->
@@ -236,7 +236,7 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 onmousedown='voz1.play()' style="text-align:center; color:black;cursor:pointer">
-                                cual es la letra A &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                                Cuál es la letra A &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
                             </h1>
                         </div>                                            
 
@@ -247,18 +247,15 @@
     
                         <!--img 2 -->
                         <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_ACIDO.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Frutas Ácidas </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_ACIDO.png"> </a>                            
                         </div>
                         <!--img 3 --> 
                         <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Zorro </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>                            
                         </div>
                         <!--img 4 -->
                         <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/lapiz.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Lapiz </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/lapiz.png"> </a>                            
                         </div>                                                       
                     </div>
                 </form>
@@ -274,7 +271,7 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center;font-size:27px"></p>                            
                             <h1 onmousedown='voz2.play()' style="text-align:center; color:black;cursor:pointer">
-                                cual es la letra E &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
+                                Cuál es la letra E &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
                             </h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
@@ -286,8 +283,7 @@
     
                         <!--img 2 -->
                         <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/manzanaVerde.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Manzana Verde </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/manzanaVerde.png"> </a>                            
                         </div>
                         <!--img 3 CORRECTO --> 
                         <div onmousedown='voz6.play()' onClick="insertP2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">
@@ -295,8 +291,7 @@
                         </div>
                         <!--img 4 -->
                         <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/pelota.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Pelota </p>
+                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/pelota.png"> </a>                                                    
                         </div>                                                       
                     </div>
                 </form>
@@ -312,7 +307,7 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 onmousedown='voz3.play()' style="text-align:center; color:black;cursor:pointer">
-                                cual es la letra i &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
+                                Cuál es la letra i &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
                             </h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
@@ -328,8 +323,7 @@
                         </div>
                         <!--img 3  --> 
                         <div onmousedown='voz7.play()' onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">                            
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/fruta_acida/uva.png"> </a>   
-                            <p style="text-align:center; color:honeydew; font-size:15px">Uva </p>                          
+                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/fruta_acida/uva.png"> </a>                                                         
                         </div>
                         <!--img 4 CORRECTO -->
                         <div onmousedown='voz6.play()' onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72"> 
@@ -349,15 +343,14 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 onmousedown='voz4.play()' style="text-align:center; color:black;cursor:pointer">
-                                cual es la letra O &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
+                                Cuál es la letra O &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
                             </h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
                         <div onmousedown='voz7.play()'  onclick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:#023e72">                                                                         
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/sandia.png"> </a> 
-                            <p style="text-align:center; color:honeydew; font-size:15px">Sandía </p>                                                                                                                               
+                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/sandia.png"> </a>                                                                                                                                                           
                         </div>                                                     
     
                         <!--img 2 CORRECTO-->
@@ -366,13 +359,11 @@
                         </div>
                         <!--img 3  --> 
                         <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">                             
-                            <a href="#"> <img class="img-responsive imgF"src="../img/CuerpoHumano/dedo.png"> </a>  
-                            <p style="text-align:center; color:honeydew; font-size:15px">Dedo </p>                          
+                            <a href="#"> <img class="img-responsive imgF"src="../img/CuerpoHumano/dedo.png"> </a>                                                        
                         </div>
                         <!--img 4 -->
                         <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/Mariposa.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Mariposa </p>                              
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/Mariposa.png"> </a>                                                          
                         </div>                                                       
                     </div>
                 </form>
@@ -388,26 +379,23 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 onmousedown='voz5.play()' style="text-align:center; color:black; cursor:pointer">
-                                cual es la letra U &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
+                                Cuál es la letra U &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true">
                             </h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
                         <div onmousedown='voz7.play()' onclick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:#11663e">                                                                            
-                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/Banano.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Banano </p>                                                                                                                               
+                            <a href="#"> <img class="img-responsive imgF"src="../img/frutas/Banano.png"> </a>                                                                                                                                                          
                         </div>                                                     
     
                         <!--img 2 -->
                         <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/maestra.png"> </a> 
-                            <p style="text-align:center; color:honeydew; font-size:15px">Maestra </p>                           
+                            <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/maestra.png"> </a>                                                        
                         </div>
                         <!--img 3  --> 
                         <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">                            
-                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>   
-                            <p style="text-align:center; color:honeydew; font-size:15px">Zorro </p>                          
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/zorro.png"> </a>                                                        
                         </div>
                         <!--img 4 CORRECTO-->
                         <div onmousedown='voz6.play()' onClick="inserbtP5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">                            

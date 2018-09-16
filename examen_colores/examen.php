@@ -49,7 +49,7 @@
                     <img src="../img/inicio.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Colores”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Evaluación de los Colores”</h1></div>
         </header>
 
         <!-- FILA DE CUERPO DE IMAGENES-->
@@ -239,21 +239,19 @@
                         </div>                                                                                                                        
     
                         <!--img 2 -->
-                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/pato.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Pato </p>
+                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/pato.png"> </a>                            
                         </div>
                         <!--img CORRECTO -->                        
-                        <div onmousedown='voz6.play()'  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                
+                        <div onmousedown='voz6.play()'  onclick="insertP()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:#e0dede">                                                
                             <input type="image" class="img-responsive imgF" src="../img/colores/rojo.png">                                                                                                                                
                         </div> 
                         <!--img 3 --> 
-                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
-                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/loro.png"> </a>
-                            <p style="text-align:center; color:honeydew; font-size:15px">Loro </p>
+                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
+                            <a href="#"> <img class="img-responsive imgF"src="../img/animales/loro.png"> </a>                            
                         </div>
                         <!--img 4 -->
-                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto1()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/gris.png"> </a>                            
                         </div> 
                         
@@ -277,20 +275,20 @@
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
                         <!--img 3 CORRECTO --> 
-                        <div onmousedown='voz6.play()' onClick="insertP2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz6.play()' onClick="insertP2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#d8d6d6">
                             <input type="image" class="img-responsive imgF" src="../img/colores/verde.png">                                                                             
                         </div>
                         <!--img 1 -->                        
-                        <div onmousedown='voz7.play()'  onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
+                        <div onmousedown='voz7.play()'  onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:#bab848">                                                                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/negro.png"> </a>                                                                                                                              
                         </div>                                                     
                             
                         <!--img 2 -->
-                        <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">
                             <a href="#"> <img class="img-responsive imgF"src="../img/inicio/Numero.png"> </a>                            
                         </div>
                         <!--img 4 -->
-                        <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto2()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
                             <a href="#"> <img class="img-responsive imgF"src="../img/EXAMEN/vocal/aa.png"> </a>                            
                         </div>                                                       
                     </div>
@@ -307,27 +305,27 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 onmousedown='voz3.play()' style="text-align:center; color:black;cursor:pointer">
-                                Cual es el círculo Azul &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                                Cuál es el círculo Azul &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
                             </h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
-                        <div onmousedown='voz7.play()' onclick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
+                        <div onmousedown='voz7.play()' onclick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:#023e72">                                                                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/Escuela/tijera.png"> </a>  
                             <p style="text-align:center; color:honeydew; font-size:15px">Tijera </p>                                                                                                                               
                         </div>                                                     
     
                         <!--img 2 -->
-                        <div onmousedown='voz7.play()' onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">
                             <a href="#"> <img class="img-responsive imgF"src="../img/EXAMEN/vocal/uu.png"> </a>                                                         
                         </div>                        
                         <!--img 3  --> 
-                        <div onmousedown='voz7.play()' onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
+                        <div onmousedown='voz7.play()' onClick="incorrecto3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/frutas/FRUTA_NEUTRO.png"> </a>                                                      
                         </div>
                          <!--img 4 CORRECTO -->
-                         <div onmousedown='voz6.play()' onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)"> 
+                         <div onmousedown='voz6.play()' onClick="insertP3()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#d8d6d6"> 
                             <input type="image" class="img-responsive imgF" src="../img/colores/azul.png">                          
                         </div>   
                                                                            
@@ -345,25 +343,25 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 onmousedown='voz4.play()' style="text-align:center; color:black;cursor:pointer">
-                                Cual es el círculo Amarillo &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                                Cuál es el círculo Amarillo &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
                             </h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
                         <!--img 1 -->                        
-                        <div onmousedown='voz7.play()'  onclick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                         
+                        <div onmousedown='voz7.play()'  onclick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:#30302b">                                                                         
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/fusia.png"> </a>                                                                                                                                                           
                         </div>                                                     
                             
                         <!--img 3  --> 
-                        <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                             
+                        <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#c6c6c2">                             
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/corinto.png"> </a>                                                    
                         </div>
                         <!--img 2 CORRECTO-->
-                        <div onmousedown='voz6.play()' onClick="inserbtP4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                     
+                        <div onmousedown='voz6.play()' onClick="inserbtP4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">                     
                             <input type="image" class="img-responsive imgF" src="../img/colores/amarillo.png">                             
                         </div>
                         <!--img 4 -->
-                        <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto4()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#023e72">
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/menta.png"> </a>                                                         
                         </div>                                                       
                     </div>
@@ -380,25 +378,25 @@
                         <div> <!-- type="hidden" id="nombre_alumno"-->
                             <p class="nombre_alumno2" style="text-align:center; font-size:27px"></p>                            
                             <h1 onmousedown='voz5.play()' style="text-align:center; color:black;cursor:pointer">
-                                Cual es el círculo Blanco &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                                Cuál es el círculo Blanco &nbsp; &nbsp; <span style="color:#015c87" class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
                             </h1>
                         </div>
                         <!-- <center><div id="respuesta"></div></center> -->                      
 
                         <!--img 1 -->                        
-                        <div onmousedown='voz7.play()'  onclick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:rgb(76, 55, 54)">                                                                            
+                        <div onmousedown='voz7.play()'  onclick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal " style="background:#dddddb">                                                                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/negro.png"> </a>                                                                                                                                                          
                         </div>                                                     
                         <!--img 4 CORRECTO-->
-                        <div onmousedown='voz6.play()' onClick="inserbtP5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
+                        <div onmousedown='voz6.play()' onClick="inserbtP5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#11663e">                            
                             <input type="image" class="img-responsive imgF" src="../img/colores/blanco.png">                                                          
                         </div>  
                         <!--img 2 -->
-                        <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">
+                        <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#30302b">
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/lila.png"> </a>                                                     
                         </div>
                         <!--img 3  --> 
-                        <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:rgb(25, 44, 61)">                            
+                        <div onmousedown='voz7.play()' onClick="incorrecto5()" class="col-lg-3 col-sm-3 col-md-6 col-xs-6 fondo_image_vocal" style="background:#dddddb">                            
                             <a href="#"> <img class="img-responsive imgF"src="../img/colores/verde.png"> </a>                                                     
                         </div>
                                                                             
