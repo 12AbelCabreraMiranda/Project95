@@ -111,7 +111,7 @@
     
         <!--INICIAR SESION -->        
         <form action="validar_usu.php" method="POST"> 
-            <p>Usuario:</p>
+            <p>Usuario</p>
             <div class="field-container">
                 <i class="fa fa-envelope-o fa-lg" ></i>
                 <input REQUIRED type="text" class="field" name="nombre_usuario" placeholder="Ingresar Usuario" > <br>

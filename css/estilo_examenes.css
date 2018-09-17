@@ -146,10 +146,14 @@
         height: 100%; 
         float: left;
         width: 93%;
+        border-bottom: 4px solid #023e72;
     }
     div h1#TituloFrutasDulces{
         color: #023e72;
         text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: 9px;
     }
     #anterior{
         margin-top: 150px;

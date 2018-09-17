@@ -112,7 +112,7 @@
         <form action="guardar_usuarioNew.php" id="form-register" method="POST"> 
             <div class="columns">
                 <div class="field-container">
-                    <p>NOMBRE:</p>
+                    <p>NOMBRE</p>
                     <i class="fa fa-user-circle fa-lg" ></i>
                     <input REQUIRED name="nombre" type="text" class="field"placeholder=" Nombres" > <br>
                 </div>
@@ -127,8 +127,8 @@
 
             <p>USUARIO</p>
             <div class="field-container">
-                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-                <input REQUIRED name="usuario" type="text" class="field" placeholder="Usuario o Correo Electrónico" > <br>
+                <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
+                <input REQUIRED name="usuario" type="text" class="field" placeholder="Usuario " > <br>
             </div>
 
             <p>CONTRASEÑA</p>
