@@ -1,4 +1,5 @@
-<?php      
+<?php   
+    //session_start();     
      include("../bd/conexion.php");	
      $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");					
      $usuLogeado = $_SESSION['u_usuario'];
@@ -33,16 +34,16 @@
 			}
 		?>
 		<!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
-           <div class="container" style="width:700px;">                  
+           <div class="container" style="width:800px;">                  
                 <div class="table-responsive">    
                     <div id="employee_table">  
                           <table class="table table-bordered">  
-                               <tr>  
-                                    <th width="10%">CÓDIGO</th> 
-                                    <th width="10%">NOMBRE</th>                                        
-                                    <th width="10%">APELLIDO</th> 
-                                    <th width="10%">EDAD</th> 
-                                    <th width="10%">DETALLES</th>  
+                               <tr style="background:#17844c; color:white">  
+                                    <th style="text-align:center" width="8%">CÓDIGO</th> 
+                                    <th style="text-align:center" width="15%">NOMBRE</th>                                        
+                                    <th style="text-align:center" width="15%">APELLIDO</th> 
+                                    <th style="text-align:center" width="10%">EDAD</th> 
+                                    <th style="text-align:center" width="10%">CURSOS REALIZADOS</th>  
                                </tr>  
                                <?php  
                                while($row = mysqli_fetch_array($result))  
@@ -52,16 +53,16 @@
                                     <td><?php echo $row["codigoEstudiante"]; ?></td>
                                     <td><?php echo $row["nombre"]; ?></td>
                                     <td><?php echo $row["apellido"]; ?></td>
-                                    <td><?php echo $row["edad"]; ?></td>    
+                                    <td style="text-align:center"><?php echo $row["edad"]; ?></td>    
                                     
-                                    <td>
-                                        <button class="btn btn-success btn-sm">
-                                            <span class="badge"><?php echo $row['cant_examen_hecho'];?></span>                                        
+                                    <td style="text-align:center">
+                                        <button class="btn btn-success btn-sm view_data2" id="<?php echo $row["codigoEstudiante"]; ?>">
+                                            <span class="badge" ><?php echo $row['cant_examen_hecho'];?> </span>                                        
                                         </button>
                                         
 
                                         <button type="button" name="view" class="btn btn-info btn-sm view_data2" id="<?php echo $row["codigoEstudiante"]; ?>">
-                                            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Ver
+                                            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><b> VER </b>
                                         </button>
                                     
                                     </td>  
@@ -78,14 +79,14 @@
  <div id="dataModals" class="modal fade">  
       <div class="modal-dialog">  
            <div class="modal-content">  
-                <div class="modal-header">  
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                     <h4 class="modal-title">Employee Details</h4>  
+                <div class="modal-header" style="background:#023e72; color:white">  
+                     <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>  
+                     <h4 class="modal-title" style="text-align:center"><b> EXAMENES REALIZADOS </b></h4>  
                 </div>  
                 <div class="modal-body" id="employee_details">  
                 </div>  
                 <div class="modal-footer">  
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>  
                 </div>  
            </div>  
       </div>  

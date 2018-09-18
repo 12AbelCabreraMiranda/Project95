@@ -51,9 +51,9 @@
             $output .= '  
                     <table class="table table-bordered">  
                         <tr>  
-                            <th width="70%">Employee Name</th>  
-                            <th width="15%">Edit</th>  
-                            <th width="15%">View</th>  
+                            <th style="text-align:center" width="70%">NOMBRE DEL ESTUDIANTE</th>  
+                            <th style="text-align:center" width="15%">EDITAR</th>  
+                            <th style="text-align:center" width="15%">VISUALIZAR</th>  
                         </tr>  
             ';  
             while($row = mysqli_fetch_array($result))  
@@ -61,8 +61,18 @@
                     $output .= '  
                             <tr>  
                                 <td>' . $row["nombre"] . '</td>  
-                                <td><input type="button" name="edit" value="Edit" id="'.$row["idEstudiante"] .'" class="btn btn-info btn-xs edit_data" /></td>  
-                                <td><input type="button" name="view" value="view" id="' . $row["idEstudiante"] . '" class="btn btn-info btn-xs view_data" /></td>  
+                                <td style="text-align:center">                                    
+                                    <button type="button" name="edit" class="btn btn-warning btn-sm edit_data" id="'.$row["idEstudiante"].' ">
+                                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><b> Editar </b>
+                                    </button>
+                                </td>  
+                                
+                                <td style="text-align:center">                           
+                                    <button type="button" name="view" class="btn btn-success btn-sm view_data" id="'.$row["idEstudiante"].' ">
+                                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><b> Ver </b>
+                                    </button>
+                                </td> 
+
                             </tr>  
                     ';  
             }  

@@ -12,8 +12,8 @@
            <table class="table table-bordered">
                 <tr>
                         
-                    <th>CODIGO</th>
-                    <th>CURSOS</th>		
+                    <th style="text-align:center">CODIGO ESTUDIANTE</th>
+                    <th style="text-align:center">CURSOS EXAMINADOS</th>		
 
                 </tr>
            ';  
@@ -21,8 +21,8 @@
       {  
            $output .= '  
                 <tr>
-                    <td >'.$row["codigoEstudiante"].'</td>
-                    <td >'.$row["nombreCurso"].'</td>						
+                    <td style="text-align:center" >'.$row["codigoEstudiante"].'</td>
+                    <td style="text-align:center">'.$row["nombreCurso"].'</td>						
                 </tr> 
  
            ';  

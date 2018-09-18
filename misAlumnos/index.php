@@ -1,4 +1,6 @@
-<?php      
+<?php  
+    //  PERMITE MOSTRAR TODO LOS ESTUDIANTES CON BOTONES: UPDATE Y VIEW Y DELETE
+        
      include("../bd/conexion.php");	
      $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");					
      $usuLogeado = $_SESSION['u_usuario'];
@@ -35,16 +37,16 @@
 		<!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
            <div class="container" style="width:700px;">                  
                 <div class="table-responsive">  
-                     <div align="right">  
+                     <!-- <div align="right">  
                           <button type="button" name="add" id="add" data-toggle="modal" data-target="#add_data_Modal" class="btn btn-warning">Add</button>  
-                     </div>  
                      <br />  
+                    </div>  -->
                      <div id="employee_table">  
                           <table class="table table-bordered">  
                                <tr>  
-                                    <th width="70%">Employee Name</th>  
-                                    <th width="15%">Edit</th>  
-                                    <th width="15%">View</th>  
+                                    <th style="text-align:center" width="70%">NOMBRE DEL ESTUDIANTE</th>  
+                                    <th style="text-align:center" width="15%">EDITAR</th>  
+                                    <th style="text-align:center" width="15%">VISUALIZAR</th>  
                                </tr>  
                                <?php  
                                while($row = mysqli_fetch_array($result))  
@@ -52,8 +54,17 @@
                                ?>  
                                <tr>  
                                     <td><?php echo $row["nombre"]; ?></td>  
-                                    <td><input type="button" name="edit" value="Edit" id="<?php echo $row["idEstudiante"]; ?>" class="btn btn-info btn-xs edit_data" /></td>  
-                                    <td><input type="button" name="view" value="view" id="<?php echo $row["idEstudiante"]; ?>" class="btn btn-info btn-xs view_data" /></td>  
+                                    <td style="text-align:center">                                                                                
+                                        <button type="button" name="edit" class="btn btn-warning btn-sm edit_data" id="<?php echo $row["idEstudiante"]; ?>">
+                                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span><b> Editar </b>
+                                        </button>
+                                    </td>  
+
+                                    <td style="text-align:center">                                        
+                                        <button type="button" name="view" class="btn btn-success btn-sm view_data" id="<?php echo $row["idEstudiante"]; ?>">
+                                            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><b> Ver </b>
+                                        </button>
+                                    </td>  
                                </tr>  
                                <?php  
                                }  
@@ -67,14 +78,14 @@
  <div id="dataModal" class="modal fade">  
       <div class="modal-dialog">  
            <div class="modal-content">  
-                <div class="modal-header">  
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                     <h4 class="modal-title">Employee Details</h4>  
+                <div class="modal-header" style="background:#023e72; color:white">  
+                     <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>  
+                     <h4 style="text-align:center" class="modal-title">DATOS DEL ESTUDIANTE</h4>  
                 </div>  
                 <div class="modal-body" id="employee_detail">  
                 </div>  
                 <div class="modal-footer">  
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>  
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>  
                 </div>  
            </div>  
       </div>  
@@ -136,6 +147,7 @@
                     }  
             });  
         });  
+        
         $('#insert_form').on("submit", function(event){  
             event.preventDefault();  
             if($('#nombre').val() == "")  

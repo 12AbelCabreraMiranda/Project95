@@ -29,9 +29,9 @@ session_start();
 
 		<!-- LINK-->	                          
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
-           <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  -->
-		   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		   <link rel="stylesheet" href="bootstrap.min.css">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.min.css">
 
     </head>  
     <body>  
@@ -63,87 +63,21 @@ session_start();
             </div>
 			<!--Muestra TODO LOS ESTUDIANTES --> 
 			<div class="col-lg-6 col-lg-offset-1" id="todosALumnos" >
-                <!-- TABLA  con AJAX Y JSON-->    
-               
+                <!-- TABLA  con AJAX Y JSON-->                   
                 <?php include('index.php');?>
-
-			</div>
-			
-				<!--Muestra los datos consultados con ajax --> 
-				<div class="col-lg-10" id="datos">
-					<!-- <div class="table-responsive" id="datos"></div>-->
-					<?php include('susCursos.php');?>
-				</div> 
+			</div>			
+			<!--Muestra los datos consultados con ajax --> 
+			<div class="col-lg-10" id="datos">
+				<!-- <div class="table-responsive" id="datos"></div>-->
+				<?php include('susCursos.php');?>
+			</div> 
         </div>
 
 		<!--ALERTA DE CONFIRMACION DEL DATO ELIMINADO --> 		
-		<div id="accion_alerta" title="cerrar"></div>
-		
-
-		
+		<div id="accion_alerta" title="cerrar"></div>		
     </body>  
 </html>  
 
 
-		<!-- UPDATE -->
-
 	 
-<!-- Codigos Ajax y Json --> 
-<script>  
-$(document).ready(function(){  
-/*
-	load_data();    
-	function load_data() //ESTA FUNCION PERMITE TRAER LOS DATOS
-	{
-		$.ajax({
-			url:"datos.php",
-			method:"POST",
-			success:function(data)
-			{
-				$('#datos').html(data);
-			}
-		});
-	}	
-	
-	$('#accion_alerta').dialog({ 
-		autoOpen:false
-	});	
-	
-	$(document).on('click', '.delete', function(){
 
-		var id = $(this).attr("id");
-		var action = 'delete';
-			$.ajax({
-				url:"action.php",
-				method:"POST",
-				data:{id:id, action:action},
-				success:function(data)
-				{					
-					$('#accion_alerta').html(data);           
-					$('#accion_alerta').dialog('open');       
-					//load_data();
-				}
-			});		 		
-	});	*/
-
-/*
-	        //VISTA DE SLECCION DEALUMNOS
-		$(document).on('click', '.view_data', function(){  
-            var employee_id = $(this).attr("id");  
-            if(employee_id != '')  
-            {  
-                    $.ajax({  
-                        url:"vista_cursos.php",  
-                        method:"POST",  
-                        data:{employee_id:employee_id},  
-                        success:function(data){  
-                            $('#employee_detail').html(data);  
-                            $('#dataModal').modal('show');  
-                        }  
-                    });  
-            }            
-        });*/
-
-});  
-
-</script>
