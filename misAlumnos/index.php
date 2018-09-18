@@ -1,13 +1,23 @@
-<?php  
- 
- $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");  
- $query = "SELECT * FROM estudiante ORDER BY idEstudiante DESC";  
- $result = mysqli_query($connect, $query);  
+<?php      
+     include("../bd/conexion.php");	
+     $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");					
+     $usuLogeado = $_SESSION['u_usuario'];
+
+      //SELECCION USUARIO para extraer id del maestro logeado
+     $ids;
+     $query1 = ("SELECT id_maestroU FROM usuario where nom_usuario='$usuLogeado'");
+     $result1 = $conexion->query($query1);
+     if($row = $result1->fetch_assoc()){      
+         $ids =$row['id_maestroU'];
+     }
+      
+    $query = "SELECT * FROM estudiante WHERE id_usuario_maestro ='$ids' ORDER BY nombre asc";  
+    $result = mysqli_query($connect, $query);  
  ?>  
  <!DOCTYPE html>  
  <html>  
       <head>  
-           <title>Webslesson Tutorial | PHP Ajax Update MySQL Data Through Bootstrap Modal</title>  
+           <title>MisAlumnos</title>  
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
            <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  -->
 		   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -15,6 +25,14 @@
 
       </head>  
       <body>  
+          		<!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+		<?php // AGREGARLO EN LAS DEMAS PAGINAS PARA QUE LOS QUE ESTEN CON SESION INICIADO PUEDAN ACCEDER ELSE NOT ACCESS                			
+			if(isset($_SESSION['u_usuario'])){
+			}else{
+				header("Location: ../login/login.php");
+			}
+		?>
+		<!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
            <br /><br />  
            <div class="container" style="width:700px;">  
                 <h3 align="center">PHP Ajax Update MySQL Data Through Bootstrap Modal</h3>  
@@ -95,79 +113,79 @@
            </div>  
       </div>  
  </div>  
- <script>  
- $(document).ready(function(){  
-      $('#add').click(function(){  
-           $('#insert').val("Insert");  
-           $('#insert_form')[0].reset();  
-      });  
-      $(document).on('click', '.edit_data', function(){  
-           var employee_id = $(this).attr("id");  
-           $.ajax({  
-                url:"fetch.php",  
-                method:"POST",  
-                data:{employee_id:employee_id},  
-                dataType:"json",  
-                success:function(data){  
-                    $('#nombre').val(data.nombre);  
-                     $('#apellido').val(data.apellido);                       
-                     $('#edad').val(data.edad);  
-                     $('#codigoEstudiante').val(data.codigoEstudiante);                       
-                     $('#employee_id').val(data.idEstudiante); // data.idEstudiante (de la base de dato)
-                     $('#insert').val("Update");  
-                     $('#add_data_Modal').modal('show');  
-                }  
-           });  
-      });  
-      $('#insert_form').on("submit", function(event){  
-           event.preventDefault();  
-           if($('#nombre').val() == "")  
-           {  
-                alert("nombre is required");  
-           }  
-           else if($('#apellido').val() == '')  
-           {  
-                alert("apellido is required");  
-           }  
-           else if($('#edad').val() == '')  
-           {  
-                alert("edad is required");  
-           }  
-           else if($('#codigoEstudiante').val() == '')  
-           {  
-                alert("codigoEstudiante is required");  
-           }  
-           else  
-           {  
-                $.ajax({  
-                     url:"insert.php",  
-                     method:"POST",  
-                     data:$('#insert_form').serialize(),  
-                     beforeSend:function(){  
-                          $('#insert').val("Inserting");  
-                     },  
-                     success:function(data){  
-                          $('#insert_form')[0].reset();  
-                          $('#add_data_Modal').modal('hide');  
-                          $('#employee_table').html(data);  
-                     }  
-                });  
-           }  
-      });  
-      $(document).on('click', '.view_data', function(){  
-           var employee_id = $(this).attr("id");  
-           if(employee_id != '')  
-           {  
-                $.ajax({  
-                     url:"select.php",  
-                     method:"POST",  
-                     data:{employee_id:employee_id},  
-                     success:function(data){  
-                          $('#employee_detail').html(data);  
-                          $('#dataModal').modal('show');  
-                     }  
-                });  
-           }            
-      });  
- });  
- </script>
+    <script>  
+    $(document).ready(function(){  
+        $('#add').click(function(){  
+            $('#insert').val("Insert");  
+            $('#insert_form')[0].reset();  
+        });  
+        $(document).on('click', '.edit_data', function(){  
+            var employee_id = $(this).attr("id");  
+            $.ajax({  
+                    url:"fetch.php",  
+                    method:"POST",  
+                    data:{employee_id:employee_id},  
+                    dataType:"json",  
+                    success:function(data){  
+                        $('#nombre').val(data.nombre);  
+                        $('#apellido').val(data.apellido);                       
+                        $('#edad').val(data.edad);  
+                        $('#codigoEstudiante').val(data.codigoEstudiante);                       
+                        $('#employee_id').val(data.idEstudiante); // data.idEstudiante (de la base de dato)
+                        $('#insert').val("Update");  
+                        $('#add_data_Modal').modal('show');  
+                    }  
+            });  
+        });  
+        $('#insert_form').on("submit", function(event){  
+            event.preventDefault();  
+            if($('#nombre').val() == "")  
+            {  
+                    alert("nombre is required");  
+            }  
+            else if($('#apellido').val() == '')  
+            {  
+                    alert("apellido is required");  
+            }  
+            else if($('#edad').val() == '')  
+            {  
+                    alert("edad is required");  
+            }  
+            else if($('#codigoEstudiante').val() == '')  
+            {  
+                    alert("codigoEstudiante is required");  
+            }  
+            else  
+            {  
+                    $.ajax({  
+                        url:"insert.php",  
+                        method:"POST",  
+                        data:$('#insert_form').serialize(),  
+                        beforeSend:function(){  
+                            $('#insert').val("Inserting");  
+                        },  
+                        success:function(data){  
+                            $('#insert_form')[0].reset();  
+                            $('#add_data_Modal').modal('hide');  
+                            $('#employee_table').html(data);  
+                        }  
+                    });  
+            }  
+        });  
+        $(document).on('click', '.view_data', function(){  
+            var employee_id = $(this).attr("id");  
+            if(employee_id != '')  
+            {  
+                    $.ajax({  
+                        url:"select.php",  
+                        method:"POST",  
+                        data:{employee_id:employee_id},  
+                        success:function(data){  
+                            $('#employee_detail').html(data);  
+                            $('#dataModal').modal('show');  
+                        }  
+                    });  
+            }            
+        });  
+    });  
+    </script>
