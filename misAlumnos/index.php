@@ -33,10 +33,7 @@
 			}
 		?>
 		<!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
-           <br /><br />  
-           <div class="container" style="width:700px;">  
-                <h3 align="center">PHP Ajax Update MySQL Data Through Bootstrap Modal</h3>  
-                <br />  
+           <div class="container" style="width:700px;">                  
                 <div class="table-responsive">  
                      <div align="right">  
                           <button type="button" name="add" id="add" data-toggle="modal" data-target="#add_data_Modal" class="btn btn-warning">Add</button>  
@@ -82,6 +79,7 @@
            </div>  
       </div>  
  </div>  
+
  <div id="add_data_Modal" class="modal fade">  
       <div class="modal-dialog">  
            <div class="modal-content">  
@@ -115,6 +113,7 @@
  </div>  
     <script>  
     $(document).ready(function(){  
+        
         $('#add').click(function(){  
             $('#insert').val("Insert");  
             $('#insert_form')[0].reset();  
@@ -172,6 +171,8 @@
                     });  
             }  
         });  
+
+        //VISTA DE SLECCION DEALUMNOS
         $(document).on('click', '.view_data', function(){  
             var employee_id = $(this).attr("id");  
             if(employee_id != '')  

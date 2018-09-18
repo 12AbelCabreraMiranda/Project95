@@ -1,4 +1,20 @@
+<?php   
+session_start();   
+     include("../bd/conexion.php");	
+     $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");					
+     $usuLogeado = $_SESSION['u_usuario'];
 
+      //SELECCION USUARIO para extraer id del maestro logeado
+     $idss;
+     $query1 = ("SELECT id_maestroU FROM usuario where nom_usuario='$usuLogeado'");
+     $result1 = $conexion->query($query1);
+     if($row = $result1->fetch_assoc()){      
+         $idss =$row['id_maestroU'];
+     }
+      
+    $query = "SELECT codigoEstudiante,nombre,apellido,edad FROM mis_estudiantes_y_cursos where id_usuario_maestro ='$idss' ";  
+    $result = mysqli_query($connect, $query);  
+ ?>  
 <html>  
     <head>  
 		<title>Mis Alumnos</title>  
@@ -7,18 +23,21 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css"> 
 		<link rel="stylesheet" href="bootstrap.min.css" />
 		<link rel="stylesheet" href="estilo_tabla_misAlumnos.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="jquery.min.js"></script>  
 		<script src="jquery-ui.js"></script>	
-        <script src="alumnosCursos.js"></script>	
-        <!--  LINK para funcionaliad de ajax modal-->                   
+        <script src="alumnosCursos.js"></script>
+
+		<!-- LINK-->	                          
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+           <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  -->
+		   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		   <link rel="stylesheet" href="bootstrap.min.css">
+
     </head>  
     <body>  
 		<!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
 		<?php // AGREGARLO EN LAS DEMAS PAGINAS PARA QUE LOS QUE ESTEN CON SESION INICIADO PUEDAN ACCEDER ELSE NOT ACCESS                
-			session_start();
+			
 			if(isset($_SESSION['u_usuario'])){
 			}else{
 				header("Location: ../login/login.php");
@@ -50,11 +69,11 @@
 
 			</div>
 			
-			<!--Muestra los datos consultados con ajax --> 
-			<div class="col-lg-10">
-				<div class="table-responsive" id="datos"></div>
-
-			</div>
+				<!--Muestra los datos consultados con ajax --> 
+				<div class="col-lg-10" id="datos">
+					<!-- <div class="table-responsive" id="datos"></div>-->
+					<?php include('susCursos.php');?>
+				</div> 
         </div>
 
 		<!--ALERTA DE CONFIRMACION DEL DATO ELIMINADO --> 		
@@ -64,15 +83,16 @@
 		
     </body>  
 </html>  
+
+
 		<!-- UPDATE -->
 
 	 
 <!-- Codigos Ajax y Json --> 
 <script>  
 $(document).ready(function(){  
-
-	load_data();
-    
+/*
+	load_data();    
 	function load_data() //ESTA FUNCION PERMITE TRAER LOS DATOS
 	{
 		$.ajax({
@@ -104,7 +124,25 @@ $(document).ready(function(){
 					//load_data();
 				}
 			});		 		
-	});	
+	});	*/
+
+/*
+	        //VISTA DE SLECCION DEALUMNOS
+		$(document).on('click', '.view_data', function(){  
+            var employee_id = $(this).attr("id");  
+            if(employee_id != '')  
+            {  
+                    $.ajax({  
+                        url:"vista_cursos.php",  
+                        method:"POST",  
+                        data:{employee_id:employee_id},  
+                        success:function(data){  
+                            $('#employee_detail').html(data);  
+                            $('#dataModal').modal('show');  
+                        }  
+                    });  
+            }            
+        });*/
 
 });  
 
