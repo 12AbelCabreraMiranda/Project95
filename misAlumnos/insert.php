@@ -20,7 +20,7 @@ $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");
         apellido='$apellido',
         edad='$edad',
         codigoEstudiante='$codigo' 
-        WHERE id='".$_POST["employee_id"]."' "; 
+        WHERE idEstudiante='".$_POST["employee_id"]."' "; 
 
         $message = 'Data Updated'; 
         
@@ -60,7 +60,7 @@ $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");
         if(mysqli_query($connect, $query))  
         {  
            $output .= '<label class="text-success">' . $message . '</label>';  
-           $select_query = "SELECT * FROM estudiante ORDER BY id DESC";  
+           $select_query = "SELECT * FROM estudiante ORDER BY idEstudiante DESC";  
            $result = mysqli_query($connect, $select_query);  
            $output .= '  
                 <table class="table table-bordered">  
@@ -75,8 +75,8 @@ $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");
                 $output .= '  
                      <tr>  
                           <td>' . $row["nombre"] . '</td>  
-                          <td><input type="button" name="edit" value="Edit" id="'.$row["id"] .'" class="btn btn-info btn-xs edit_data" /></td>  
-                          <td><input type="button" name="view" value="view" id="' . $row["id"] . '" class="btn btn-info btn-xs view_data" /></td>  
+                          <td><input type="button" name="edit" value="Edit" id="'.$row["idEstudiante"] .'" class="btn btn-info btn-xs edit_data" /></td>  
+                          <td><input type="button" name="view" value="view" id="' . $row["idEstudiante"] . '" class="btn btn-info btn-xs view_data" /></td>  
                      </tr>  
                 ';  
            }  

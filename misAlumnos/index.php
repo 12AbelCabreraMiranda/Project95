@@ -1,7 +1,7 @@
 <?php  
  
  $connect = mysqli_connect("localhost", "root", "", "desarrollo_aprendizaje");  
- $query = "SELECT * FROM estudiante ORDER BY id DESC";  
+ $query = "SELECT * FROM estudiante ORDER BY idEstudiante DESC";  
  $result = mysqli_query($connect, $query);  
  ?>  
  <!DOCTYPE html>  
@@ -37,8 +37,8 @@
                                ?>  
                                <tr>  
                                     <td><?php echo $row["nombre"]; ?></td>  
-                                    <td><input type="button" name="edit" value="Edit" id="<?php echo $row["id"]; ?>" class="btn btn-info btn-xs edit_data" /></td>  
-                                    <td><input type="button" name="view" value="view" id="<?php echo $row["id"]; ?>" class="btn btn-info btn-xs view_data" /></td>  
+                                    <td><input type="button" name="edit" value="Edit" id="<?php echo $row["idEstudiante"]; ?>" class="btn btn-info btn-xs edit_data" /></td>  
+                                    <td><input type="button" name="view" value="view" id="<?php echo $row["idEstudiante"]; ?>" class="btn btn-info btn-xs view_data" /></td>  
                                </tr>  
                                <?php  
                                }  
@@ -113,7 +113,7 @@
                      $('#apellido').val(data.apellido);                       
                      $('#edad').val(data.edad);  
                      $('#codigoEstudiante').val(data.codigoEstudiante);                       
-                     $('#employee_id').val(data.id);  
+                     $('#employee_id').val(data.idEstudiante); // data.idEstudiante (de la base de dato)
                      $('#insert').val("Update");  
                      $('#add_data_Modal').modal('show');  
                 }  
