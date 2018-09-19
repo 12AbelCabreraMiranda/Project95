@@ -1,6 +1,7 @@
-alter view mis_estudiantes_y_cursos as
+-- alter view mis_estudiantes_y_cursos as
 
-select count(mis_cursos.id_estudianteA)as cant_examen_hecho, estudiante.codigoEstudiante, estudiante.nombre, estudiante.apellido,estudiante.edad, estudiante.id_usuario_maestro
+select count(mis_cursos.id_estudianteA)as cant_examen_hecho, estudiante.codigoEstudiante, estudiante.nombre, 
+estudiante.apellido,estudiante.edad, estudiante.id_usuario_maestro, estudiante.estado
 
 from mis_cursos
 inner join estudiante on estudiante.idEstudiante = mis_cursos.id_estudianteA

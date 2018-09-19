@@ -1,5 +1,6 @@
-create view escuela_puntos as
-select estudiante.id_usuario_maestro,estudiante.codigoEstudiante,estudiante.nombre,estudiante.apellido, cursos.nombreCurso, avancepuntos.puntos
+alter view escuela_puntos as
+select estudiante.id_usuario_maestro,estudiante.codigoEstudiante,estudiante.nombre,estudiante.apellido, 
+cursos.nombreCurso, avancepuntos.puntos, estudiante.estado
 
 from avancepuntos
 

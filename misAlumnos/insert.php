@@ -40,12 +40,12 @@
             $query = "  
             INSERT INTO estudiante(nombre, apellido, edad, codigoEstudiante, id_usuario_maestro)  
             VALUES('$nombre', '$apellido', '$edad', '$codigo','$ids'); ";  
-            $message = 'Data Inserted';  
+            //$message = 'Data Inserted';  
         }  
         
             if(mysqli_query($connect, $query))  
             {  
-            $output .= '<label class="text-success">' . $message . '</label>';  
+            //$output .= '<label class="text-success">' . $message . '</label>';  
             $select_query = "SELECT * FROM estudiante WHERE id_usuario_maestro ='$ids' AND estado=1 ORDER BY nombre asc";  
             $result = mysqli_query($connect, $select_query);  
             $output .= '  

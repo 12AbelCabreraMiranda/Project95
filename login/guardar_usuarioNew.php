@@ -10,6 +10,13 @@
     $establecimiento = $_POST["establecimiento"];
     $profesion = $_POST["profesion"];
 
+    //FECHA SISTEMA AL REGISTRARSE
+    ini_set('date.timezone', 'America/Guatemala');
+    $fecha_sistema = date("d-m-Y");
+    //HORA SISTEMA AL REGISTRARSE
+    ini_set('date.timezone', 'America/Guatemala');
+    $hora_sistema = date ('H:i:s', time());
+
     $usua;
     $pass;
     $query = ("SELECT nom_usuario, contrasenia FROM usuario where nom_usuario='".$usuario."'");
@@ -22,8 +29,8 @@
             window.location='registrarse.php';
         </script>";         
     }else{
-        $query2="insert into maestro (nombre, apellido, establecimiento, profesion, estado) 
-        values('$nom','$apellido','$establecimiento','$profesion',1)";
+        $query2="insert into maestro (nombre, apellido, establecimiento, profesion,fecha_registrado,hora_registrado, estado) 
+        values('$nom','$apellido','$establecimiento','$profesion','$fecha_sistema','$hora_sistema',1)";
         $resultad2= $conexion->query($query2);
 
         //SELECT MAESTRO PARA CONSEGUIR SU ID
