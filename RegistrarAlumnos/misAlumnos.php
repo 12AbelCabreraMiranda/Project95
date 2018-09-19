@@ -25,7 +25,7 @@
     <div class="container-fluid">
         <div class="row"> 
             <center>
-                <h1>Escuela Oficial Rural Mixta</h1>
+                <h1>Establecimiento Educativo</h1>
             </center>           
             <div class="col-lg-4 col-lg-offset-4 fondo_form">                
                 <center>

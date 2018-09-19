@@ -13,7 +13,7 @@
          $ids =$row['id_maestroU'];
      }
       
-    $query = "SELECT * FROM estudiante WHERE id_usuario_maestro ='$ids' ORDER BY nombre asc";  
+    $query = "SELECT * FROM estudiante WHERE id_usuario_maestro ='$ids' AND estado=1 ORDER BY nombre asc";  
     $result = mysqli_query($connect, $query);  
  ?>  
  <!DOCTYPE html>  

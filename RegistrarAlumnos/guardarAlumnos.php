@@ -8,6 +8,14 @@ session_start();
     $codigo =   $_POST["codigo"]; 
     $usuLogeado = $_SESSION['u_usuario'];
 
+    //FECHA SISTEMA AL REGISTRARSE
+    ini_set('date.timezone', 'America/Guatemala');
+    $fecha_sistema = date("d-m-Y");
+    //HORA SISTEMA AL REGISTRARSE
+    ini_set('date.timezone', 'America/Guatemala');
+    $hora_sistema = date ('H:i:s', time());
+    
+
     //SELECCION USUARIO para extraer id del maestro logeado
     $id;
     $query1 = ("SELECT id_maestroU FROM usuario where nom_usuario='$usuLogeado'");
@@ -27,8 +35,8 @@ session_start();
     }
     else{
         //INSERCION 
-        $query  = "INSERT into estudiante (nombre,apellido,edad,codigoEstudiante,id_usuario_maestro) 
-                                    VALUES('$nombre','$apellido','$edad','$codigo','$id')";
+        $query  = "INSERT into estudiante (nombre,apellido,edad,codigoEstudiante,id_usuario_maestro,fecha_registrado,hora_registrado,estado) 
+                                    VALUES('$nombre','$apellido','$edad','$codigo','$id','$fecha_sistema','$hora_sistema',1)";
         $resultado= $conexion->query($query);
 
         if($resultado){

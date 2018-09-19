@@ -46,7 +46,7 @@
             if(mysqli_query($connect, $query))  
             {  
             $output .= '<label class="text-success">' . $message . '</label>';  
-            $select_query = "SELECT * FROM estudiante WHERE id_usuario_maestro ='$ids' ORDER BY nombre asc";  
+            $select_query = "SELECT * FROM estudiante WHERE id_usuario_maestro ='$ids' AND estado=1 ORDER BY nombre asc";  
             $result = mysqli_query($connect, $select_query);  
             $output .= '  
                     <table class="table table-bordered">  

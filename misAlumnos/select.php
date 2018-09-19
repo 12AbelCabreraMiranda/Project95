@@ -17,7 +17,7 @@
       }
 
 
-      $query = "SELECT * FROM estudiante WHERE idEstudiante = '".$_POST["employee_id"]."' AND id_usuario_maestro ='$ids' ";  
+      $query = "SELECT * FROM estudiante WHERE idEstudiante = '".$_POST["employee_id"]."' AND id_usuario_maestro ='$ids'  ";  
       $result = mysqli_query($connect, $query);  
       $output .= '  
       <div class="table-responsive">  
@@ -40,6 +40,14 @@
                 <tr>  
                      <td width="30%"><label>CODIGO DEL ALUMNO</label></td>  
                      <td width="70%">'.$row["codigoEstudiante"].'</td>  
+                </tr>  
+                <tr>  
+                     <td width="30%"><label>FECHA REGISTRADO</label></td>  
+                     <td width="70%">'.$row["fecha_registrado"].'</td>  
+                </tr>  
+                <tr>  
+                     <td width="30%"><label>HORA REGISTRADO</label></td>  
+                     <td width="70%">'.$row["hora_registrado"].'</td>  
                 </tr>  
  
            ';  

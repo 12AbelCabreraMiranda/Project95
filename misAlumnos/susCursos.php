@@ -12,7 +12,7 @@
          $idss =$row['id_maestroU'];
      }
       
-    $query = "SELECT * FROM mis_estudiantes_y_cursos where id_usuario_maestro ='$idss'";  
+    $query = "SELECT * FROM mis_estudiantes_y_cursos where id_usuario_maestro ='$idss' and estado=1 ";  
     $result = mysqli_query($connect, $query);  
  ?>  
  <!DOCTYPE html>  
