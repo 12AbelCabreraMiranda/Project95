@@ -10,7 +10,7 @@
         $id =$row['id_maestroU'];
      }
 
-    $query = "select idEstudiante, nombre,codigoEstudiante from estudiante WHERE id_usuario_maestro='$id' ";
+    $query = "select idEstudiante, nombre,codigoEstudiante from estudiante WHERE id_usuario_maestro='$id' and estado=1 ";
     $resultado = $conexion->query($query);
 ?>
 
@@ -76,17 +76,20 @@
             <aside class="col-lg-12 " style="background:white; height:500px">
                 <!--FORM PARA GUARDAR EL ESTUDIANTE PARA LA EVALUACIÓN-->
                 <form action="examen.php" method="post" id="guardarEstudiante" enctype="multipart/form-data" style="margin-top:10px">                                                          
-                        <div class="col-md-12" style="color:black"> Estudiante
-                            <select name="elegir" style="color:black; width:150px; border-radius:5px"  id="id_estudiante">
-                            <?php while($row = $resultado->fetch_assoc()){  ?>
-                            <option class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
-                                <?php  echo $row['nombre']; ?> 
-                                <?php  echo $row['codigoEstudiante']; ?>
-                            </option>
-                            <?php }?>
-                            </select> 
+                    <p style="margin-left:15px">SELECCIONAR ESTUDIANTE</p> 
+                    <div class="col-md-3" style="color:black">
+                        <select name="elegir" class="form-control"  id="id_estudiante">
+                        <?php while($row = $resultado->fetch_assoc()){  ?>
+                        <option class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
+                            <?php  echo $row['nombre']; ?> 
+                            <?php  echo $row['codigoEstudiante']; ?>
+                        </option>
+                        <?php }?>
+                        </select> 
+                    </div>     
+                    <div class="col-md-2">
                             <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>
-                        </div>                        
+                    </div>                     
                 </form>                
             <!--  .................BOTONES CON IMAGENES................................................... -->
                 
