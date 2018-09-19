@@ -41,81 +41,81 @@
                     $id3 =$row['id_maestroU'];
                 }
                 // CONSULTA DE ESCUELA
-                $query4="SELECT count(avancepuntos.id_curso)as cursos_en_escuela, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query4="SELECT count(avancepuntos.id_curso)as cursos_en_escuela, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Escuela' and id_usuario_maestro='$id3'";
+                where nombreCurso='Escuela' and id_usuario_maestro='$id3' and estado=1 ";
 
                 $resultado2=$conexion->query($query4);
                 if($row1=$resultado2->fetch_assoc()) 
 
                 // CONSULTA DE VOCALES
-                $query5="SELECT count(avancepuntos.id_curso)as cursos_en_vocales, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query5="SELECT count(avancepuntos.id_curso)as cursos_en_vocales, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Vocales' and id_usuario_maestro='$id3'";
+                where nombreCurso='Vocales' and id_usuario_maestro='$id3' and estado=1";
 
                 $resultado3=$conexion->query($query5);
                 if($row3=$resultado3->fetch_assoc()) 
 
                 // CONSULTA DE ABECEDARIOS
-                $query10="SELECT count(avancepuntos.id_curso)as cursos_en_abecedarios, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query10="SELECT count(avancepuntos.id_curso)as cursos_en_abecedarios, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Abecedarios' and id_usuario_maestro='$id3'";
+                where nombreCurso='Abecedarios' and id_usuario_maestro='$id3' and estado=1 ";
 
                 $resultado10=$conexion->query($query10);
                 if($row10=$resultado10->fetch_assoc()) 
 
                 // CONSULTA DE COLORES
-                $query11="SELECT count(avancepuntos.id_curso)as cursos_en_colores, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query11="SELECT count(avancepuntos.id_curso)as cursos_en_colores, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Colores' and id_usuario_maestro='$id3'";
+                where nombreCurso='Colores' and id_usuario_maestro='$id3' and estado=1 ";
 
                 $resultado11=$conexion->query($query11);
                 if($row11=$resultado11->fetch_assoc()) 
 
                 // CONSULTA DE NÚMEROS
-                $query12="SELECT count(avancepuntos.id_curso)as cursos_en_numeros, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query12="SELECT count(avancepuntos.id_curso)as cursos_en_numeros, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Numeros' and id_usuario_maestro='$id3'";
+                where nombreCurso='Numeros' and id_usuario_maestro='$id3' and estado=1 ";
 
                 $resultado12=$conexion->query($query12);
                 if($row12=$resultado12->fetch_assoc())
 
                 // CONSULTA DE FRUTAS
-                $query13="SELECT count(avancepuntos.id_curso)as cursos_en_frutas, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query13="SELECT count(avancepuntos.id_curso)as cursos_en_frutas, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Frutas' and id_usuario_maestro='$id3'";
+                where nombreCurso='Frutas' and id_usuario_maestro='$id3' and estado=1 ";
 
                 $resultado13=$conexion->query($query13);
                 if($row13=$resultado13->fetch_assoc())
 
                 // CONSULTA DE CUERPO HUMANO
-                $query14="SELECT count(avancepuntos.id_curso)as cursos_en_cuerpoHumano, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query14="SELECT count(avancepuntos.id_curso)as cursos_en_cuerpoHumano, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Cuerpo Humano' and id_usuario_maestro='$id3'";
+                where nombreCurso='Cuerpo Humano' and id_usuario_maestro='$id3' and estado=1 ";
 
                 $resultado14=$conexion->query($query14);
                 if($row14=$resultado14->fetch_assoc())
 
                 // CONSULTA DE ANIMALES
-                $query15="SELECT count(avancepuntos.id_curso)as cursos_en_animales, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela FROM avancepuntos
+                $query15="SELECT count(avancepuntos.id_curso)as cursos_en_animales, cursos.nombreCurso, estudiante.id_usuario_maestro as maestro_escuela,estudiante.estado FROM avancepuntos
                 inner join cursos on cursos.idCursos = avancepuntos.id_curso
                 inner join estudiante on estudiante.idEstudiante = avancepuntos.id_estudiante 
             
-                where nombreCurso='Animales' and id_usuario_maestro='$id3'";
+                where nombreCurso='Animales' and id_usuario_maestro='$id3' and estado=1 ";
 
                 $resultado15=$conexion->query($query15);
                 if($row15=$resultado15->fetch_assoc())
@@ -159,7 +159,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from vocales_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from vocales_puntos WHERE id_usuario_maestro ='$id' and estado=1 ";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
@@ -197,7 +197,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from abecedarios_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from abecedarios_puntos WHERE id_usuario_maestro ='$id' and estado=1";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
@@ -235,7 +235,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from colores_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from colores_puntos WHERE id_usuario_maestro ='$id' and estado=1 ";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
@@ -273,7 +273,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from numeros_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from numeros_puntos WHERE id_usuario_maestro ='$id' and estado=1";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
@@ -311,7 +311,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from frutas_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from frutas_puntos WHERE id_usuario_maestro ='$id' and estado=1";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
@@ -349,7 +349,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from escuela_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from escuela_puntos WHERE id_usuario_maestro ='$id' and estado=1";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
@@ -387,7 +387,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from cuerpoHumano_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from cuerpoHumano_puntos WHERE id_usuario_maestro ='$id' and estado=1";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
@@ -425,7 +425,7 @@
                             $id =$row['id_maestroU'];
                         }
     
-                        $query="SELECT *from animales_puntos WHERE id_usuario_maestro ='$id' ";
+                        $query="SELECT *from animales_puntos WHERE id_usuario_maestro ='$id' and estado=1 ";
                         $resultado=$conexion->query($query);
                         while($row=$resultado->fetch_assoc()){
                         ?>  
