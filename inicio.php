@@ -108,10 +108,13 @@
                 <!--PERFIL -->
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoIMG" >
                     <a> <img class="img-responsive imgF img-rounded"  style="margin-top:5px" src="img/maestro.png"></a>                    
-                    <p style="text-align:center; font-size:14px;text-transform: uppercase"> <b> <?php echo $_SESSION['u_usuario'] ?></b> </p>  
+                    <p style="text-align:center; font-size:14px;text-transform: uppercase"> <b> <?php echo $_SESSION['u_usuario'] ?></b> </p>                   
                 </div>
                 <!--BOTONES de ACCIONES -->
                 <div class="col-lg-6 col-md-6 col-xs-6 fondoBotonesAcciones" style="background: #ffffff"> <br>
+                    <p style="text-align:center;margin-top:-12px">
+                        <a href="perfil/miPerfil.php"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> &nbsp;Mi Perfil</a> 
+                    </p>
                     <!--BOTONES -->
                     <a href="RegistrarAlumnos/misAlumnos.php" class="botonesMenu"> <button class="btn btn-info btn-block">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> &nbsp;Registrar Alumnos</button>
