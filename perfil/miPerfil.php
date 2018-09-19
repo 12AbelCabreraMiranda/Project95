@@ -14,14 +14,22 @@
     $apellido;
     $establecimiento;
     $profesion;
-    $query = "SELECT nombre, apellido,establecimiento,profesion from maestro WHERE idmaestro='$id' ";
+    $usu;
+    $query = "SELECT maestro.nombre, maestro.apellido,maestro.establecimiento,maestro.profesion, usuario.nom_usuario
+    from usuario 
+    inner join maestro on maestro.idmaestro =usuario.id_maestroU
+    WHERE idmaestro='$id' ";
+
     $resultado = $conexion->query($query);
     if($row = $resultado->fetch_assoc()){      
         $nombre =$row['nombre'];
         $apellido =$row['apellido'];
         $establecimiento =$row['establecimiento'];
         $profesion =$row['profesion'];
+        $usu =$row['nom_usuario'];
      }
+
+ 
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +42,8 @@
     <link rel="icon" href="../img/android.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css"> 
     <link rel="stylesheet" href="perfil_estilos.css">
+    <link rel="stylesheet" href="../css/estilo_inicio.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
 
 </head>
 <body>
@@ -44,73 +54,128 @@
             header("Location: login/login.php");
         }
     ?>
-    <a href="../inicio.php"> <button class="btn btn-info"> Inicio</button> </a>
-    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
-    <div class="container"><br>
+    <div class="container-fluid">
 
-    <!--EDICION DE DATOS -->
-    <div class="col-md-4 col-lg-offset-4">
-        <center><h1>Actulización de Datos</h1></center><br>
-        <!--NOMBRE -->
-        <form action="miPerfil.php" class="form-horizontal" method="post" id="form_nombre" enctype="multipart/form-data" ><!--Permite dar saltos de espacios entre filas -->
-            <div class="form-group"><!--Agrupacion -->
-                <label class="control-label ">NOMBRE:</label>
-                <div class="input-group">                       
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>             
-                    <input class="form-control" nome="nombre" id="nombre" type="text" disabled value="<?php  echo $row['nombre']; ?>" >
-                    <div class="input-group-addon" style="cursor:pointer" onclick="habilitarNombre()">
-                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                    </div>
-                </div><br>
-                <input type="button" class="btn btn-default botonGuardar" id="botonGuardarNombre" onclick="ActulizarNombre()" value="Guardar Cambios">
-                <input type="button" class="btn btn-default botonCancelar"id="botonCancelarNombre" onclick="CancelarNombre()" value="Cancelar">
-            </div>
-        </form>
-        <!--APELLIDO -->
-        <form action="miPerfil.php" class="form-horizontal" method="post" id="form_apellido" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
-            <div class="form-group"><!--Agrupacion -->
-                <label class="control-label ">APELLIDO:</label>
-                <div class="input-group">    
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>                 
-                    <input class="form-control" nome="apellido" id="apellido" type="text" disabled value="<?php  echo $row['apellido']; ?>">
-                    <div class="input-group-addon" style="cursor:pointer" onclick="habilitarApellido()">
-                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                </div><br>
-                <input type="button" class="btn btn-default botonGuardar" id="botonGuardarApellido" onclick="ActulizarApellido()" value="Guardar Cambios">
-                <input type="button" class="btn btn-default botonCancelar"id="botonCancelarApellido" onclick="CancelarApellido()" value="Cancelar">
-            </div>
-        </form>
-        <!--ESTABLECIMIENTO -->
-        <form action="miPerfil.php" class="form-horizontal" method="post" id="form_establecimiento" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
-            <div class="form-group"><!--Agrupacion -->
-                <label class="control-label ">ESTABLECIMIENTO:</label>
-                <div class="input-group">    
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-th" aria-hidden="true"></span></div>                 
-                    <input class="form-control" nome="establecimiento" id="establecimiento" type="text" disabled value="<?php  echo $row['establecimiento']; ?>">
-                    <div class="input-group-addon" style="cursor:pointer" onclick="habilitarEstablecimiento()">
-                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                </div><br>
-                <input type="button" class="btn btn-default botonGuardar" id="botonGuardarEstablecimiento" onclick="ActulizarEstablecimiento()" value="Guardar Cambios">
-                <input type="button" class="btn btn-default botonCancelar"id="botonCancelarEstablecimiento" onclick="CancelarEstablecimiento()" value="Cancelar">
-            </div>
-        </form>
-        <!--PROFESION -->
-        <form action="miPerfil.php" class="form-horizontal" method="post" id="form_profesion" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
-            <div class="form-group"><!--Agrupacion -->
-                <label class="control-label ">PROFESION:</label>
-                <div class="input-group">    
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> </div>                 
-                    <input class="form-control" nome="profesion" id="profesion" type="text" disabled value="<?php  echo $row['profesion']; ?>">
-                    <div class="input-group-addon" style="cursor:pointer" onclick="habilitarProfesion()">
-                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                </div><br>
-                <input type="button" class="btn btn-default botonGuardar" id="botonGuardarProfesion" onclick="ActulizarProfesion()" value="Guardar Cambios">
-                <input type="button" class="btn btn-default botonCancelar"id="botonCancelarProfesion" onclick="CancelarProfesion()" value="Cancelar">
-            </div>
-        </form>
-
-
+        <div class="row">
+            <div class="col-md-12 col-xs-12 navegacion">
+                <h1 id="tituloINICIO">“APLICACIÓN EDUCATIVA PARA EL APRENDIZAJE DEL HABLA NIVEL DE EDUCACIÓN PRE-PRIMARIA”</h1>
+            </div>         
+        </div>
     </div>
+    <!--PERMITE REDIRECCIONARLO AL LOGIN SI NO HAY SESION INICIADA -->
+    <div class="container-fluid"><br>
+
+        <!--MI PERFLIL  -->
+        <div class="col-md-3" id="perfil">
+            <a> <img class="img-responsive imgPerfil img-rounded"  style="margin-top:5px" src="../img/maestro.png"></a>
+            <div class="datos">
+                <label class="espacio">DOCENTE:</label>
+                <p class="control-label "><?php  echo $row['nombre']; ?> <?php  echo $row['apellido']; ?></p>
+
+                <label class="espacio">MI PROFESIÓN:</label>
+                <p class="control-label "><?php echo $row['profesion']; ?></p>
+
+                <label class="espacio">MI ESTABLECIMIENTO:</label>
+                <p class="control-label "><?php echo $row['establecimiento']; ?></p>
+            </div>
+            <a href="../inicio.php"> <button class="btn btn-info btn-block"> Inicio</button> </a>
+            <button class="btn btn-warning btn-block"> Actualizar Datos</button> 
+
+        </div>
+        <!--EDICION DE DATOS -->
+        <div class="col-md-4 col-lg-offset-1">
+
+            <center><h2 id="tituloActualizarDatos">Actualización de Datos</h2></center>
+            <!--NOMBRE -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_nombre" enctype="multipart/form-data" ><!--Permite dar saltos de espacios entre filas -->
+                <div class="form-group"><!--Agrupacion -->
+                    <label class="control-label ">NOMBRE:</label>
+                    <div class="input-group">                       
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>             
+                        <input class="form-control" nome="nombre" id="nombre" type="text" disabled value="<?php  echo $row['nombre']; ?>" >
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarNombre()">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                        </div>
+                    </div><br>
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarNombre" onclick="ActulizarNombre()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarNombre" onclick="CancelarNombre()" value="Cancelar">
+                </div>
+            </form>
+            <!--APELLIDO -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_apellido" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+                <div class="form-group"><!--Agrupacion -->
+                    <label class="control-label ">APELLIDO:</label>
+                    <div class="input-group">    
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>                 
+                        <input class="form-control" nome="apellido" id="apellido" type="text" disabled value="<?php  echo $row['apellido']; ?>">
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarApellido()">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
+                    </div><br>
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarApellido" onclick="ActulizarApellido()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarApellido" onclick="CancelarApellido()" value="Cancelar">
+                </div>
+            </form>
+            <!--ESTABLECIMIENTO -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_establecimiento" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+                <div class="form-group"><!--Agrupacion -->
+                    <label class="control-label ">ESTABLECIMIENTO:</label>
+                    <div class="input-group">    
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-th" aria-hidden="true"></span></div>                 
+                        <input class="form-control" nome="establecimiento" id="establecimiento" type="text" disabled value="<?php  echo $row['establecimiento']; ?>">
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarEstablecimiento()">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
+                    </div><br>
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarEstablecimiento" onclick="ActulizarEstablecimiento()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarEstablecimiento" onclick="CancelarEstablecimiento()" value="Cancelar">
+                </div>
+            </form>
+            <!--PROFESION -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_profesion" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+                <div class="form-group"><!--Agrupacion -->
+                    <label class="control-label ">PROFESION:</label>
+                    <div class="input-group">    
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> </div>                 
+                        <input class="form-control" nome="profesion" id="profesion" type="text" disabled value="<?php  echo $row['profesion']; ?>">
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarProfesion()">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
+                    </div><br>
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarProfesion" onclick="ActulizarProfesion()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarProfesion" onclick="CancelarProfesion()" value="Cancelar">
+                </div>
+            </form>
+
+            <!--                 ACTUALIZAR SEGURIDAD             -->
+            <center><h3 id="tituloActualizarDatos">Actualización de Seguridad</h3></center><br>
+            <!--NUEVO USUARIO -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_establecimiento" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+                <div class="form-group"><!--Agrupacion -->
+                    <label class="control-label ">NUEVO USUARIO:</label>
+                    <div class="input-group">    
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>                 
+                        <input class="form-control" nome="establecimiento" id="establecimiento" type="text" disabled value="<?php  echo $row['nom_usuario']; ?>">
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarEstablecimiento()">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
+                    </div><br>
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarEstablecimiento" onclick="ActulizarEstablecimiento()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarEstablecimiento" onclick="CancelarEstablecimiento()" value="Cancelar">
+                </div>
+            </form>
+            <!-- NUEVA CONTRASEÑA -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_profesion" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+                <div class="form-group"><!--Agrupacion -->
+                    <label class="control-label ">NUEVA CONTRASEÑA:</label>
+                    <div class="input-group">    
+                        <div class="input-group-addon"><i class="fa fa-key fa-lg" aria-hidden="true"></i> </div>                 
+                        <input class="form-control" nome="profesion" id="profesion" type="text" disabled placeholder="Ingresar Nueva Contraseña">
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarProfesion()">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
+                    </div><br>
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarProfesion" onclick="ActulizarProfesion()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarProfesion" onclick="CancelarProfesion()" value="Cancelar">
+                </div>
+            </form>
+
+        </div>
     </div>
 
    <script src="../js/jquery-3.2.1.js"></script>

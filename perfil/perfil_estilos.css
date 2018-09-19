@@ -5,3 +5,26 @@
 .botonCancelar{
     display: none;
 }
+#perfil{
+    height: 500px;
+    background-color: rgb(79, 82, 82);
+    border-radius: 10px;
+}
+.imgPerfil{
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.datos{
+    color: white;
+}
+.espacio{
+    margin-top: 10px;
+}
+#tituloActualizarDatos{
+    margin-top: -5px;
+}
