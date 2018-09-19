@@ -28,3 +28,8 @@
 #tituloActualizarDatos{
     margin-top: -5px;
 }
+.fondoFotoPerfil{
+    margin-top: 13px;
+    background: white;
+    border-radius: 10px;
+}

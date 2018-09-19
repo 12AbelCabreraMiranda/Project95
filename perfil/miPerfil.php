@@ -15,7 +15,7 @@
     $establecimiento;
     $profesion;
     $usu;
-    $query = "SELECT maestro.nombre, maestro.apellido,maestro.establecimiento,maestro.profesion, usuario.nom_usuario
+    $query="SELECT maestro.nombre, maestro.apellido,maestro.establecimiento,maestro.profesion, usuario.nom_usuario
     from usuario 
     inner join maestro on maestro.idmaestro =usuario.id_maestroU
     WHERE idmaestro='$id' ";
@@ -28,8 +28,6 @@
         $profesion =$row['profesion'];
         $usu =$row['nom_usuario'];
      }
-
- 
 ?>
 
 <!DOCTYPE html>
@@ -67,7 +65,9 @@
 
         <!--MI PERFLIL  -->
         <div class="col-md-3" id="perfil">
-            <a> <img class="img-responsive imgPerfil img-rounded"  style="margin-top:5px" src="../img/maestro.png"></a>
+            <div class="fondoFotoPerfil">
+                <a> <img class="img-responsive imgPerfil img-rounded"  style="margin-top:5px" src="../img/maestro.png"></a>                
+            </div>
             <div class="datos">
                 <label class="espacio">DOCENTE:</label>
                 <p class="control-label "><?php  echo $row['nombre']; ?> <?php  echo $row['apellido']; ?></p>
@@ -78,8 +78,8 @@
                 <label class="espacio">MI ESTABLECIMIENTO:</label>
                 <p class="control-label "><?php echo $row['establecimiento']; ?></p>
             </div>
-            <a href="../inicio.php"> <button class="btn btn-info btn-block"> Inicio</button> </a>
-            <button class="btn btn-warning btn-block"> Actualizar Datos</button> 
+            <a href="../inicio.php"> <button class="btn btn-info btn-block"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp; Inicio</button> </a>
+            <button class="btn btn-warning btn-block"> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> &nbsp;&nbsp;Actualizar Datos</button> 
 
         </div>
         <!--EDICION DE DATOS -->
@@ -147,32 +147,33 @@
             <!--                 ACTUALIZAR SEGURIDAD             -->
             <center><h3 id="tituloActualizarDatos">Actualización de Seguridad</h3></center><br>
             <!--NUEVO USUARIO -->
-            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_establecimiento" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_usuario" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
                     <label class="control-label ">NUEVO USUARIO:</label>
                     <div class="input-group">    
                         <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>                 
-                        <input class="form-control" nome="establecimiento" id="establecimiento" type="text" disabled value="<?php  echo $row['nom_usuario']; ?>">
-                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarEstablecimiento()">
+                        <input class="form-control" nome="usuario" id="usuario" type="text" disabled value="<?php  echo $row['nom_usuario']; ?>">
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarUsuario()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div><br>
-                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarEstablecimiento" onclick="ActulizarEstablecimiento()" value="Guardar Cambios">
-                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarEstablecimiento" onclick="CancelarEstablecimiento()" value="Cancelar">
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarrUsuario" onclick="ActulizarrUsuario()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarrUsuario" onclick="CancelarrUsuario()" value="Cancelar">
                 </div>
             </form>
             <!-- NUEVA CONTRASEÑA -->
-            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_profesion" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_contrasenia" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
                     <label class="control-label ">NUEVA CONTRASEÑA:</label>
                     <div class="input-group">    
                         <div class="input-group-addon"><i class="fa fa-key fa-lg" aria-hidden="true"></i> </div>                 
-                        <input class="form-control" nome="profesion" id="profesion" type="text" disabled placeholder="Ingresar Nueva Contraseña">
-                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarProfesion()">
+                        <input class="form-control" nome="contrasenia" id="contrasenia" type="password" disabled placeholder="Ingresar Nueva Contraseña">
+                        <div class="input-group-addon" style="cursor:pointer" onclick="habilitarContrasenia()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div><br>
-                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarProfesion" onclick="ActulizarProfesion()" value="Guardar Cambios">
-                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarProfesion" onclick="CancelarProfesion()" value="Cancelar">
+                    <input type="button" class="btn btn-default botonGuardar" id="botonGuardarContrasenia" onclick="ActulizarContrasenia()" value="Guardar Cambios">
+                    <input type="button" class="btn btn-default botonCancelar"id="botonCancelarContrasenia" onclick="CancelarContrasenia()" value="Cancelar">
                 </div>
+                <br><br><br>
             </form>
 
         </div>
