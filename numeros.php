@@ -42,7 +42,7 @@
                     <audio style="display: none" id="audio" controls>
                         <source type="audio/mp3" src="audio/numeros/cero.mp3">
                     </audio>
-                    <p id="numActual">0</p>
+                    <p id="numActual" style="color:#023e72">0</p>
                 <div class="espacioNumero">
                 </div>
 
