@@ -90,7 +90,7 @@
                     </div>     
                         <div class="col-md-2">                            
                             <!-- <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>-->
-                            <input type="submit" onclick="guardando_alumno()" class="btn btn-warning" value="Guardar"></input>
+                            <input type="submit" onclick="guardando_alumno()" class="btn btn-warning selec_boton" value="Guardar"></input>
                         </div>                   
                 </form>                
                 <!--  .................BOTONES CON IMAGENES................................................... -->
@@ -445,10 +445,18 @@
         <a href="#"> <img class="img-responsive" src="../img/tecnologia.png"> </a>
     </div>
     
-<script  src="prueba.js">    
-</script>
+<script  src="prueba.js">    </script>
 <script src="guardando_alumno.js"></script>
 <script src="audios.js"></script>
+
+<script>
+    if( $('#id_estudiante').val() ){
+            $('.selec_boton').show();
+        }else if( !$('#id_estudiante').val()){
+            $('.selec_boton').hide();
+
+        }
+</script>
 
 </body>
 </html>
