@@ -1,3 +1,46 @@
+$(document).ready(function(){
+    $("#form_nombre").submit(ActulizarNombre)
+    function ActulizarNombre(evento){
+        evento.preventDefault()
+        //alert("funciona registro");        
+        
+        var datos = new FormData($("#form_nombre")[0])
+        //ACCIONES 
+        var habil= document.getElementById("nombre");
+        habil.disabled=true;     
+        $('#botonGuardarNombre').hide(); 
+        $('#botonCancelarNombre').hide(); 
+
+        // ETIQUETA AUTOMATICO
+        $("#respuesta_nombre").show(); // APARECE CADA VEZ QUE HAY UPDATE Y DESPUES YA SE EJECUTA LA FUNCION DEL TIEMPO
+        setTimeout(function(){
+            $("#respuesta_nombre").hide();// SE OCULTA DESPUES DE 4 SEGUNDOS LA RESPUESTA
+        },4000); // 4000ms = 4s
+
+        $("#respuesta_nombre").html("<img src='../img/cargando.gif' style='height:30px'> ")
+          $.ajax({
+              url: 'actualizar_datos.php',
+              type: 'POST',
+              data: datos,
+              contentType: false, //se anota porque se mandarán archivos
+              processData: false,
+              success: function(datos){
+                  $("#respuesta_nombre").html(datos)
+              }
+          })
+
+          $.ajax({
+            url: 'selectMaestro.php',
+            type: 'POST',
+            data: datos,
+            contentType: false, //se anota porque se mandarán archivos
+            processData: false,
+            success: function(datos){
+                $("#nombreNuevo").html(datos)
+            }
+        })
+    }
+})
 // -------------------- FUNCION EDITAR NOMBRE ----------------------
 function habilitarNombre(){
     var habil= document.getElementById("nombre");
@@ -35,13 +78,6 @@ function habilitarNombre(){
     habil.disabled=true;     
     $('#botonGuardarContrasenia').hide(); 
     $('#botonCancelarContrasenia').hide(); 
-}
-// BOTON guardar cambios
-function ActulizarNombre(){
-    var habil= document.getElementById("nombre");
-    habil.disabled=true;     
-    $('#botonGuardarNombre').hide(); 
-    $('#botonCancelarNombre').hide();    
 }
 // BOTON cancelar
 function CancelarNombre(){
@@ -342,6 +378,9 @@ function editarDatos(){
     $('.data').show(); 
 }
 
+function cerrar(){
+    $('.data').hide();
+}
 
 
 

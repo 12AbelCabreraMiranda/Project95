@@ -42,6 +42,72 @@ form{
     background: rgba(79, 82, 82, 0.849);
     border-radius: 10px;
     color: white;
-    display: none;
+    display: show;
     position:absolute; z-index:1; /*PERMITE COLOCAR ENCIMA*/
+}
+
+/*CODIGO PARA CERRAR*/
+#fondoCerrar{
+    position:absolute; z-index:1; /*PERMITE COLOCAR ENCIMA*/
+    top: 0;    
+    right: 0;
+    margin: auto;
+    background-color:rgb(253, 253, 253);
+    height: 30px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border: rgba(79, 82, 82, 0.849) solid 1px;
+}
+#cerrar{
+    color: rgb(31, 30, 30);
+    padding: 5px;
+    font-weight: bold;
+}/*CODIGO PARA CERRAR*/
+
+.portada{
+    border-radius: 10px;
+    height: 500px;;    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*CODIGO PARA SUBIR FOTO*/
+#fondoSubirFotoPerfil{
+    cursor: pointer;
+}
+/*CODIGO PARA SUBIR FOTO*/
+#form_contrasenia{
+    margin-bottom:20px; 
+}
+#respuesta_nombre{
+    margin-top:0px; 
+    font-size:18px; 
+    text-align:center;
+    background:#019256;    
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+#docente{
+    display: block;
+    text-decoration: underline;
+}
+#nombreNuevo{               
+    display:inline-block;/*coloca la etiqueta en la misma fila que del apellido*/
+}
+#apellidoNuevo{      
+    display:inline-block; /*coloca la etiqueta en la misma fila que del nombre*/
+}
+
+#mi_profesion{
+    text-decoration: underline;
+    margin-top: 5px;
+    display:block;
+}
+#mi_establecimiento{
+    text-decoration: underline;
+    margin-top: 5px;
+    display:block;
 }
