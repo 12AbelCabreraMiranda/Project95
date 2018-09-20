@@ -81,7 +81,7 @@
                     <div class="col-md-3" style="color:black"> 
                             <select name="elegir" class="form-control"  id="id_estudiante">
                             <?php while($row = $resultado->fetch_assoc()){  ?>
-                            <option class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
+                            <option  class="col-md-12" value="<?php echo $row['idEstudiante']; ?> ">
                                 <?php  echo $row['nombre']; ?> 
                                 <?php  echo $row['codigoEstudiante']; ?>
                             </option>
@@ -89,7 +89,8 @@
                             </select> 
                     </div>     
                         <div class="col-md-2">                            
-                            <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>
+                            <!-- <button onclick="guardando_alumno()" class="btn btn-warning">Guardar</button>-->
+                            <input type="submit" onclick="guardando_alumno()" class="btn btn-warning" value="Guardar"></input>
                         </div>                   
                 </form>                
             <!--  .................BOTONES CON IMAGENES................................................... -->
@@ -222,6 +223,8 @@
                         <h1>Total de Puntos</h1>
                         <p id="respuesta_puntos" style="font-size:140px"></p>
                     </div>
+                </div>
+                <div id="respuesta_vacia">
                 </div>
 
                 <!-- .................FORM DE IMAGENES................... -->

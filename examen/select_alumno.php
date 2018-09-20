@@ -2,6 +2,10 @@
    
 include("../bd/conexion.php");
 
+if(empty($_POST['elegir'])){
+     
+}
+elseif(!empty($_POST['elegir'])){
     $nombres = $_POST["elegir"];
         //SELECCION
         $NombreCompleto;
@@ -11,5 +15,5 @@ include("../bd/conexion.php");
             $NombreCompleto=$row['nombre'];
             echo $NombreCompleto;
         }    
-
+    }
 ?>
