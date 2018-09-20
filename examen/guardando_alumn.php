@@ -7,7 +7,7 @@ include("../bd/conexion.php");
     //echo $alumno;
 
     if(empty($_POST['elegir'])){
-        echo 'Obligatorio registrar alumnos';
+        echo 'Obligatorio Registrar Alumnos';
         /*
         echo "<script>
             alert('Para llevar el examen, primero debe tener alumnos registrados');

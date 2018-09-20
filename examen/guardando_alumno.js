@@ -39,7 +39,7 @@ $(document).ready(function(){
                 }
             })
             //
-        }else if( !$('#id_estudiante').val() ){
+        }else if( !$('#id_estudiante').val()){
             //
             $.ajax({
               url: 'guardando_alumn.php',
@@ -50,6 +50,7 @@ $(document).ready(function(){
               success: function(datos){
                   $("#respuesta_vacia").html(datos)
                   $('#form2').hide();
+                  $('#contenedor_vacio').show();
                           // AUDIO AUTOMATICO
                               setTimeout(function(){
                                   //alert("Han pasado los tres segundos");
