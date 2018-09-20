@@ -338,7 +338,9 @@ function CancelarContrasenia(){
 }
 
 
-
+function editarDatos(){
+    $('.data').show(); 
+}
 
 
 

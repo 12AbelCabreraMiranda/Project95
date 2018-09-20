@@ -78,14 +78,17 @@
                 <label class="espacio">MI ESTABLECIMIENTO:</label>
                 <p class="control-label "><?php echo $row['establecimiento']; ?></p>
             </div>
-            <a href="../inicio.php"> <button class="btn btn-info btn-block"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp; Inicio</button> </a>
-            <button class="btn btn-warning btn-block"> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> &nbsp;&nbsp;Actualizar Datos</button> 
-
+            <a href="../inicio.php"> 
+                <button class="btn btn-info btn-block"> <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp; Inicio</button> 
+            </a>
+            <button class="btn btn-warning btn-block" onclick="editarDatos()"> 
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> &nbsp;&nbsp;Actualizar Datos
+            </button> 
         </div>
-        <!--EDICION DE DATOS -->
-        <div class="col-md-4 col-lg-offset-1">
+        <!--EDICION DE DATOS -->    
+        <div class="col-md-4 col-lg-offset-4 data">
 
-            <center><h2 id="tituloActualizarDatos">Actualización de Datos</h2></center>
+            <center><h4 id="tituloActualizarDatos">Actualización de Datos </h4><p>X</p></center>
             <!--NOMBRE -->
             <form action="miPerfil.php" class="form-horizontal" method="post" id="form_nombre" enctype="multipart/form-data" ><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
@@ -96,27 +99,27 @@
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarNombre()">
                             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                         </div>
-                    </div><br>
+                    </div>
                     <input type="button" class="btn btn-default botonGuardar" id="botonGuardarNombre" onclick="ActulizarNombre()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarNombre" onclick="CancelarNombre()" value="Cancelar">
                 </div>
             </form>
             <!--APELLIDO -->
-            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_apellido" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+            <form action="miPerfil.php" class="form-horizontal " method="post" id="form_apellido" enctype="multipart/form-data" style="margin-top:-10px"><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
-                    <label class="control-label ">APELLIDO:</label>
+                    <label class="control-label">APELLIDO:</label>
                     <div class="input-group">    
                         <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>                 
                         <input class="form-control" nome="apellido" id="apellido" type="text" disabled value="<?php  echo $row['apellido']; ?>">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarApellido()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                    </div><br>
+                    </div>
                     <input type="button" class="btn btn-default botonGuardar" id="botonGuardarApellido" onclick="ActulizarApellido()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarApellido" onclick="CancelarApellido()" value="Cancelar">
                 </div>
             </form>
             <!--ESTABLECIMIENTO -->
-            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_establecimiento" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_establecimiento" enctype="multipart/form-data" style="margin-top:-10px"><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
                     <label class="control-label ">ESTABLECIMIENTO:</label>
                     <div class="input-group">    
@@ -124,13 +127,13 @@
                         <input class="form-control" nome="establecimiento" id="establecimiento" type="text" disabled value="<?php  echo $row['establecimiento']; ?>">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarEstablecimiento()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                    </div><br>
+                    </div>
                     <input type="button" class="btn btn-default botonGuardar" id="botonGuardarEstablecimiento" onclick="ActulizarEstablecimiento()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarEstablecimiento" onclick="CancelarEstablecimiento()" value="Cancelar">
                 </div>
             </form>
             <!--PROFESION -->
-            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_profesion" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_profesion" enctype="multipart/form-data" style="margin-top:-10px"><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
                     <label class="control-label ">PROFESION:</label>
                     <div class="input-group">    
@@ -138,16 +141,16 @@
                         <input class="form-control" nome="profesion" id="profesion" type="text" disabled value="<?php  echo $row['profesion']; ?>">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarProfesion()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                    </div><br>
+                    </div>
                     <input type="button" class="btn btn-default botonGuardar" id="botonGuardarProfesion" onclick="ActulizarProfesion()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarProfesion" onclick="CancelarProfesion()" value="Cancelar">
                 </div>
             </form>
-
+            <hr style="margin-top:-15px;">
             <!--                 ACTUALIZAR SEGURIDAD             -->
-            <center><h3 id="tituloActualizarDatos">Actualización de Seguridad</h3></center><br>
+            <center><h4 id="tituloActualizarDatos" style="margin-top:-15px">Actualización de Seguridad</h4></center><br>
             <!--NUEVO USUARIO -->
-            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_usuario" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_usuario" enctype="multipart/form-data" style="margin-top:-10px"><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
                     <label class="control-label ">NUEVO USUARIO:</label>
                     <div class="input-group">    
@@ -155,13 +158,13 @@
                         <input class="form-control" nome="usuario" id="usuario" type="text" disabled value="<?php  echo $row['nom_usuario']; ?>">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarUsuario()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                    </div><br>
+                    </div>
                     <input type="button" class="btn btn-default botonGuardar" id="botonGuardarrUsuario" onclick="ActulizarrUsuario()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarrUsuario" onclick="CancelarrUsuario()" value="Cancelar">
                 </div>
             </form>
             <!-- NUEVA CONTRASEÑA -->
-            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_contrasenia" enctype="multipart/form-data" style="margin-top:-20px"><!--Permite dar saltos de espacios entre filas -->
+            <form action="miPerfil.php" class="form-horizontal" method="post" id="form_contrasenia" enctype="multipart/form-data" style="margin-top:-10px"><!--Permite dar saltos de espacios entre filas -->
                 <div class="form-group"><!--Agrupacion -->
                     <label class="control-label ">NUEVA CONTRASEÑA:</label>
                     <div class="input-group">    
@@ -169,14 +172,17 @@
                         <input class="form-control" nome="contrasenia" id="contrasenia" type="password" disabled placeholder="Ingresar Nueva Contraseña">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarContrasenia()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
-                    </div><br>
+                    </div>
                     <input type="button" class="btn btn-default botonGuardar" id="botonGuardarContrasenia" onclick="ActulizarContrasenia()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarContrasenia" onclick="CancelarContrasenia()" value="Cancelar">
                 </div>
-                <br><br><br>
             </form>
-
         </div>
+        
+        <!--fondo de portada --> 
+        <div class="col-md-9">
+            <a href="#"> <img class="img-responsive" src="../img/portada.jpg"> </a>
+        </div>  
     </div>
 
    <script src="../js/jquery-3.2.1.js"></script>

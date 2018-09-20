@@ -26,10 +26,22 @@
     margin-top: 10px;
 }
 #tituloActualizarDatos{
-    margin-top: -5px;
+    margin-top: 10;
 }
 .fondoFotoPerfil{
     margin-top: 13px;
     background: white;
     border-radius: 10px;
+}
+form{
+    margin-top: -5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.data{
+    background: rgba(79, 82, 82, 0.849);
+    border-radius: 10px;
+    color: white;
+    display: none;
+    position:absolute; z-index:1; /*PERMITE COLOCAR ENCIMA*/
 }
