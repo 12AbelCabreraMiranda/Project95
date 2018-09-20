@@ -14,6 +14,7 @@
 
     $query = "UPDATE usuario SET nom_usuario='$usuaM' where id_maestroU='$idMaestroLogeado'";
     $resultado= $conexion->query($query);
+    $_SESSION['u_usuario'] = $usuaM;// SE REINICIALIZA LA SESION CON EL NUEVO CAMBIO DE USUARIO PARA SEGUIR CON LA SESION EN EL SISTEMA
     if($resultado){
         echo'Usuario Actualizado Exitosamente';
     }
