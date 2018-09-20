@@ -3,7 +3,7 @@
     include("../bd/conexion.php");
     session_start();
     $usuMaestro = $_SESSION['u_usuario'];
-    $nombre = $_POST["nombre"];
+    $apellido = $_POST["apellido"];
 
     $idMaestroLogeado;
     $query1 = ("SELECT id_maestroU FROM usuario where nom_usuario='$usuMaestro'");
@@ -12,13 +12,15 @@
         $idMaestroLogeado =$row['id_maestroU'];
      }
 
-    $query = "UPDATE maestro SET nombre='$nombre' where idmaestro='$idMaestroLogeado'";
-    $resultado= $conexion->query($query);
-    if($resultado){
-        echo'Nombre Actualizado Exitosamente';
+
+    $query2 = "UPDATE maestro SET apellido='$apellido' where idmaestro='$idMaestroLogeado'";
+    $resultado2= $conexion->query($query2);
+    if($resultado2){
+        echo'apellido Actualizado Exitosamente';
     }
     else{
         echo'No Actualizado';
     }
+
 
 ?>

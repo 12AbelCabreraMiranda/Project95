@@ -6,8 +6,8 @@
     $id;
     $query1 = ("SELECT id_maestroU FROM usuario where nom_usuario='$usuMaestro'");
     $result1 = $conexion->query($query1);
-    if($row = $result1->fetch_assoc()){      
-        $id =$row['id_maestroU'];
+    if($row1 = $result1->fetch_assoc()){      
+        $id =$row1['id_maestroU'];
      }
 
     $nombre;
@@ -17,7 +17,7 @@
     $usu;
     $query="SELECT maestro.nombre, maestro.apellido,maestro.establecimiento,maestro.profesion, usuario.nom_usuario
     from usuario 
-    inner join maestro on maestro.idmaestro =usuario.id_maestroU
+    inner join maestro on maestro.idmaestro = usuario.id_maestroU
     WHERE idmaestro='$id' ";
 
     $resultado = $conexion->query($query);
@@ -76,11 +76,12 @@
                 <p class="control-label " id="nombreNuevo"><?php  echo $row['nombre']; ?> </p>
                 <p class="control-label " id="apellidoNuevo"> <?php  echo $row['apellido']; ?></p>
 
-                <label class="espacio" id="mi_profesion">MI PROFESIÓN:</label>
-                <p class="control-label "><?php echo $row['profesion']; ?></p>
-
                 <label class="espacio" id="mi_establecimiento">MI ESTABLECIMIENTO:</label>
-                <p class="control-label "><?php echo $row['establecimiento']; ?></p>
+                <p class="control-label " id="mi_establecimiento_edu"><?php echo $row['establecimiento']; ?></p>
+
+                <label class="espacio" id="mi_profesion">MI PROFESIÓN:</label>
+                <p class="control-label" id="profesion_edu"><?php echo $row['profesion']; ?></p>
+                
             </div>
             
             <!--BOTONES -->
@@ -107,9 +108,7 @@
                             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                         </div>
                     </div>
-                    <div id="respuesta_nombre" >
-                    
-                    </div>
+                    <div id="respuesta_nombre" ></div>
                     <input type="submit" class="btn btn-default botonGuardar" id="botonGuardarNombre" onclick="ActulizarNombre()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarNombre" onclick="CancelarNombre()" value="Cancelar">
                 </div>
@@ -124,6 +123,7 @@
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarApellido()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
+                    <div id="respuesta_apellido"></div>
                     <input type="submit" class="btn btn-default botonGuardar" id="botonGuardarApellido" onclick="ActulizarApellido()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarApellido" onclick="CancelarApellido()" value="Cancelar">
                 </div>
@@ -138,6 +138,7 @@
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarEstablecimiento()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
+                    <div id="respuesta_establecimiento"></div>
                     <input type="submit" class="btn btn-default botonGuardar" id="botonGuardarEstablecimiento" onclick="ActulizarEstablecimiento()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarEstablecimiento" onclick="CancelarEstablecimiento()" value="Cancelar">
                 </div>
@@ -152,6 +153,7 @@
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarProfesion()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
+                    <div id="respuesta_profesion"></div>
                     <input type="submit" class="btn btn-default botonGuardar" id="botonGuardarProfesion" onclick="ActulizarProfesion()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarProfesion" onclick="CancelarProfesion()" value="Cancelar">
                 </div>
@@ -169,6 +171,7 @@
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarUsuario()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
+                    <div id="respuesta_usuario"></div>
                     <input type="submit" class="btn btn-default botonGuardar" id="botonGuardarrUsuario" onclick="ActulizarrUsuario()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarrUsuario" onclick="CancelarrUsuario()" value="Cancelar">
                 </div>
@@ -179,11 +182,12 @@
                     <label class="control-label ">CAMBIAR CONTRASEÑA:</label>
                     <div class="input-group">    
                         <div class="input-group-addon"><i class="fa fa-key fa-lg" aria-hidden="true"></i> </div>                 
-                        <input class="form-control" name="contrasenia" id="contrasenia" type="password" disabled placeholder="Ingresar Nueva Contraseña">
+                        <input REQUIRED class="form-control" name="contrasenia" id="contrasenia" type="password" disabled placeholder="Ingresar Nueva Contraseña">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarContrasenia()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
-                    <input type="submit" class="btn btn-default botonGuardar" id="botonGuardarContrasenia" onclick="ActulizarContrasenia()" value="Guardar Cambios">
+                    <div id="respuesta_contrasenia"></div>
+                    <input  type="submit" class="btn btn-default botonGuardar" id="botonGuardarContrasenia" onclick="ActulizarContrasenia()" value="Guardar Cambios">
                     <input type="button" class="btn btn-default botonCancelar"id="botonCancelarContrasenia" onclick="CancelarContrasenia()" value="Cancelar">
                 </div>
             </form>

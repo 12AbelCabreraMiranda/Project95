@@ -9,9 +9,9 @@ session_start();
     include('seguridad.php');
 
     //VALIDACION CON ENCRIPTACIÓN DE PASSWORD
-    //passEncriptado = SED::encryption($clave); 
+    $passEncriptado = SED::encryption($clave); 
 
-    $proceso= $conexion->query("select *from usuario WHERE nom_usuario='$usuario' and contrasenia='$clave' ");
+    $proceso= $conexion->query("select *from usuario WHERE nom_usuario='$usuario' and contrasenia='$passEncriptado' ");
 
     if($resultado = mysqli_fetch_array($proceso)){
         $_SESSION['u_usuario'] = $usuario;
