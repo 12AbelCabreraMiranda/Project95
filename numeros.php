@@ -38,11 +38,12 @@
                
                 <!-- VOCAL CENTRO -->
                 
-                <div class="espacioVocales">
+                
                     <audio style="display: none" id="audio" controls>
                         <source type="audio/mp3" src="audio/numeros/cero.mp3">
                     </audio>
                     <p id="numActual">0</p>
+                <div class="espacioNumero">
                 </div>
 
                 <div class="botones">
@@ -92,7 +93,7 @@
         }            
        
         //INICIALIZACION
-        //$(".espacioVocales").html("<a href='#' > <img class='img-responsive' src='img/vocales/a.png'> </a>");
+        $(".espacioNumero").html("<a href='#' onmousedown='voz3.play()' > <img class='img-responsive' src='img/numero/cero.png'> </a>");
         //INICIO DE CONDICIONES PARA IR CAMBIANDO IMAGENES
         voz1.play(); 
         function sigNumero(){ 
@@ -106,6 +107,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz2.play()' > <img class='img-responsive' src='img/numero/1.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz12.play()' > <img class='img-responsive' src='img/numero/uno.jpg'> </a>");  
                         voz2.play();  
                                           
@@ -121,6 +123,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz3.play()' > <img class='img-responsive' src='img/numero/2.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz13.play()'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");  
                         voz3.play();                      
                     }                                       
@@ -135,6 +138,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz4.play()' > <img class='img-responsive' src='img/numero/3.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz14.play()'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");  
                         voz4.play();                       
                     }                                       
@@ -149,6 +153,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz5.play()' > <img class='img-responsive' src='img/numero/4.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz15.play()'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");
                         voz5.play();                         
                     }                                       
@@ -163,6 +168,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz6.play()' > <img class='img-responsive' src='img/numero/5.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz16.play()'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
                         voz6.play(); 
                     }                                       
@@ -177,6 +183,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz7.play()' > <img class='img-responsive' src='img/numero/6.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz17.play()'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
                         voz7.play(); 
                     }                                       
@@ -191,6 +198,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz8.play()' > <img class='img-responsive' src='img/numero/7.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz18.play()'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
                         voz8.play(); 
                     }                                       
@@ -205,6 +213,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz9.play()' > <img class='img-responsive' src='img/numero/8.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz19.play()'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
                         voz9.play(); 
                     }                                       
@@ -219,6 +228,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz10.play()' > <img class='img-responsive' src='img/numero/9.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz20.play()'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
                         voz10.play(); 
                     }                                       
@@ -233,6 +243,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz11.play()' > <img class='img-responsive' src='img/numero/10.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz21.play()'> <img class='img-responsive' src='img/numero/diez.jpg'> </a>"); 
                         voz11.play();                        
                     }                                       
@@ -253,6 +264,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz1.play()' > <img class='img-responsive' src='img/numero/cero.png'> </a>");  
                         $(".animalVocal").html("");   
                         voz1.play();                      
                     }                                       
@@ -267,6 +279,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz2.play()' > <img class='img-responsive' src='img/numero/1.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz12.play()'> <img class='img-responsive' src='img/numero/uno.jpg'> </a>");
                         voz2.play();                         
                     }                                       
@@ -281,6 +294,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz3.play()' > <img class='img-responsive' src='img/numero/2.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz13.play()'> <img class='img-responsive' src='img/numero/dos.jpg'> </a>");                        
                         voz3.play(); 
                     }                                       
@@ -295,6 +309,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz4.play()' > <img class='img-responsive' src='img/numero/3.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz14.play()'> <img class='img-responsive' src='img/numero/tres.jpg'> </a>");                        
                         voz4.play(); 
                     }                                       
@@ -309,6 +324,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz5.play()' > <img class='img-responsive' src='img/numero/4.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz15.play()'> <img class='img-responsive' src='img/numero/cuatro.jpg'> </a>");                        
                         voz5.play(); 
                     }                                       
@@ -323,6 +339,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz6.play()' > <img class='img-responsive' src='img/numero/5.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz16.play()'> <img class='img-responsive' src='img/numero/cinco.jpg'> </a>");                        
                         voz6.play(); 
                     }                                       
@@ -337,6 +354,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz7.play()' > <img class='img-responsive' src='img/numero/6.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz17.play()'> <img class='img-responsive' src='img/numero/seis.jpg'> </a>");                        
                         voz7.play(); 
                     }                                       
@@ -351,6 +369,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz8.play()' > <img class='img-responsive' src='img/numero/7.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz18.play()'> <img class='img-responsive' src='img/numero/siete.jpg'> </a>");                        
                         voz8.play(); 
                     }                                       
@@ -365,6 +384,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz9.play()' > <img class='img-responsive' src='img/numero/8.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz19.play()'> <img class='img-responsive' src='img/numero/ocho.jpg'> </a>");                        
                         voz9.play(); 
                     }                                       
@@ -379,6 +399,7 @@
                         var x=(productos.data[i].nombreImagen);                                                           
                         $("#numActual").html(x);//SobreEscribe NuevoNombre 
                         //SobrePone ImagenNuevo
+                        $(".espacioNumero").html("<a href='#' onmousedown='voz10.play()' > <img class='img-responsive' src='img/numero/9.png'> </a>");  
                         $(".animalVocal").html("<a href='#' onmousedown='voz20.play()'> <img class='img-responsive' src='img/numero/nueve.jpg'> </a>");                        
                         voz10.play(); 
                     }                                       

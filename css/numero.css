@@ -61,7 +61,21 @@
         font-size: 300px;   
         color: white;
     }
-
+    .espacioNumero{
+        height: 400px;
+        width: 400px; 
+        position: absolute;
+        top: -50px;
+        left: -30px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position:absolute; z-index:1;
+ 
+    }
+    #numActual{
+        position:absolute; z-index:0;
+    }
     .animal{
         background-color: white;
         height: 480px; 
