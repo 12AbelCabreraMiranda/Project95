@@ -9,15 +9,12 @@ $(document).ready(function(){
         $('#mostrar_correcto').show();
         $('#form2').hide();
         
-         // AUDIO AUTOMATICO
+         // DETIENE EL AUDIO ANTERIOR
         setTimeout(function(){
-            //alert("Han pasado los tres segundos");
             var audio = document.getElementById("audio1");               
             audio.muted = true;
-        },0); // 2000ms = 3s	
-           
-       
-
+        },0); // cero segundos
+                  
        //$('#audio1')[0].pause();// otra manera de pausar audio en reproduccion
        //$('#audio1')[0].play();// otra manera de play audio
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
@@ -43,7 +40,13 @@ $(document).ready(function(){
         $('#mostrar_correcto2').show();
         $('#form3').hide();
         $('#respuesta').show();
-        
+
+        // DETIENE EL AUDIO ANTERIOR
+        setTimeout(function(){
+            var audio = document.getElementById("audio2");               
+            audio.muted = true;
+        },0); // cero segundos
+                  
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
           $.ajax({
               url: 'prueba.php?nombre='+n,// nombre es una variable para ser redireccionado para php
@@ -69,6 +72,12 @@ $(document).ready(function(){
         $('#form4').hide();
         $('#respuesta').show();
         
+        // DETIENE EL AUDIO ANTERIOR
+        setTimeout(function(){
+            var audio = document.getElementById("audio3");               
+            audio.muted = true;
+        },0); // cero segundos
+
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
           $.ajax({
               url: 'prueba.php?nombre='+n,// nombre es una variable para ser redireccionado para php
@@ -94,6 +103,12 @@ $(document).ready(function(){
         $('#form5').hide();
         $('#respuesta').show();
         
+        // DETIENE EL AUDIO ANTERIOR
+        setTimeout(function(){
+            var audio = document.getElementById("audio4");               
+            audio.muted = true;
+        },0); // cero segundos
+
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
             $.ajax({
                 url: 'prueba.php?nombre='+n,// nombre es una variable para ser redireccionado para php
@@ -119,6 +134,12 @@ $(document).ready(function(){
         $('#form6').hide();
         $('#respuesta').show();
         
+        // DETIENE EL AUDIO ANTERIOR
+        setTimeout(function(){
+            var audio = document.getElementById("audio5");               
+            audio.muted = true;
+        },0); // cero segundos
+
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
             $.ajax({
                 url: 'prueba.php?nombre='+n,// nombre es una variable para ser redireccionado para php
@@ -163,6 +184,12 @@ function siguienteForm(){
 function incorrecto1(){
     $('#incorrecto1').show();
     $('#form2').hide();
+
+    // DETIENE EL AUDIO ANTERIOR
+    setTimeout(function(){
+        var audio = document.getElementById("audio1");               
+        audio.muted = true;
+    },0); // cero segundos
 }
 function NextForm2(){
     $('#incorrecto1').hide();
@@ -196,6 +223,11 @@ function siguienteForm3(){
 function incorrecto2(){
     $('#incorrecto2').show();
     $('#form3').hide();
+    // DETIENE EL AUDIO ANTERIOR
+    setTimeout(function(){
+        var audio = document.getElementById("audio2");               
+        audio.muted = true;
+    },0); // cero segundos
 }
 function NextForm3(){
     $('#incorrecto2').hide();
@@ -227,6 +259,11 @@ function siguienteForm4(){
 function incorrecto3(){
     $('#incorrecto3').show();
     $('#form4').hide();
+    // DETIENE EL AUDIO ANTERIOR
+    setTimeout(function(){
+        var audio = document.getElementById("audio3");               
+        audio.muted = true;
+    },0); // cero segundos
 }
 function NextForm4(){
     $('#incorrecto3').hide();
@@ -257,6 +294,11 @@ function siguienteForm5(){
 function incorrecto4(){
     $('#incorrecto4').show();
     $('#form5').hide();
+    // DETIENE EL AUDIO ANTERIOR
+    setTimeout(function(){
+        var audio = document.getElementById("audio4");               
+        audio.muted = true;
+    },0); // cero segundos
 }
 function NextForm5(){
     $('#incorrecto4').hide();
@@ -297,6 +339,11 @@ function siguienteForm6(evento){
 function incorrecto5(){
     $('#incorrecto5').show();
     $('#form6').hide();
+    // DETIENE EL AUDIO ANTERIOR
+    setTimeout(function(){
+        var audio = document.getElementById("audio5");               
+        audio.muted = true;
+    },0); // cero segundos
 }
 //  -----------FUNCIONES PARA LA quinta VALIDACION DEL FORMULARIO CON IMAGENES -------INCORRECTO--------
 $("#form_puntos").submit(verPuntos)

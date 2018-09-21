@@ -5,10 +5,8 @@ $(document).ready(function(){
 
         var idA= document.getElementById('id_estudiante');
             // AUDIO AUTOMATICO
-            //var audio = new Audio('../audio/vocales/cualeslaletra_a.mp3');
+            //var audio = new Audio('../audio/vocales/cualeslaletra_a.mp3'); //Otra manera de reproducir audios
             setTimeout(function(){
-                //alert("Han pasado los tres segundos");
-                //var audio = document.getElementById("audio1");   
                 var audio=$('#audio1')[0].play();
                 audio.play();
             },2000); // 2000ms = 3s	
