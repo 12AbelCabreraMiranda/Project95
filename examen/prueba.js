@@ -9,6 +9,17 @@ $(document).ready(function(){
         $('#mostrar_correcto').show();
         $('#form2').hide();
         
+         // AUDIO AUTOMATICO
+        setTimeout(function(){
+            //alert("Han pasado los tres segundos");
+            var audio = document.getElementById("audio1");               
+            audio.muted = true;
+        },0); // 2000ms = 3s	
+           
+       
+
+       //$('#audio1')[0].pause();// otra manera de pausar audio en reproduccion
+       //$('#audio1')[0].play();// otra manera de play audio
         var n = $(".nombre_alumno").text();//PERMITE EXTRAER EL VALOR DE LA CLASE EN LUGAR DE ID
           $.ajax({
               url: 'prueba.php?nombre='+n,// nombre es una variable para ser redireccionado para php
