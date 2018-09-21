@@ -217,17 +217,19 @@
                         <!- Aqui muestra el resultado si fue exito en la base de datos->
                     </div>
                 </center>-->
-                
+
+                <!-- .................CONTENEDOR MUESTRA NOTA FINAL DESPUES DE HABER COMPLETADO LAS 5 PRUEBAS................... -->
                 <div class="row" id="fondo_puntos" >
                     <div class="col-lg-3 col-lg-offset-4 text-center" id="estilo_puntos" style="height: 300px"> 
                         <h1>Total de Puntos</h1>
                         <p id="respuesta_puntos" style="font-size:140px"></p>
                     </div>
                 </div>
+                <!-- .................CONTENEDOR DE ESTUDIANTES VACÍO................... -->
                 <div class="row" id="contenedor_vacio">                    
                     <div class="col-lg-6 col-lg-offset-3  text-center" >
-                        <p id="respuesta_vacia"> respuesta_vacia</p> 
-                        <a href="#"> <img class="img-responsive" src="../img/ninosdiferentesraza.jpg"> </a>
+                        <p id="respuesta_vacia"> Obligatorio Registrar Alumno</p> 
+                        <a href="#"> <img class="img-responsive img-rounded" src="../img/ninosdiferentesraza.jpg"> </a>
 
                         <a href="../RegistrarAlumnos/misAlumnos.php"> 
                             <button class="btn btn-success " style="margin-top:5px">
@@ -451,11 +453,11 @@
 
 <script>
     if( $('#id_estudiante').val() ){
-            $('.selec_boton').show();
-        }else if( !$('#id_estudiante').val()){
-            $('.selec_boton').hide();
-
-        }
+        $('.selec_boton').show();
+    }else if( !$('#id_estudiante').val()){
+        $('.selec_boton').hide();
+        $('#contenedor_vacio').show();
+    }
 </script>
 
 </body>

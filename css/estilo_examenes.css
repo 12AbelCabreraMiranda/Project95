@@ -112,9 +112,8 @@
         color: white;
     }
     #respuesta_vacia{
-        font-size: 25px;
-        margin-top: 50px;
-        color: rebeccapurple;
+        font-size: 25px;        
+        color: #11663e;
         font-weight: bold;
     }
     #contenedor_vacio{
