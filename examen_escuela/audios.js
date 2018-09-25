@@ -1,10 +1,10 @@
 // AUDIO 
 
 var voz1= new Audio();
-voz1.src = "../audio/escuela/cualeslasacapunta.mp3";
+voz1.src = "../audio/escuela/cualeselsacapunta.mp3";
 
 var voz2= new Audio();
-voz2.src = "../audio/escuela/cualeslamaestra.mp3";
+voz2.src = "../audio/escuela/dondeestalamaestra.mp3";
 
 var voz3= new Audio();
 voz3.src = "../audio/escuela/cualeslatijera.mp3";
