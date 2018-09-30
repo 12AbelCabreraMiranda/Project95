@@ -34,7 +34,7 @@
                     <img src="img/inicio.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Frutas Dulces”</h1></div>
+            <div id="encabezadoFruta" ><h1 id="TituloFrutasDulces">“Categoría Frutas”</h1></div>
         </header>
 
         <!-- FILA DE CUERPO DE IMAGENES-->

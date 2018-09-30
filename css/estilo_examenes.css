@@ -86,19 +86,19 @@
 
     /* OCULTO LOS FORM de IMAGENES*/
     #form2{
-        display: show;
+        display: none;
     }
     #form3{
-        display: show;
+        display: none;
     }
     #form4{
-        display: show;
+        display: none;
     }
     #form5{
-        display: show;
+        display: none;
     }
     #form6{
-        display: show;
+        display: none;
     }
 
 
