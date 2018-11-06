@@ -35,15 +35,15 @@
                     <br>
                     <div class="form-group">
                         <label for="nombre">NOMBRE COMPLETO</label>                        
-                        <input REQUIRED name="nombre" class="form-control" id="nombres" type="text" placeholder="Nombre Completo">
+                        <input REQUIRED name="nombre" class="form-control" id="nombres" type="text" placeholder="Nombre Completo" onkeypress="return soloLetras(event)" onpaste="return false">
                     </div>
                     <div class="form-group">
                         <label for="nombre">APELLIDO COMPLETO</label>                        
-                        <input REQUIRED name="apellido" type="text"  class="form-control" placeholder="Ingresar Apellido Completo">
+                        <input REQUIRED name="apellido" type="text"  class="form-control" placeholder="Ingresar Apellido Completo" onkeypress="return soloLetras(event)" onpaste="return false">
                     </div>
                     <div class="form-group">
                         <label for="nombre">EDAD</label>                        
-                        <input REQUIRED name="edad" type="number" class="form-control"  min="1" placeholder="0" value="">
+                        <input REQUIRED name="edad" type="number" class="form-control"  min="1" placeholder="0" value="" onkeypress="return soloNumero(event)" onpaste="return false">
                     </div>
                     <div class="form-group">
                         <label for="nombre">CODIGO DEL ESTUDIANTE</label>                        
@@ -71,6 +71,8 @@
         
     <script src="../js/bootstrap.min.js" ></script>
     <script src="guardarAlumnos.js" ></script>
+    <script src="validacionCaracter.js"></script>
+    <script src="validarInNumero.js"></script>
 
 </body>
 </html>

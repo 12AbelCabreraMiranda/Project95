@@ -114,13 +114,13 @@
                 <div class="field-container">
                     <p>NOMBRE</p>
                     <i class="fa fa-user-circle fa-lg" ></i>
-                    <input REQUIRED name="nombre" type="text" class="field"placeholder=" Nombres" > <br>
+                    <input REQUIRED name="nombre" type="text" class="field"placeholder=" Nombres" onkeypress="return soloLetras(event)" onpaste="return false"> <br>
                 </div>
 
                 <div class="field-container">
                     <p>APELLIDO</p>
                     <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
-                    <input REQUIRED name="apellido" type="text" class="field"placeholder=" Apellidos" > <br>
+                    <input REQUIRED name="apellido" type="text" class="field"placeholder=" Apellidos" onkeypress="return soloLetras(event)" onpaste="return false"> <br>
                 </div>
             </div>
 
@@ -141,18 +141,19 @@
                 <div class="field-container">
                     <p>ESTABLECIMIENTO</p>
                     <i class="fa fa-building fa-lg" aria-hidden="true"></i>
-                    <input REQUIRED name="establecimiento" type="text" class="field"placeholder="Establecimiento" > <br>
+                    <input REQUIRED name="establecimiento" type="text" class="field"placeholder="Establecimiento" onkeypress="return soloLetras(event)" onpaste="return false"> <br>
                 </div>
     
                 <div class="field-container">
                     <p>PROFESIÓN</p>
                     <i class="fa fa-address-card fa-lg" aria-hidden="true"></i>
-                    <input REQUIRED name="profesion" type="text" class="field" placeholder="Profesión" > <br>
+                    <input REQUIRED name="profesion" type="text" class="field" placeholder="Profesión" onkeypress="return soloLetras(event)" onpaste="return false"> <br>
                 </div>
             </div>
             <p class="center-content"> <input type="submit" class="btn btn-green" value="Iniciar Sesion"> </p>
         </form>
     </div>
 
+    <script src="validacionCaracter.js"></script>
 </body>
 </html>

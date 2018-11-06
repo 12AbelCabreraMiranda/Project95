@@ -68,7 +68,7 @@
             <!--MI FOTO PERFLIL  -->
             <div class="fondoFotoPerfil">
                 <a> <img class="img-responsive imgPerfil img-rounded"  style="margin-top:5px" src="../img/maestro.png"></a>  
-                <div id="fondoSubirFotoPerfil"> <p id="subirFotoPerfil"> Subir Foto</p> </div>              
+                <!--<div id="fondoSubirFotoPerfil"> <p id="subirFotoPerfil"> Subir Foto</p> </div>  -->            
             </div>
             <!--MIS DATOS  -->
             <div class="datos">
@@ -103,7 +103,7 @@
                     <label class="control-label ">NOMBRE:</label>
                     <div class="input-group">                       
                         <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>             
-                        <input class="form-control" name="nombre" id="nombre" type="text" disabled value="<?php  echo $row['nombre']; ?>" >
+                        <input class="form-control" name="nombre" id="nombre" type="text" disabled value="<?php  echo $row['nombre']; ?>" onkeypress="return soloLetras(event)" onpaste="return false">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarNombre()">
                             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                         </div>
@@ -119,7 +119,7 @@
                     <label class="control-label">APELLIDO:</label>
                     <div class="input-group">    
                         <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>                 
-                        <input class="form-control" name="apellido" id="apellido" type="text" disabled value="<?php  echo $row['apellido']; ?>">
+                        <input class="form-control" name="apellido" id="apellido" type="text" disabled value="<?php  echo $row['apellido']; ?>" onkeypress="return soloLetras(event)" onpaste="return false">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarApellido()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
@@ -134,7 +134,7 @@
                     <label class="control-label ">ESTABLECIMIENTO:</label>
                     <div class="input-group">    
                         <div class="input-group-addon"><span class="glyphicon glyphicon-th" aria-hidden="true"></span></div>                 
-                        <input class="form-control" name="establecimiento" id="establecimiento" type="text" disabled value="<?php  echo $row['establecimiento']; ?>">
+                        <input class="form-control" name="establecimiento" id="establecimiento" type="text" disabled value="<?php  echo $row['establecimiento']; ?>" onkeypress="return soloLetras(event)" onpaste="return false">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarEstablecimiento()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
@@ -149,7 +149,7 @@
                     <label class="control-label ">PROFESION:</label>
                     <div class="input-group">    
                         <div class="input-group-addon"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> </div>                 
-                        <input class="form-control" name="profesion" id="profesion" type="text" disabled value="<?php  echo $row['profesion']; ?>">
+                        <input class="form-control" name="profesion" id="profesion" type="text" disabled value="<?php  echo $row['profesion']; ?>"onkeypress="return soloLetras(event)" onpaste="return false">
                         <div class="input-group-addon" style="cursor:pointer" onclick="habilitarProfesion()">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></div>
                     </div>
@@ -204,5 +204,7 @@
    <script src="jquery-3.2.1.js"></script>   
    <script src="../js/bootstrap.min.js" ></script>
    <script src="actualizar.js"></script>    
+   <script src="validacionCaracter.js"></script>
+    <script src="validarInNumero.js"></script>
 </body>
 </html>

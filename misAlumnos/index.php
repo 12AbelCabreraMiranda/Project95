@@ -101,13 +101,13 @@
                 <div class="modal-body">  
                      <form method="post" id="insert_form">  
                           <label>NOMBRE</label>  
-                          <input type="text" name="nombre" id="nombre" class="form-control" />  
+                          <input type="text" name="nombre" id="nombre" class="form-control" onkeypress="return soloLetras(event)" onpaste="return false"/>  
                           <br />  
                           <label>APELLIDO</label>                            
-                          <input type="text" name="apellido" id="apellido" class="form-control" />   
+                          <input type="text" name="apellido" id="apellido" class="form-control" onkeypress="return soloLetras(event)" onpaste="return false" />   
                           <br />  
                           <label>EDAD</label>  
-                          <input type="text" name="edad" id="edad" class="form-control" />  
+                          <input type="text" name="edad" id="edad" class="form-control" onkeypress="return soloNumero(event)" onpaste="return false" />  
                           <br />  
                           <label>CODIGO ESTUDIANTE</label>  
                           <input type="text" name="codigoEstudiante" id="codigoEstudiante" class="form-control" />  
@@ -122,83 +122,87 @@
            </div>  
       </div>  
  </div>  
-    <script>  
-    $(document).ready(function(){  
-        
-        $('#add').click(function(){  
-            $('#insert').val("Insert");  
-            $('#insert_form')[0].reset();  
-        });  
-        $(document).on('click', '.edit_data', function(){  
-            var employee_id = $(this).attr("id");  
-            $.ajax({  
-                    url:"fetch.php",  
-                    method:"POST",  
-                    data:{employee_id:employee_id},  
-                    dataType:"json",  
-                    success:function(data){  
-                        $('#nombre').val(data.nombre);  
-                        $('#apellido').val(data.apellido);                       
-                        $('#edad').val(data.edad);  
-                        $('#codigoEstudiante').val(data.codigoEstudiante);                       
-                        $('#employee_id').val(data.idEstudiante); // data.idEstudiante (de la base de dato)
-                        $('#insert').val("Update");  
-                        $('#add_data_Modal').modal('show');  
-                    }  
-            });  
-        });  
-        
-        $('#insert_form').on("submit", function(event){  
-            event.preventDefault();  
-            if($('#nombre').val() == "")  
-            {  
-                    alert("nombre is required");  
-            }  
-            else if($('#apellido').val() == '')  
-            {  
-                    alert("apellido is required");  
-            }  
-            else if($('#edad').val() == '')  
-            {  
-                    alert("edad is required");  
-            }  
-            else if($('#codigoEstudiante').val() == '')  
-            {  
-                    alert("codigoEstudiante is required");  
-            }  
-            else  
-            {  
-                    $.ajax({  
-                        url:"insert.php",  
-                        method:"POST",  
-                        data:$('#insert_form').serialize(),  
-                        beforeSend:function(){  
-                            $('#insert').val("Inserting");  
-                        },  
-                        success:function(data){  
-                            $('#insert_form')[0].reset();  
-                            $('#add_data_Modal').modal('hide');  
-                            $('#employee_table').html(data);  
-                        }  
-                    });  
-            }  
-        });  
 
-        //VISTA DE SLECCION DEALUMNOS
-        $(document).on('click', '.view_data', function(){  
-            var employee_id = $(this).attr("id");  
-            if(employee_id != '')  
-            {  
-                    $.ajax({  
-                        url:"select.php",  
+    <script src="validacionCaracter.js"></script>
+    <script src="validarInNumero.js"></script>
+
+    <script>  
+        $(document).ready(function(){  
+            
+            $('#add').click(function(){  
+                $('#insert').val("Insert");  
+                $('#insert_form')[0].reset();  
+            });  
+            $(document).on('click', '.edit_data', function(){  
+                var employee_id = $(this).attr("id");  
+                $.ajax({  
+                        url:"fetch.php",  
                         method:"POST",  
                         data:{employee_id:employee_id},  
+                        dataType:"json",  
                         success:function(data){  
-                            $('#employee_detail').html(data);  
-                            $('#dataModal').modal('show');  
+                            $('#nombre').val(data.nombre);  
+                            $('#apellido').val(data.apellido);                       
+                            $('#edad').val(data.edad);  
+                            $('#codigoEstudiante').val(data.codigoEstudiante);                       
+                            $('#employee_id').val(data.idEstudiante); // data.idEstudiante (de la base de dato)
+                            $('#insert').val("Update");  
+                            $('#add_data_Modal').modal('show');  
                         }  
-                    });  
-            }            
+                });  
+            });  
+            
+            $('#insert_form').on("submit", function(event){  
+                event.preventDefault();  
+                if($('#nombre').val() == "")  
+                {  
+                        alert("nombre is required");  
+                }  
+                else if($('#apellido').val() == '')  
+                {  
+                        alert("apellido is required");  
+                }  
+                else if($('#edad').val() == '')  
+                {  
+                        alert("edad is required");  
+                }  
+                else if($('#codigoEstudiante').val() == '')  
+                {  
+                        alert("codigoEstudiante is required");  
+                }  
+                else  
+                {  
+                        $.ajax({  
+                            url:"insert.php",  
+                            method:"POST",  
+                            data:$('#insert_form').serialize(),  
+                            beforeSend:function(){  
+                                $('#insert').val("Inserting");  
+                            },  
+                            success:function(data){  
+                                $('#insert_form')[0].reset();  
+                                $('#add_data_Modal').modal('hide');  
+                                $('#employee_table').html(data);  
+                            }  
+                        });  
+                }  
+            });  
+
+            //VISTA DE SLECCION DEALUMNOS
+            $(document).on('click', '.view_data', function(){  
+                var employee_id = $(this).attr("id");  
+                if(employee_id != '')  
+                {  
+                        $.ajax({  
+                            url:"select.php",  
+                            method:"POST",  
+                            data:{employee_id:employee_id},  
+                            success:function(data){  
+                                $('#employee_detail').html(data);  
+                                $('#dataModal').modal('show');  
+                            }  
+                        });  
+                }            
+            });  
         });  
-    });  
     </script>
