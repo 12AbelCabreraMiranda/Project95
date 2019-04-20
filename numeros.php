@@ -93,7 +93,7 @@
         }            
        
         //INICIALIZACION
-        $(".espacioNumero").html("<a href='#' onmousedown='voz3.play()' > <img class='img-responsive' src='img/numero/cero.png'> </a>");
+        $(".espacioNumero").html("<a href='#' onmousedown='voz1.play()' > <img class='img-responsive' src='img/numero/cero.png'> </a>");
         //INICIO DE CONDICIONES PARA IR CAMBIANDO IMAGENES
         voz1.play(); 
         function sigNumero(){ 

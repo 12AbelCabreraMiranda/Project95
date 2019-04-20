@@ -43,7 +43,7 @@
                     </div>
                     <div class="form-group">
                         <label for="nombre">EDAD</label>                        
-                        <input REQUIRED name="edad" type="number" class="form-control"  min="1" placeholder="0" value="" onkeypress="return soloNumero(event)" onpaste="return false">
+                        <input REQUIRED name="edad" type="number" class="form-control"  min="1" max="6" placeholder="0" value="" onkeypress="return soloNumero(event)" onpaste="return false">
                     </div>
                     <div class="form-group">
                         <label for="nombre">CODIGO DEL ESTUDIANTE</label>                        
